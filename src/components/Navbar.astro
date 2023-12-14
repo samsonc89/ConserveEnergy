@@ -3,13 +3,13 @@ import ScheduleButton from "./ScheduleButton.astro";
 import logo from "/public/CE-Logo.svg";
 ---
 
-<nav>
+<nav class="flex items-center justify-between">
   <div class="logo"><img src="/public/CE-Logo.svg" /></div>
-  <div class="navLinks">
+  <div class="navLinks flex gap-4">
     <a href="">Services</a>
     <a href="">Results</a>
     <a href="">About</a>
     <a href="">Contact</a>
   </div>
-  <ScheduleButton />
+  <ScheduleButton class="ml-auto" />
 </nav>
