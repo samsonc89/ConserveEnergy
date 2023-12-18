@@ -1,0 +1,32 @@
+---
+import ScheduleButton from "./ScheduleButton.astro";
+import bulb from "../images/LED-bulb.png";
+---
+
+<div class="hero-container flex justify-center items-center gap-10 px-24">
+  <div class="hero-left flex-1">
+    <div class="hero-text">
+      <h4>About Us</h4>
+      <h2>Improving your energy efficiency</h2>
+      <p>Lorem ipsum</p>
+    </div>
+    <ScheduleButton />
+  </div>
+  <div class="hero-right flex-1">
+    <div class="hero-image-wrapper overflow-hidden">
+      <!-- <img class="h-full object-cover" src={bulb.src} /> -->
+      <!-- <img class="h-full" src="/public/LED-bulb.png" /> -->
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero-image-wrapper {
+    background-image: url(../images/LED-bulb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 45%;
+    width: 30rem;
+    height: 36rem;
+  }
+</style>
