@@ -3,7 +3,7 @@ import ScheduleButton from "./ScheduleButton.astro";
 import bulb from "../images/LED-bulb.png";
 ---
 
-<div class="hero-container flex justify-center items-center gap-10 px-24">
+<section class="hero-container flex justify-center items-center gap-10">
   <div class="hero-left flex-1">
     <div class="hero-text">
       <h4>About Us</h4>
@@ -12,13 +12,10 @@ import bulb from "../images/LED-bulb.png";
     </div>
     <ScheduleButton />
   </div>
-  <div class="hero-right flex-1">
-    <div class="hero-image-wrapper overflow-hidden">
-      <!-- <img class="h-full object-cover" src={bulb.src} /> -->
-      <!-- <img class="h-full" src="/public/LED-bulb.png" /> -->
-    </div>
+  <div class="hero-right flex-1 aspect-square">
+    <div class="hero-image-wrapper w-full h-full"></div>
   </div>
-</div>
+</section>
 
 <style>
   .hero-image-wrapper {
@@ -26,7 +23,7 @@ import bulb from "../images/LED-bulb.png";
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 45%;
-    width: 30rem;
-    height: 36rem;
+    /* width: 30rem;
+    height: 36rem; */
   }
 </style>
