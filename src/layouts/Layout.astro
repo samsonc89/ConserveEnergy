@@ -4,6 +4,8 @@ interface Props {
 }
 
 import Navbar from "../components/Navbar.astro";
+import "@fontsource-variable/roboto-slab";
+import "@fontsource/roboto";
 
 const { title } = Astro.props;
 ---
@@ -29,21 +31,56 @@ const { title } = Astro.props;
     --caption-color: #e06127;
     --accent-color: #f8f5ed;
   }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+
+  #root,
+  #__next {
+    isolation: isolate;
+  }
   html {
-    font-family: system-ui, sans-serif;
+    font-family: "Roboto Slab Variable", "Roboto", system-ui, sans-serif;
     background: #fff;
     background-size: 224px;
-  }
-  code {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      Liberation Mono,
-      DejaVu Sans Mono,
-      Bitstream Vera Sans Mono,
-      Courier New,
-      monospace;
   }
 
   h1 {
@@ -74,8 +111,10 @@ const { title } = Astro.props;
     color: var(--caption-color);
   }
 
-  .body {
+  .body,
+  button {
     font-size: 16px;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     line-height: 24px;
   }
