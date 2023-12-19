@@ -25,15 +25,9 @@ const { title } = Astro.props;
 </html>
 <style is:global>
   :root {
-    --accent: 136, 58, 234;
-    --accent-light: 224, 204, 250;
-    --accent-dark: 49, 10, 101;
-    --accent-gradient: linear-gradient(
-      45deg,
-      rgb(var(--accent)),
-      rgb(var(--accent-light)) 30%,
-      white 60%
-    );
+    --body-color: #3a3a3a;
+    --caption-color: #e06127;
+    --accent-color: #f8f5ed;
   }
   html {
     font-family: system-ui, sans-serif;
@@ -51,6 +45,41 @@ const { title } = Astro.props;
       Courier New,
       monospace;
   }
+
+  h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 72.8px;
+  }
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+  }
+  h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+  }
+  h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+  }
+
+  .caption {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    color: var(--caption-color);
+  }
+
+  .body {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
   section {
     margin-left: auto;
     margin-right: auto;
