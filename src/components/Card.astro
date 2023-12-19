@@ -1,18 +1,21 @@
 ---
-import asset from "../images/asset1.jpg";
+import { Image } from "astro:assets";
+
+const { imagePath, altText } = Astro.props;
+const images = import.meta.glob("/src/images/*.{jpeg,jpg,png,gif}");
 ---
 
 <div class="card flex items-center rounded-3xl overflow-hidden shadow-2xl">
   <div class="text-wrapper flex-1 px-10">
-    <h3 class="w-3/4 mb-6">TURNKEY SOLUTIONS, EXCEPTIONAL PRODUCTS</h3>
+    <h3 class="w-3/4 mb-6">Lorem ipsum dolor sit amet consectetur</h3>
     <p class="body">
-      Conserve Energy turnkey solutions start with audits to determine the
-      energy saving potential, and extends into lighting and control design, top
-      quality energy-efficient products, installation, project management,
-      handling of all utility incentive paperwork, financing, and more.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+      exercitationem placeat delectus dicta voluptatibus accusantium corrupti
+      qui ex voluptas eligendi repellat, modi architecto ipsum fugiat eveniet,
+      facere autem ullam necessitatibus!
     </p>
   </div>
   <div class="image-wrapper w-5/12">
-    <img src={asset.src} />
+    <Image src={images[imagePath]()} alt={altText} />
   </div>
 </div>
