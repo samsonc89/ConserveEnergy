@@ -2,11 +2,25 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import Card from "../components/Card.astro";
+const heroContent = {
+  caption: "About Us",
+  imagePath: "../src/images/LED-bulb.png",
+  title: "Improving your energy efficiency",
+  text: `At Conserve Energy, we're not just consultants; we're your partners in
+    achieving energy efficiency. Discover the team and values that drive us
+    to be pioneers in delivering sustainable solutions for your business.`,
+};
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
-    <Hero />
+    <Hero
+      title={heroContent.title}
+      text={heroContent.text}
+      caption={heroContent.caption}
+      altText="test"
+      imagePath={heroContent.imagePath}
+    />
     <section>
       <Card imagePath="/src/images/asset1.jpg" altText="test image" />
     </section>
