@@ -1,8 +1,5 @@
 ---
-import { Image } from "astro:assets";
-
 const { imagePath, altText } = Astro.props;
-const images = import.meta.glob("/src/images/*.{jpeg,jpg,png,gif}");
 ---
 
 <div class="card flex items-center rounded-3xl overflow-hidden shadow-2xl">
@@ -16,6 +13,14 @@ const images = import.meta.glob("/src/images/*.{jpeg,jpg,png,gif}");
     </p>
   </div>
   <div class="image-wrapper w-5/12">
-    <Image src={images[imagePath]()} alt={altText} />
+    <img src={imagePath} alt={altText} />
   </div>
 </div>
+
+<style>
+  img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
+</style>
