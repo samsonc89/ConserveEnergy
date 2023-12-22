@@ -1,0 +1,47 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "TURNKEY SOLUTIONS, EXCEPTIONAL PRODUCTS",
+      "content": "Conserve Energy turnkey solutions start with audits to determine the energy saving potential, and extends into lighting and control design, top quality energy-efficient products, installation, project management, handling of all utility incentive paperwork, financing, and more.",
+      "imagePath": "../src/images/about1.jpg",
+      "altText": "This is placeholder text"
+    },
+    {
+      "id": 2,
+      "title": "YOUR ENERGY EFFICIENCY PARTNER",
+      "content": {
+        "text": "Conserve Energy turnkey solutions start with audits to determine the energy saving potential, and extends into lighting and control design, top quality energy-efficient products, installation, project management, handling of all utility incentive paperwork, financing, and more.\n\nConserve Energy will make a great partner if you are: ",
+        "list": [
+          "Looking to strengthen your businesses by reducing energy costs",
+          "Wanting improved lighting for retail product displays",
+          "Seeking to enhance worker safety and productivity",
+          "Simply wanting to reduce your carbon footprint"
+        ]
+      },
+      "imagePath": "../src/images/about2.jpg",
+      "altText": "This is placeholder text"
+    },
+    {
+      "id": 3,
+      "title": "CUTILITY KNOWLEDGE",
+      "content": "In addition to our technical and product expertise, Conserve Energy works closely with local utilities and utility program management contractors to assure our customers receive maximum incentive dollars.",
+      "imagePath": "../src/images/about1.jpg",
+      "altText": "This is placeholder text"
+    },
+    {
+      "id": 4,
+      "title": "LED LIGHTING EXPERTISE SETS CONSERVE ENERGY APART",
+      "content": "Deep knowledge of LED lighting and control solutions for new construction and retrofits help define Conserve Energy. \n \nWe have completed a large number of all-LED lighting projects including interior, exterior and specialty products, from canopy down-lights to signs and case lighting. \n\nFor customers desiring more comprehensive energy management programs, Conserve Energy partners with other experts to improve efficiency of HVAC and refrigeration systems.",
+      "imagePath": "../src/images/about1.jpg",
+      "altText": "This is placeholder text"
+    },
+    {
+      "id": 5,
+      "title": "CONSERVE ENERGY ORIGINS",
+      "content": "Conserve Energy was established with the vision of being a Northwest company that could provide “the complete package” for energy efficiency. \n\nSince our start in 2008, we have developed an extensive network of suppliers and partners that help us deliver top-drawer products at reasonable prices. \n\nWorking with our partner companies, Conserve Energy has completed over 3,200 lighting and energy efficiency projects in the commercial and industrial sectors.",
+      "imagePath": "../src/images/about1.jpg",
+      "altText": "This is placeholder text"
+    }
+  ]
+}

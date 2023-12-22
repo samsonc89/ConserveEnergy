@@ -1,16 +1,28 @@
 ---
-const { imagePath, altText } = Astro.props;
+const { title, content, imagePath, altText, extraClass } = Astro.props;
 ---
 
-<div class="card flex items-center rounded-3xl overflow-hidden shadow-2xl">
+<div
+  class=`${extraClass} flex items-center rounded-3xl overflow-hidden shadow-2xl mb-12`
+>
   <div class="text-wrapper flex-1 px-10">
-    <h3 class="w-3/4 mb-6">Lorem ipsum dolor sit amet consectetur</h3>
-    <p class="body">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-      exercitationem placeat delectus dicta voluptatibus accusantium corrupti
-      qui ex voluptas eligendi repellat, modi architecto ipsum fugiat eveniet,
-      facere autem ullam necessitatibus!
-    </p>
+    <h3 class="w-3/4 mb-6">{title}</h3>
+    {
+      typeof content === "string" ? (
+        <p>{content} </p>
+      ) : (
+        <div>
+          {content.text && <p>{content.text}</p>}
+          {content.list && content.list.length > 0 && (
+            <ul>
+              {content.list.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )
+    }
   </div>
   <div class="image-wrapper w-5/12">
     <img src={imagePath} alt={altText} />
