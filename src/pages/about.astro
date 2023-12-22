@@ -26,10 +26,8 @@ import about3 from "../images/about3.jpg";
       imagePath={heroContent.imagePath}
     />
     <section>
-      <div
-        class="flex items-center rounded-3xl overflow-hidden shadow-2xl mb-12"
-      >
-        <div class="text-wrapper flex-1 p-10">
+      <div class="card flex rounded-3xl overflow-hidden shadow-2xl mb-12">
+        <div class="text-wrapper flex-1 p-16">
           <h3 class="w-3/4 mb-6">TURNKEY SOLUTIONS, EXCEPTIONAL PRODUCTS</h3>
           <p class="body">
             Conserve Energy turnkey solutions start with audits to determine the
@@ -39,15 +37,15 @@ import about3 from "../images/about3.jpg";
             and more.
           </p>
         </div>
-        <div id="about1" class="image-wrapper flex-1 w-5/12">
-          <img src="../src/images/about1.jpg" alt="placeholder" />
+        <div id="about1" class="image-wrapper w-5/12">
+          <!-- <img src="../src/images/about1.jpg" alt="placeholder" /> -->
         </div>
       </div>
 
       <div
         class="flex flex-row-reverse items-stretch rounded-3xl overflow-hidden shadow-2xl mb-12"
       >
-        <div class="text-wrapper flex-1 p-10">
+        <div class="text-wrapper flex-1 p-16">
           <h3 class="w-3/4 mb-6">YOUR ENERGY EFFICIENCY PARTNER</h3>
           <p class="body">
             At Conserve Energy, we stay focused on meeting customer needs.
@@ -73,7 +71,7 @@ import about3 from "../images/about3.jpg";
       </div>
 
       <div class="card flex rounded-3xl overflow-hidden shadow-2xl mb-12">
-        <div class="text-wrapper flex-1 px-10 py-16">
+        <div class="text-wrapper flex-1 p-16">
           <h3 class="w-3/4 mb-6">UTILITY KNOWLEDGE</h3>
           <p class="body">
             In addition to our technical and product expertise, Conserve Energy
@@ -88,7 +86,7 @@ import about3 from "../images/about3.jpg";
       <div
         class="card flex flex-row-reverse rounded-3xl overflow-hidden shadow-2xl mb-12"
       >
-        <div class="text-wrapper flex-1 p-10">
+        <div class="text-wrapper flex-1 p-16">
           <h3 class="w-3/4 mb-6">
             LED LIGHTING EXPERTISE SETS CONSERVE ENERGY APART
           </h3>
@@ -112,7 +110,7 @@ import about3 from "../images/about3.jpg";
       </div>
 
       <div class="card flex rounded-3xl overflow-hidden shadow-2xl mb-12">
-        <div class="text-wrapper flex-1 p-10">
+        <div class="text-wrapper flex-1 p-16">
           <h3 class="w-3/4 mb-6">ONSERVE ENERGY ORIGINS</h3>
           <p class="body mb-4">
             Conserve Energy was established with the vision of being a Northwest
@@ -132,9 +130,14 @@ import about3 from "../images/about3.jpg";
 </Layout>
 
 <style>
+  #about1 {
+    background-image: url(../src/images/about1.jpg);
+    background-size: cover;
+  }
   #about2 {
     background-image: url(../src/images/about2.jpg);
     background-size: cover;
+    background-position: -60px;
   }
   #about3 {
     background-image: url(../src/images/about3.jpg);
