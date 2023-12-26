@@ -6,6 +6,7 @@ interface Props {
 import Navbar from "../components/Navbar.astro";
 import "@fontsource-variable/roboto-slab";
 import "@fontsource/roboto";
+import Footer from "../components/Footer.astro";
 
 const { title } = Astro.props;
 ---
@@ -17,12 +18,17 @@ const { title } = Astro.props;
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body>
     <Navbar />
     <slot />
+    <Footer />
   </body>
 </html>
 <style is:global>
