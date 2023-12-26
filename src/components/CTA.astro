@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets";
+import phone from "../images/phone.svg";
+import ScheduleButton from "./ScheduleButton.astro";
+---
+
+<section class="rounded-3xl shadow-2xl">
+  <div class="container flex justify-center py-12 px-20 items-center">
+    <div class="content-wrapper flex flex-col items-start gap-6 flex-1">
+      <p class="caption uppercase">for a free consultation</p>
+      <h3 class="uppercase w-1/2">looking at the bigger picture</h3>
+      <p class="body mb-4">
+        By looking at your big picture, we find the cost-effective pathway to
+        making the energy saving measures reality. Conserve Energy focuses
+        solely on your energy needs, and how to trim your energy use. We provide
+        the in-house expertise to be your turnkey solution for total energy
+        efficiency.
+      </p>
+      <p class="body">
+        Our experienced network of suppliers and subcontractors lets us specify
+        and deliver the very best to you. Expect cutting-edge products at
+        competitive prices when you work with Conserve Energy.
+      </p>
+      <ScheduleButton />
+    </div>
+    <div class="img-wrapper flex justify-center items-center">
+      <Image src={phone} alt="phone" />
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    background-color: var(--accent-color);
+  }
+</style>

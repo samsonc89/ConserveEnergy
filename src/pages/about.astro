@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import Card from "../components/Card.astro";
+import CTA from "../components/CTA.astro";
 const heroContent = {
   caption: "About Us",
   imagePath: "../src/images/aboutHero.png",
@@ -16,7 +17,7 @@ import about2 from "../images/about2.jpg";
 import about3 from "../images/about3.jpg";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Conserve Energy | About Us">
   <main>
     <Hero
       title={heroContent.title}
@@ -132,6 +133,7 @@ import about3 from "../images/about3.jpg";
         <div id="about5" class="image-wrapper w-5/12"></div>
       </div>
     </section>
+    <CTA />
   </main>
 </Layout>
 
