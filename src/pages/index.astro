@@ -2,6 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Hero from "../components/Hero.astro";
+import Footer from "../components/Footer.astro";
+
+import icon1 from "../images/indexIcon1.svg";
+import icon2 from "../images/indexIcon2.svg";
+import icon3 from "../images/indexIcon3.svg";
+import { Image } from "astro:assets";
+
 const heroContent = {
   caption: "Power Up Your Business",
   imagePath: "../src/images/homeHero.jpg",
@@ -18,5 +25,33 @@ const heroContent = {
       caption={heroContent.caption}
       imagePath={heroContent.imagePath}
     />
+    <section class="grid-cols-3 grid justify-between gap-8">
+      <div class="cards shadow-xl p-8 flex flex-col gap-4 rounded-xl">
+        <Image src={icon1} alt="icon 1" />
+        <h4 class="w-3/5">The total energy effeciency package</h4>
+        <p class="body">
+          Conserve Energy’s turnkey approach to energy efficiency puts your
+          business in a better competitive position. Energy saving solutions
+          trim energy consumption and capture utility incentives.
+        </p>
+      </div>
+      <div class="cards shadow-xl p-8 flex flex-col gap-4 rounded-xl">
+        <Image src={icon2} alt="icon 2" />
+        <h4 class="w-3/5">Capture utility incentives</h4>
+        <p class="body">
+          Let us show you how specific energy-saving measures can earn generous
+          incentives from utilities and third parties in the Northwest. These
+          incentives typically cover 40-70%, of up-front costs.
+        </p>
+      </div>
+      <div class="cards shadow-xl p-8 flex flex-col gap-4 rounded-xl">
+        <Image src={icon3} alt="icon 3" />
+        <h4 class="w-3/5">Reasonable costs, predictable results</h4>
+        <p class="body">
+          Every dollar you can save on energy drops immediately to the bottom
+          line. Cost-effective energy-efficiency retrofits pay back. Fast.
+        </p>
+      </div>
+    </section>
   </main>
 </Layout>
