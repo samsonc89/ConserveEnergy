@@ -3,11 +3,18 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Hero from "../components/Hero.astro";
 import Footer from "../components/Footer.astro";
-
-import icon1 from "../images/indexIcon1.svg";
-import icon2 from "../images/indexIcon2.svg";
-import icon3 from "../images/indexIcon3.svg";
 import { Image } from "astro:assets";
+
+import {
+  icon1,
+  icon2,
+  icon3,
+  service1,
+  service2,
+  service3,
+  service4,
+  service5,
+} from "../images";
 
 const heroContent = {
   caption: "Power Up Your Business",
@@ -28,7 +35,7 @@ const heroContent = {
     <section class="grid-cols-3 grid justify-between gap-8">
       <div class="cards shadow-xl p-8 flex flex-col gap-4 rounded-xl">
         <Image src={icon1} alt="icon 1" />
-        <h4 class="w-3/5">The total energy effeciency package</h4>
+        <h4 class="w-4/5">The total energy effeciency package</h4>
         <p class="body">
           Conserve Energy’s turnkey approach to energy efficiency puts your
           business in a better competitive position. Energy saving solutions
@@ -46,7 +53,7 @@ const heroContent = {
       </div>
       <div class="cards shadow-xl p-8 flex flex-col gap-4 rounded-xl">
         <Image src={icon3} alt="icon 3" />
-        <h4 class="w-3/5">Reasonable costs, predictable results</h4>
+        <h4 class="w-4/5">Reasonable costs, predictable results</h4>
         <p class="body">
           Every dollar you can save on energy drops immediately to the bottom
           line. Cost-effective energy-efficiency retrofits pay back. Fast.
@@ -59,5 +66,65 @@ const heroContent = {
         <div class="logos-wrapper"></div>
       </div>
     </div>
+    <section class="services">
+      <h2>Our Services</h2>
+      <div class="container grid grid-cols-3 grid-rows-2 gap-8">
+        <div
+          class="card1 shadow-xl rounded-xl bg-slate-400 col-span-1 row-span-2 h-[31rem] overflow-hidden relative"
+        >
+          <Image src={service1} alt="services" class="object-cover h-full" />
+          <div
+            class="absolute bg-white/90 w-full h-16 bottom-0 flex justify-between items-center px-4"
+          >
+            <h5 class="uppercase">the energy audit</h5>
+            <span class="material-symbols-outlined"> east</span>
+          </div>
+        </div>
+        <div
+          class="card2 shadow-xl rounded-xl bg-slate-400 overflow-hidden relative"
+        >
+          <Image src={service2} alt="services" class="object-cover h-full" />
+          <div
+            class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
+          >
+            <h5 class="uppercase">design solutions</h5>
+            <span class="material-symbols-outlined"> east</span>
+          </div>
+        </div>
+        <div
+          class="card3 shadow-xl rounded-xl bg-slate-400 overflow-hidden relative"
+        >
+          <Image src={service5} alt="services" class="object-cover h-full" />
+          <div
+            class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
+          >
+            <h5 class="uppercase">maximum utility incentives</h5>
+            <span class="material-symbols-outlined"> east</span>
+          </div>
+        </div>
+        <div
+          class="card4 shadow-xl rounded-xl bg-slate-400 overflow-hidden relative"
+        >
+          <Image src={service3} alt="services" class="object-cover h-full" />
+          <div
+            class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
+          >
+            <h5 class="uppercase">led lights and more</h5>
+            <span class="material-symbols-outlined"> east</span>
+          </div>
+        </div>
+        <div
+          class="card5 shadow-xl rounded-xl bg-slate-400 overflow-hidden relative"
+        >
+          <Image src={service4} alt="services" class="object-cover h-full" />
+          <div
+            class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
+          >
+            <h5 class="uppercase">installation excellence</h5>
+            <span class="material-symbols-outlined"> east</span>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </Layout>
