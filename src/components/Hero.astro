@@ -17,7 +17,7 @@ import { Image } from "astro:assets";
   <div class="flex-1 aspect-square">
     <div class="hero-image w-full h-full rounded-3xl overflow-hidden">
       <!-- <img src={imagePath} alt={altText} /> -->
-      <Image src={imagePath} alt={altText} />
+      <Image src={import(`${imagePath}`)} alt={altText} />
     </div>
   </div>
 </section>
