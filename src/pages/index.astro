@@ -18,13 +18,13 @@ import {
 
 const heroContent = {
   caption: "Power Up Your Business",
-  imagePath: "../src/images/homeHero.jpg",
+  imagePath: "/src/images/homeHero.jpg",
   title: "Illuminate Smarter and Save Bigger",
   text: `Your unique energy solution begins with a consultation. See how we’ve helped thousands of businesses discover the brilliance of customized energy efficiency—schedule your consultation now.`,
 };
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Conserve Energy">
   <main>
     <Hero
       title={heroContent.title}
@@ -33,7 +33,7 @@ const heroContent = {
       imagePath={heroContent.imagePath}
     />
     <section class="grid-cols-3 grid justify-between gap-8">
-      <div class="cards shadow-xl p-8 flex flex-col gap-4 rounded-xl">
+      <div class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl">
         <Image src={icon1} alt="icon 1" />
         <h4 class="w-4/5">The total energy effeciency package</h4>
         <p class="body">
@@ -42,7 +42,7 @@ const heroContent = {
           trim energy consumption and capture utility incentives.
         </p>
       </div>
-      <div class="cards shadow-xl p-8 flex flex-col gap-4 rounded-xl">
+      <div class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl">
         <Image src={icon2} alt="icon 2" />
         <h4 class="w-3/5">Capture utility incentives</h4>
         <p class="body">
@@ -51,7 +51,7 @@ const heroContent = {
           incentives typically cover 40-70%, of up-front costs.
         </p>
       </div>
-      <div class="cards shadow-xl p-8 flex flex-col gap-4 rounded-xl">
+      <div class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl">
         <Image src={icon3} alt="icon 3" />
         <h4 class="w-4/5">Reasonable costs, predictable results</h4>
         <p class="body">
