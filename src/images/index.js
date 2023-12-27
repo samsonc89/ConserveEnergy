@@ -6,3 +6,8 @@ export { default as about5 } from "./about5.jpg";
 export { default as icon1 } from "./indexIcon1.svg";
 export { default as icon2 } from "./indexIcon2.svg";
 export { default as icon3 } from "./indexIcon3.svg";
+export { default as service1 } from "./service1.jpeg";
+export { default as service2 } from "./service2.jpeg";
+export { default as service3 } from "./service3.jpeg";
+export { default as service4 } from "./service4.jpeg";
+export { default as service5 } from "./service5.jpeg";
