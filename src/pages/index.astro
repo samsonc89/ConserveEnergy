@@ -14,10 +14,12 @@ import {
   service3,
   service4,
   service5,
+  homeHero,
 } from "../images";
 
 const heroContent = {
   caption: "Power Up Your Business",
+  altText: "Hero image",
   imagePath: "/src/images/homeHero.jpg",
   title: "Illuminate Smarter and Save Bigger",
   text: `Your unique energy solution begins with a consultation. See how we’ve helped thousands of businesses discover the brilliance of customized energy efficiency—schedule your consultation now.`,
@@ -30,7 +32,8 @@ const heroContent = {
       title={heroContent.title}
       text={heroContent.text}
       caption={heroContent.caption}
-      imagePath={heroContent.imagePath}
+      imagePath={homeHero}
+      altText={heroContent.altText}
     />
     <section class="grid-cols-3 grid justify-between gap-8">
       <div class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl">
@@ -60,7 +63,7 @@ const heroContent = {
         </p>
       </div>
     </section>
-    <div class="w-full bg-[var(--accent-color)] h-48">
+    <div class="w-full bg-[var(--accent-color)] h-48 mx-auto">
       <div class="container flex flex-col items-center">
         <h4>Companies Who Trust Us</h4>
         <div class="logos-wrapper"></div>
