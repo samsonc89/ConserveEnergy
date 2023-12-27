@@ -15,7 +15,9 @@ import {
   service4,
   service5,
   homeHero,
+  whyUs,
 } from "../images";
+import ScheduleButton from "../components/ScheduleButton.astro";
 
 const heroContent = {
   caption: "Power Up Your Business",
@@ -36,6 +38,8 @@ const heroContent = {
     >
       <Image src={homeHero} alt="hero image" class="h-full" />
     </Hero>
+
+    <!-- FEATURES -->
     <section class="grid-cols-3 grid justify-between gap-8">
       <div class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl">
         <Image src={icon1} alt="icon 1" />
@@ -64,12 +68,16 @@ const heroContent = {
         </p>
       </div>
     </section>
+
+    <!-- COMPANIES WE WORKED WITH -->
     <div class="w-full bg-[var(--accent-color)] h-48 mx-auto">
       <div class="container flex flex-col items-center">
         <h4>Companies Who Trust Us</h4>
         <div class="logos-wrapper"></div>
       </div>
     </div>
+
+    <!-- SERVICES -->
     <section class="services flex flex-col items-center gap-16">
       <h2>Our Services</h2>
       <div class="container grid grid-cols-3 grid-rows-2 gap-8">
@@ -130,5 +138,53 @@ const heroContent = {
         </div>
       </div>
     </section>
+
+    <!-- WHY US -->
+    <div class="wrapper w-full bg-[var(--accent-color)] py-1">
+      <section class="bg-[var(--accent-color)]">
+        <div class="wrapper flex items-center justify-between gap-36">
+          <div class="col1 bg-white w-1/2 px-12 py-10 rounded-2xl">
+            <p class="caption mb-4">Why Us</p>
+            <h2 class="uppercase w-4/5 mb-8">team up with a proven leader</h2>
+            <p class="body mb-8">
+              Conserve Energy, LLC has completed over 3,000 cost-effective
+              energy efficiency retrofit projects for businesses ranging from
+              small retailers to large industrial facilities. Our turnkey
+              solutions include top-quality products at very competitive prices.
+              We work closely with all major utility programs to maximize
+              incentives for our customers and deliver great value and
+              unbeatable ROI.
+            </p>
+            <ScheduleButton />
+          </div>
+          <div class="col2 w-2/5 h-[34rem] relative">
+            <Image
+              src={whyUs}
+              alt="building at sunset"
+              class="h-full w-full object-cover rounded-2xl"
+            />
+            <div
+              class="text-center absolute bg-white rounded-xl px-6 py-6 flex flex-col items-center gap-3.5 top-14 -left-24 right-80"
+            >
+              <h4>$100 Million+</h4>
+              <p class="body">Completed energy projects</p>
+            </div>
+            <div
+              class="text-center absolute bg-white rounded-xl px-9 py-6 flex flex-col items-center gap-3.5 bottom-[13.5rem] -left-16 right-80"
+            >
+              <h4>3500+</h4>
+              <p class="body">Businesses helped</p>
+            </div>
+            <div
+              class="text-center absolute bg-white rounded-xl px-6 py-6 flex flex-col items-center gap-3.5 bottom-14 right-80 -left-10"
+            >
+              <h4>2008</h4>
+              <p class="body">Year founded</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- </div> -->
+    </div>
   </main>
 </Layout>
