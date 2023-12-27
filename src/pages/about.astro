@@ -13,9 +13,7 @@ const heroContent = {
 };
 
 import { Image } from "astro:assets";
-import { aboutHero } from "../images";
-import about2 from "../images/about2.jpg";
-import about3 from "../images/about3.jpg";
+import { aboutHero, about1, about2, about3, about4, about5 } from "../images";
 ---
 
 <Layout title="Conserve Energy | About Us">
@@ -26,7 +24,7 @@ import about3 from "../images/about3.jpg";
       caption={heroContent.caption}
       altText="test"
     >
-      <Image src={aboutHero} alt="hero image" class="h-full object-cover" />
+      <Image src={aboutHero} alt="hero image" />
     </Hero>
     <section>
       <div class="card flex rounded-3xl overflow-hidden shadow-2xl mb-12">
@@ -42,6 +40,7 @@ import about3 from "../images/about3.jpg";
         </div>
         <div id="about1" class="image-wrapper w-5/12">
           <!-- <img src="../src/images/about1.jpg" alt="placeholder" /> -->
+          <Image src={about1} alt="grocery produce" />
         </div>
       </div>
 
@@ -70,11 +69,13 @@ import about3 from "../images/about3.jpg";
 
           <p class="body">Then Conserve Energy will make a great partner.</p>
         </div>
-        <div id="about2" class="image-wrapper w-5/12"></div>
+        <div id="about2" class="image-wrapper w-5/12">
+          <Image src={about2} alt="shaking hands" />
+        </div>
       </div>
 
       <div class="card flex rounded-3xl overflow-hidden shadow-2xl mb-12">
-        <div class="text-wrapper flex-1 p-16">
+        <div class="text-wrapper flex-1 flex flex-col justify-center p-16">
           <h3 class="w-3/4 mb-6">UTILITY KNOWLEDGE</h3>
           <p class="body">
             In addition to our technical and product expertise, Conserve Energy
@@ -83,7 +84,9 @@ import about3 from "../images/about3.jpg";
             dollars.
           </p>
         </div>
-        <div id="about3" class="image-wrapper w-5/12"></div>
+        <div id="about3" class="image-wrapper w-5/12">
+          <Image src={about3} alt="solar panel" />
+        </div>
       </div>
 
       <div
@@ -109,7 +112,9 @@ import about3 from "../images/about3.jpg";
             efficiency of HVAC and refrigeration systems.
           </p>
         </div>
-        <div id="about4" class="image-wrapper w-5/12"></div>
+        <div id="about4" class="image-wrapper w-5/12">
+          <Image src={about4} alt="gas station" />
+        </div>
       </div>
 
       <div class="card flex rounded-3xl overflow-hidden shadow-2xl mb-12">
@@ -132,7 +137,9 @@ import about3 from "../images/about3.jpg";
             and industrial sectors.
           </p>
         </div>
-        <div id="about5" class="image-wrapper w-5/12"></div>
+        <div id="about5" class="image-wrapper w-5/12">
+          <Image src={about5} alt="lightbulb" />
+        </div>
       </div>
     </section>
     <CTA />
@@ -140,26 +147,8 @@ import about3 from "../images/about3.jpg";
 </Layout>
 
 <style>
-  #about1 {
-    background-image: url(../src/images/about1.jpg);
-    background-size: cover;
-  }
-  #about2 {
-    background-image: url(../src/images/about2.jpg);
-    background-size: cover;
-    background-position: -60px;
-  }
-  #about3 {
-    background-image: url(../src/images/about3.jpg);
-    background-size: cover;
-  }
-  #about4 {
-    background-image: url(../src/images/about4.jpg);
-    background-size: cover;
-    background-position: -110px;
-  }
-  #about5 {
-    background-image: url(../src/images/about5.jpg);
-    background-size: cover;
+  img {
+    height: 100%;
+    object-fit: cover;
   }
 </style>
