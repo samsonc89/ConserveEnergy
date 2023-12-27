@@ -12,3 +12,4 @@ export { default as service3 } from "./service3.jpeg";
 export { default as service4 } from "./service4.jpeg";
 export { default as service5 } from "./service5.jpeg";
 export { default as homeHero } from "./homeHero.jpg";
+export { default as aboutHero } from "./aboutHero.png";

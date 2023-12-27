@@ -13,6 +13,7 @@ const heroContent = {
 };
 
 import { Image } from "astro:assets";
+import { aboutHero } from "../images";
 import about2 from "../images/about2.jpg";
 import about3 from "../images/about3.jpg";
 ---
@@ -24,8 +25,9 @@ import about3 from "../images/about3.jpg";
       text={heroContent.text}
       caption={heroContent.caption}
       altText="test"
-      imagePath={heroContent.imagePath}
-    />
+    >
+      <Image src={aboutHero} alt="hero image" class="h-full object-cover" />
+    </Hero>
     <section>
       <div class="card flex rounded-3xl overflow-hidden shadow-2xl mb-12">
         <div class="text-wrapper flex-1 p-16">
