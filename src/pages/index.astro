@@ -18,11 +18,12 @@ import {
   whyUs,
 } from "../images";
 import ScheduleButton from "../components/ScheduleButton.astro";
+import TestimonialCard from "../components/TestimonialCard.astro";
 
 const heroContent = {
   caption: "Power Up Your Business",
   altText: "Hero image",
-  imagePath: "../images/homeHero.jpg",
+  imagePath: "/src/images/homeHero.jpg",
   title: "Illuminate Smarter and Save Bigger",
   text: `Your unique energy solution begins with a consultation. See how we’ve helped thousands of businesses discover the brilliance of customized energy efficiency—schedule your consultation now.`,
 };
@@ -184,7 +185,14 @@ const heroContent = {
           </div>
         </div>
       </section>
-      <!-- </div> -->
     </div>
+    <section>
+      <!-- <TestimonialCard
+        name={heroContent.title}
+        text={heroContent.text}
+        imagePath={heroContent.imagePath}
+        altText={heroContent.altText}
+      /> -->
+    </section>
   </main>
 </Layout>
