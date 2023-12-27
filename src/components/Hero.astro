@@ -3,6 +3,7 @@ import ScheduleButton from "./ScheduleButton.astro";
 import bulb from "../images/LED-bulb.png";
 const { text, title, caption, imagePath, altText } = Astro.props;
 import { Image } from "astro:assets";
+const images = import.meta.glob("../images/*");
 ---
 
 <section class="flex justify-center items-center gap-12">
@@ -17,7 +18,7 @@ import { Image } from "astro:assets";
   <div class="flex-1 aspect-square">
     <div class="hero-image w-full h-full rounded-3xl overflow-hidden">
       <!-- <img src={imagePath} alt={altText} /> -->
-      <Image src={import(`${imagePath}`)} alt={altText} />
+      <Image src={images[imagePath]()} alt={altText} />
     </div>
   </div>
 </section>
