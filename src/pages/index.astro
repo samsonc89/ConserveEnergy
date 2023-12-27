@@ -32,9 +32,10 @@ const heroContent = {
       title={heroContent.title}
       text={heroContent.text}
       caption={heroContent.caption}
-      imagePath={heroContent.imagePath}
       altText={heroContent.altText}
-    />
+    >
+      <Image src={homeHero} alt="hero image" />
+    </Hero>
     <section class="grid-cols-3 grid justify-between gap-8">
       <div class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl">
         <Image src={icon1} alt="icon 1" />

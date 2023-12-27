@@ -18,7 +18,8 @@ const images = import.meta.glob("../images/*");
   <div class="flex-1 aspect-square">
     <div class="hero-image w-full h-full rounded-3xl overflow-hidden">
       <!-- <img src={imagePath} alt={altText} /> -->
-      <Image src={images[imagePath]()} alt={altText} />
+      <!-- <Image src={images[imagePath]()} alt={altText} /> -->
+      <slot />
     </div>
   </div>
 </section>
