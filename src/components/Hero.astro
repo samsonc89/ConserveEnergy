@@ -1,9 +1,9 @@
 ---
 import ScheduleButton from "./ScheduleButton.astro";
-import bulb from "../images/LED-bulb.png";
-const { text, title, caption, imagePath, altText, extraClass } = Astro.props;
-import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
+const { text, title, caption, imagePath, altText, extraClass } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/images/*.{jpeg,jpg,png,gif}"
 );
@@ -26,6 +26,7 @@ if (!images[imagePath])
     <div class="hero-image w-full h-full rounded-3xl overflow-hidden">
       <!-- <img src={imagePath} alt={altText} /> -->
       <Image src={images[imagePath]()} alt={altText} class="h-full" />
+      <slot />
       <slot />
     </div>
   </div>
