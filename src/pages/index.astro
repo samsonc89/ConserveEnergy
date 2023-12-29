@@ -36,8 +36,28 @@ const heroContent = {
       text={heroContent.text}
       caption={heroContent.caption}
       altText={heroContent.altText}
+      extraClass="relative"
     >
       <Image src={homeHero} alt="hero image" class="h-full" />
+
+      <div
+        class="text-center absolute bg-white shadow-2xl rounded-xl px-8 py-4 flex flex-col items-center gap-2 -bottom-6 right-[27rem]"
+      >
+        <p class="text-[var(--caption-color)] text-2xl font-semibold">
+          Outdoor lighting
+        </p>
+        <p class="body">
+          Pole lights, flood lights, ,<br /> canopy lights & more.
+        </p>
+      </div>
+      <div
+        class="text-center absolute bg-white shadow-2xl rounded-xl px-8 py-4 flex flex-col items-center gap-2 bottom-24 -right-12"
+      >
+        <p class="text-[#247B46] text-2xl font-semibold">Indoor lighting</p>
+        <p class="body">
+          High bays, troffers, panels,<br />tubes, bulbs & more.
+        </p>
+      </div>
     </Hero>
 
     <!-- FEATURES -->
