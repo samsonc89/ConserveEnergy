@@ -3,7 +3,14 @@ import ScheduleButton from "./ScheduleButton.astro";
 import bulb from "../images/LED-bulb.png";
 const { text, title, caption, imagePath, altText, extraClass } = Astro.props;
 import { Image } from "astro:assets";
-const images = import.meta.glob("../images/*");
+import type { ImageMetadata } from "astro";
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/images/*.{jpeg,jpg,png,gif}"
+);
+if (!images[imagePath])
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "/src/images/*.{jpeg,jpg,png,gif}"`
+  );
 ---
 
 <section class=`flex justify-center items-center gap-12 ${extraClass}`>
@@ -18,7 +25,7 @@ const images = import.meta.glob("../images/*");
   <div class="flex-1 aspect-square">
     <div class="hero-image w-full h-full rounded-3xl overflow-hidden">
       <!-- <img src={imagePath} alt={altText} /> -->
-      <!-- <Image src={images[imagePath]()} alt={altText} /> -->
+      <Image src={images[imagePath]()} alt={altText} class="h-full" />
       <slot />
     </div>
   </div>

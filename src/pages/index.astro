@@ -36,9 +36,10 @@ const heroContent = {
       text={heroContent.text}
       caption={heroContent.caption}
       altText={heroContent.altText}
+      imagePath={heroContent.imagePath}
       extraClass="relative"
     >
-      <Image src={homeHero} alt="hero image" class="h-full" />
+      <!-- <Image src={homeHero} alt="hero image" class="h-full" /> -->
 
       <div
         class="text-center absolute bg-white shadow-2xl rounded-xl px-8 py-4 flex flex-col items-center gap-2 -bottom-6 right-[27rem]"
@@ -206,7 +207,12 @@ const heroContent = {
         </div>
       </section>
     </div>
+
+    <!-- TESTIMONIALS -->
     <section>
+      <p class="caption">Testimonials</p>
+      <h2>What our clients say</h2>
+      <div class="testimonials-wrapper"></div>
       <!-- <TestimonialCard
         name={heroContent.title}
         text={heroContent.text}
