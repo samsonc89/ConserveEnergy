@@ -26,7 +26,11 @@ if (!images[imagePath])
   <div class="flex-1 aspect-square">
     <div class="hero-image w-full h-full rounded-3xl overflow-hidden">
       <!-- <img src={imagePath} alt={altText} /> -->
-      <Image src={images[imagePath]()} alt={altText} />
+      <Image
+        src={images[imagePath]()}
+        alt={altText}
+        class="h-full object-cover"
+      />
 
       <slot />
       <slot />
