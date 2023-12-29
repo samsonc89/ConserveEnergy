@@ -5,7 +5,7 @@ import Card from "../components/Card.astro";
 import CTA from "../components/CTA.astro";
 const heroContent = {
   caption: "About Us",
-  imagePath: "../src/images/aboutHero.png",
+  imagePath: "/src/images/aboutHero.png",
   title: "Improving your energy efficiency",
   text: `At Conserve Energy, we're not just consultants; we're your partners in
     achieving energy efficiency. Discover the team and values that drive us
@@ -22,9 +22,10 @@ import { aboutHero, about1, about2, about3, about4, about5 } from "../images";
       title={heroContent.title}
       text={heroContent.text}
       caption={heroContent.caption}
+      imagePath={heroContent.imagePath}
       altText="test"
     >
-      <Image src={aboutHero} alt="hero image" />
+      <!-- <Image src={aboutHero} alt="hero image" /> -->
     </Hero>
     <section>
       <div class="card flex rounded-3xl overflow-hidden shadow-2xl mb-12">
