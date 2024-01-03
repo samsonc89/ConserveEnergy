@@ -137,7 +137,14 @@ const { title } = Astro.props;
   }
 
   section {
-    margin: 6rem auto;
+    margin: 2rem auto;
     max-width: 1192px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    section {
+      margin: 6rem auto;
+      max-width: 1192px;
+    }
   }
 </style>
