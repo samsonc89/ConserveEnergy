@@ -18,7 +18,7 @@ import {
 } from "../images";
 import ScheduleButton from "../components/ScheduleButton.astro";
 
-import testData from "../data/testimonialsContent.json";
+import testimonials from "../data/testimonials.json";
 import TestimonialCard from "../components/TestimonialCard.astro";
 
 const heroContent = {
@@ -210,12 +210,12 @@ const heroContent = {
     </div>
 
     <!-- TESTIMONIALS -->
-    <section class="">
+    <section class="flex flex-col items-center gap-8">
       <p class="caption">Testimonials</p>
       <h2>What our clients say</h2>
       <div class="testimonials-wrapper flex">
         {
-          testData.testimonials.map((card) => (
+          testimonials.map((card) => (
             <TestimonialCard
               name={card.title}
               text={card.content}
@@ -224,13 +224,6 @@ const heroContent = {
             />
           ))
         }
-        <p>
-          {
-            testData.testimonials.map((data) => {
-              <p>{data.title}</p>;
-            })
-          }
-        </p>
       </div>
       <!-- <TestimonialCard
         name={heroContent.title}
