@@ -14,17 +14,21 @@ if (!images[imagePath])
   );
 ---
 
-<section class=`flex justify-center items-center gap-12 ${extraClass}`>
-  <div class="flex-1">
-    <div class="flex flex-col gap-6 mb-10">
+<section
+  class=`flex flex-col md:flex-row justify-center items-center md:gap-12 ${extraClass}`
+>
+  <div class="flex-1 px-2">
+    <div class="flex flex-col gap-2 md:gap-6 mb-4 md:mb-10">
       <h4 class="caption">{caption}</h4>
       <h1>{title}</h1>
-      <p class="body mr-4">{text}</p>
+      <p class="body md:mr-4">{text}</p>
     </div>
     <ScheduleButton />
   </div>
   <div class="flex-1 aspect-square">
-    <div class="hero-image w-full h-full rounded-3xl overflow-hidden">
+    <div
+      class="hero-image relative w-full sm:h-full md:rounded-3xl overflow-hidden"
+    >
       <!-- <img src={imagePath} alt={altText} /> -->
       <Image
         src={images[imagePath]()}
@@ -32,7 +36,6 @@ if (!images[imagePath])
         class="h-full object-cover"
       />
 
-      <slot />
       <slot />
     </div>
   </div>
