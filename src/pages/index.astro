@@ -13,39 +13,31 @@ import {
   service3,
   service4,
   service5,
-  homeHero,
   whyUs,
 } from "../images";
 import ScheduleButton from "../components/ScheduleButton.astro";
 
 import testimonials from "../data/testimonials.json";
 import TestimonialCard from "../components/TestimonialCard.astro";
-
-const heroContent = {
-  caption: "Power Up Your Business",
-  altText: "Hero image",
-  imagePath: "/src/images/homeHero.jpg",
-  title: "Illuminate Smarter and Save Bigger",
-  text: `Your unique energy solution begins with a consultation. See how we’ve helped thousands of businesses discover the brilliance of customized energy efficiency—schedule your consultation now.`,
-};
+import { indexHero } from "../constants/index.js";
 ---
 
 <Layout title="Conserve Energy">
   <main>
     <Hero
-      title={heroContent.title}
-      text={heroContent.text}
-      caption={heroContent.caption}
-      altText={heroContent.altText}
-      imagePath={heroContent.imagePath}
+      title={indexHero.title}
+      text={indexHero.text}
+      caption={indexHero.caption}
+      altText={indexHero.altText}
+      imagePath={indexHero.imagePath}
       extraClass="relative"
     >
-      <Image src={homeHero} alt="hero image" class="h-full" />
-
       <div
-        class="text-center absolute bg-white shadow-2xl rounded-xl px-8 py-4 flex flex-col items-center gap-2 -bottom-6 right-[27rem]"
+        class="text-center absolute bg-white shadow-2xl rounded-xl p-4 md:px-8 md:py-4 flex flex-col items-center gap-2 bottom-12 left-8"
       >
-        <p class="text-[var(--caption-color)] text-2xl font-semibold">
+        <p
+          class="text-[var(--caption-color)] text-xl md:text-2xl font-semibold"
+        >
           Outdoor lighting
         </p>
         <p class="body">
@@ -53,9 +45,11 @@ const heroContent = {
         </p>
       </div>
       <div
-        class="text-center absolute bg-white shadow-2xl rounded-xl px-8 py-4 flex flex-col items-center gap-2 bottom-24 -right-12"
+        class="text-center absolute bg-white shadow-2xl rounded-xl p-4 md:px-8 md:py-4 flex flex-col items-center gap-2 top-12 right-8"
       >
-        <p class="text-[#247B46] text-2xl font-semibold">Indoor lighting</p>
+        <p class="text-[#247B46] text-xl md:text-2xl font-semibold">
+          Indoor lighting
+        </p>
         <p class="body">
           High bays, troffers, panels,<br />tubes, bulbs & more.
         </p>
@@ -105,7 +99,7 @@ const heroContent = {
       <h2>Our Services</h2>
       <div class="container grid grid-cols-3 grid-rows-2 gap-8">
         <div
-          class="services-card hover:text-[var(--caption-color)] cursor-pointer shadow-xl rounded-xl bg-slate-400 col-span-1 row-span-2 h-[31rem] overflow-hidden relative"
+          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-xl rounded-xl bg-slate-400 col-span-1 row-span-2 h-[31rem] overflow-hidden relative"
         >
           <Image src={service1} alt="services" class="object-cover h-full" />
           <div
@@ -116,7 +110,7 @@ const heroContent = {
           </div>
         </div>
         <div
-          class="services-card hover:text-[var(--caption-color)] cursor-pointer shadow-xl rounded-xl bg-slate-400 overflow-hidden relative"
+          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-xl rounded-xl bg-slate-400 overflow-hidden relative"
         >
           <Image src={service2} alt="services" class="object-cover h-full" />
           <div
@@ -127,7 +121,7 @@ const heroContent = {
           </div>
         </div>
         <div
-          class="services-card hover:text-[var(--caption-color)] cursor-pointer shadow-xl rounded-xl bg-slate-400 overflow-hidden relative"
+          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-xl rounded-xl bg-slate-400 overflow-hidden relative"
         >
           <Image src={service5} alt="services" class="object-cover h-full" />
           <div
@@ -138,7 +132,7 @@ const heroContent = {
           </div>
         </div>
         <div
-          class="services-card hover:text-[var(--caption-color)] cursor-pointer shadow-xl rounded-xl bg-slate-400 overflow-hidden relative"
+          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-xl rounded-xl bg-slate-400 overflow-hidden relative"
         >
           <Image src={service3} alt="services" class="object-cover h-full" />
           <div
@@ -149,7 +143,7 @@ const heroContent = {
           </div>
         </div>
         <div
-          class="services-card hover:text-[var(--caption-color)] cursor-pointer shadow-xl rounded-xl bg-slate-400 overflow-hidden relative"
+          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-xl rounded-xl bg-slate-400 overflow-hidden relative"
         >
           <Image src={service4} alt="services" class="object-cover h-full" />
           <div
@@ -210,10 +204,12 @@ const heroContent = {
     </div>
 
     <!-- TESTIMONIALS -->
-    <section class="flex flex-col items-center gap-8">
+    <!-- <section class="flex flex-col items-center gap-8">
       <p class="caption">Testimonials</p>
       <h2>What our clients say</h2>
-      <div class="testimonials-wrapper flex">
+      <div
+        class="testimonials-wrapper overflow-hidden relative flex flex-nowrap"
+      >
         {
           testimonials.map((card) => (
             <TestimonialCard
@@ -225,13 +221,7 @@ const heroContent = {
           ))
         }
       </div>
-      <!-- <TestimonialCard
-        name={heroContent.title}
-        text={heroContent.text}
-        imagePath={heroContent.imagePath}
-        altText={heroContent.altText}
-      /> -->
-    </section>
+    </section> -->
     <CTA />
   </main>
 </Layout>
