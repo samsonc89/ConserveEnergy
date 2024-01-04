@@ -57,7 +57,7 @@ import { indexHero } from "../constants/index.js";
     </Hero>
 
     <!-- FEATURES -->
-    <section class="grid-cols-3 grid justify-between gap-8">
+    <section class="md:grid-cols-3 grid px-4 justify-between gap-8">
       <div class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl">
         <Image src={icon1} alt="icon 1" />
         <h4 class="w-4/5">The total energy effeciency package</h4>
@@ -89,17 +89,17 @@ import { indexHero } from "../constants/index.js";
     <!-- COMPANIES WE WORKED WITH -->
     <div class="w-full bg-[var(--accent-color)] h-48 mx-auto">
       <div class="container flex flex-col items-center">
-        <h4>Companies Who Trust Us</h4>
+        <h4>Companies We've Helped</h4>
         <div class="logos-wrapper"></div>
       </div>
     </div>
 
     <!-- SERVICES -->
-    <section class="services flex flex-col items-center gap-16">
+    <section class="services flex flex-col px-4 items-center gap-16">
       <h2>Our Services</h2>
-      <div class="container grid grid-cols-3 grid-rows-2 gap-8">
+      <div class="container grid md:grid-cols-3 md:grid-rows-2 gap-8">
         <div
-          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-xl rounded-xl bg-slate-400 col-span-1 row-span-2 h-[31rem] overflow-hidden relative"
+          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-xl rounded-xl bg-slate-400 col-span-1 row-span-2 md:h-[31rem] overflow-hidden relative"
         >
           <Image src={service1} alt="services" class="object-cover h-full" />
           <div
