@@ -15,7 +15,7 @@ if (!images[imagePath])
 ---
 
 <section
-  class=`flex flex-col md:flex-row justify-center items-center md:gap-12 ${extraClass}`
+  class=`flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 ${extraClass}`
 >
   <div class="flex-1 px-2">
     <div class="flex flex-col gap-2 md:gap-6 mb-4 md:mb-10">
@@ -25,9 +25,9 @@ if (!images[imagePath])
     </div>
     <ScheduleButton />
   </div>
-  <div class="flex-1 aspect-square">
+  <div class="md:flex-1 h-[30rem] md:aspect-square">
     <div
-      class="hero-image relative w-full sm:h-full md:rounded-3xl overflow-hidden"
+      class="hero-image relative w-full h-full md:rounded-3xl md:overflow-hidden"
     >
       <!-- <img src={imagePath} alt={altText} /> -->
       <Image
