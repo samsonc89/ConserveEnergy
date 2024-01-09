@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import CTA from "../components/CTA.astro";
+import { serviceHero } from "../constants/index.js";
+---
+
+<Layout title="Services">
+  <main>
+    <Hero
+      title={serviceHero.title}
+      text={serviceHero.text}
+      caption={serviceHero.caption}
+      altText={serviceHero.altText}
+      imagePath={serviceHero.imagePath}
+      extraClass="relative"
+    />
+
+    <ServiceCard />
+
+    <CTA />
+  </main>
+</Layout>
