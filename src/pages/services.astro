@@ -18,81 +18,100 @@ import { Image } from "astro:assets";
       extraClass="relative"
     />
     <section>
-      <div class="max-container max-lg:mx-5">
-        <h2 class="capitalize text-center my-10">our services</h2>
-        <div class="flex shadow-2xl rounded-lg max-lg:flex-col">
-          <div class="flex-col px-12 py-10 max-lg:px-3">
-            <h3 class="py-5 uppercase">The energy audit</h3>
-            <p class="pt-5">
-              Following a detailed process, Conserve Energy reps bring their
-              audit skills to bear. They develop an accurate understanding of
-              your current systems. This serves as the foundation for an
-              effective retrofit, expansion or remodel.
-            </p>
-          </div>
+      <h2 class="capitalize text-center my-10">our services</h2>
+
+      <div
+        class="flex flex-col md:flex-row shadow-2xl rounded-3xl overflow-hidden card"
+      >
+        <div class="text-wrapper flex-1 p-16">
+          <h3 class="w-3/4 mb-6 uppercase">The energy audit</h3>
+          <p class="body">
+            Following a detailed process, Conserve Energy reps bring their audit
+            skills to bear. They develop an accurate understanding of your
+            current systems. This serves as the foundation for an effective
+            retrofit, expansion or remodel.
+          </p>
+        </div>
+        <div class="md:w-5/12 image-wrapper">
           <Image src={service1} alt="Service-1" class="max-lg:w-full" />
         </div>
-        <div class="flex shadow-2xl rounded-lg mt-20 max-lg:flex-col-reverse">
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row shadow-2xl rounded-3xl overflow-hidden card mt-20"
+      >
+        <div class="md:w-5/12 image-wrapper">
           <Image src={service2} alt="Service-2" class="max-lg:w-full" />
-          <div class="flex-col px-12 py-10 max-lg:px-3">
-            <h3 class="py-5 uppercase">Design solutions</h3>
-            <p class="pt-5">
-              Following a detailed process, Conserve Energy reps bring their
-              audit skills to bear. They develop an accurate understanding of
-              your current systems. This serves as the foundation for an
-              effective retrofit, expansion or remodel.
-            </p>
-            <button
-              class="text-base text-green font-roboto mt-5 flex item-center"
-              >See our results →</button
-            >
-          </div>
         </div>
-        <div class="flex shadow-2xl rounded-lg mt-20 max-lg:flex-col">
-          <div class="flex-col px-12 py-10 max-lg:px-3">
-            <h3 class="py-5 uppercase">led lights and more</h3>
-            <p class="pt-5">
-              No longer a niche product, LED lighting stands alone as the top
-              dog in energy saving lighting options. With hundreds of LED
-              retrofits under our collective belts (including highly specialized
-              projects), consider the Conserve Energy team your energy-efficient
-              LED expert. We offer everything from lighting design services for
-              customized solutions to standard retrofits and LED re-lamping.
-            </p>
-            <button
-              class="text-base text-green font-roboto mt-5 flex item-center"
-              >More LED info →</button
-            >
-          </div>
+        <div class="text-wrapper flex-1 p-16">
+          <h3 class="w-3/4 mb-6 uppercase">Design solutions</h3>
+          <p class="body">
+            Following a detailed process, Conserve Energy reps bring their audit
+            skills to bear. They develop an accurate understanding of your
+            current systems. This serves as the foundation for an effective
+            retrofit, expansion or remodel.
+          </p>
+          <button class="text-base text-green font-roboto mt-5 flex item-center"
+            >See our results →</button
+          >
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row shadow-2xl rounded-3xl overflow-hidden card mt-20"
+      >
+        <div class="text-wrapper flex-1 p-16">
+          <h3 class="w-3/4 mb-6 uppercase">led lights and more</h3>
+          <p class="body">
+            No longer a niche product, LED lighting stands alone as the top dog
+            in energy saving lighting options. With hundreds of LED retrofits
+            under our collective belts (including highly specialized projects),
+            consider the Conserve Energy team your energy-efficient LED expert.
+            We offer everything from lighting design services for customized
+            solutions to standard retrofits and LED re-lamping.
+          </p>
+          <button class="text-base text-green font-roboto mt-5 flex item-center"
+            >More LED info →</button
+          >
+        </div>
+        <div class="md:w-5/12 image-wrapper">
           <Image src={service3} alt="Service-3" class="max-lg:w-full" />
         </div>
-        <div class="flex shadow-2xl rounded-lg mt-20 max-lg:flex-col-reverse">
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row shadow-2xl rounded-3xl overflow-hidden card mt-20"
+      >
+        <div class="md:w-5/12 image-wrapper">
           <Image src={service4} alt="Service-4" class="max-lg:w-full" />
-          <div class="flex-col px-12 py-10 max-lg:px-3">
-            <h3 class="py-5 uppercase font-robotoSlab">
-              installation excellence
-            </h3>
-            <p class="pt-5">
-              How do we insure a successful install? Simple. Our rigorous
-              installation process ensures your project will be a success. We
-              are there every step of the way, so problems are not. We assign a
-              Conserve Energy Project Coordinator to each job and choose only
-              licensed electrical contractors and other skilled firms that have
-              what it takes to complete your installation properly.
-            </p>
-          </div>
         </div>
-        <div class="flex shadow-2xl rounded-lg mt-20 max-lg:flex-col">
-          <div class="flex-col px-12 py-10 max-lg:px-3">
-            <h3 class="py-5 uppercase">maximum utility incentives</h3>
-            <p class="pt-5">
-              No rookie in this venture, Conserve Energy has worked with all of
-              the major utility programs in the Northwest. We’re adept at
-              securing the maximum incentives available. We do the paperwork,
-              handle the headaches, and negotiate to secure the energy
-              incentives, which generally range from 20-70% of the project cost.
-            </p>
-          </div>
+        <div class="text-wrapper flex-1 p-16">
+          <h3 class="w-3/4 mb-6 uppercase">installation excellence</h3>
+          <p class="body">
+            How do we insure a successful install? Simple. Our rigorous
+            installation process ensures your project will be a success. We are
+            there every step of the way, so problems are not. We assign a
+            Conserve Energy Project Coordinator to each job and choose only
+            licensed electrical contractors and other skilled firms that have
+            what it takes to complete your installation properly.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row shadow-2xl rounded-3xl overflow-hidden card mt-20"
+      >
+        <div class="text-wrapper flex-1 p-16">
+          <h3 class="w-3/4 mb-6 uppercase">maximum utility incentives</h3>
+          <p class="body">
+            No rookie in this venture, Conserve Energy has worked with all of
+            the major utility programs in the Northwest. We’re adept at securing
+            the maximum incentives available. We do the paperwork, handle the
+            headaches, and negotiate to secure the energy incentives, which
+            generally range from 20-70% of the project cost.
+          </p>
+        </div>
+        <div class="md:w-5/12 image-wrapper">
           <Image src={service5} alt="Service-5" class="max-lg:w-full" />
         </div>
       </div>
@@ -100,3 +119,10 @@ import { Image } from "astro:assets";
     <CTA />
   </main>
 </Layout>
+
+<style>
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
