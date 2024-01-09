@@ -15,3 +15,11 @@ export const serviceHero = {
   title: "Top-notch services",
   text: `Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.`,
 };
+
+export const resultsHero = {
+  caption: "Strategies for cost savings",
+  altText: "Hero image",
+  imagePath: "/src/images/resultsHero.jpeg",
+  title: "Boosting business energy efficiency",
+  text: `Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.`,
+};

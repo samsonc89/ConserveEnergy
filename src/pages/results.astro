@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import CTA from "../components/CTA.astro";
+import { resultsHero } from "../constants/index.js";
+import { service1, service2, service3, service4, service5 } from "../images";
+import { Image } from "astro:assets";
+---
+
+<Layout title="Results">
+  <main>
+    <Hero
+      title={resultsHero.title}
+      text={resultsHero.text}
+      caption={resultsHero.caption}
+      altText={resultsHero.altText}
+      imagePath={resultsHero.imagePath}
+    />
+  </main>
+</Layout>
