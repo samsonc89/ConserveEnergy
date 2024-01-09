@@ -38,11 +38,8 @@ import { Image } from "astro:assets";
       </div>
 
       <div
-        class="flex flex-col md:flex-row shadow-2xl rounded-3xl overflow-hidden card mt-20"
+        class="flex flex-col md:flex-row-reverse shadow-2xl rounded-3xl overflow-hidden card mt-20"
       >
-        <div class="md:w-5/12 image-wrapper">
-          <Image src={service2} alt="Service-2" class="max-lg:w-full" />
-        </div>
         <div class="text-wrapper flex-1 p-16">
           <h3 class="w-3/4 mb-6 uppercase">Design solutions</h3>
           <p class="body">
@@ -51,9 +48,14 @@ import { Image } from "astro:assets";
             current systems. This serves as the foundation for an effective
             retrofit, expansion or remodel.
           </p>
-          <button class="text-base text-green font-roboto mt-5 flex item-center"
-            >See our results →</button
-          >
+          <p class="mt-5">
+            <a class="body underline font-semibold text-green-700" href=""
+              >See our results →</a
+            >
+          </p>
+        </div>
+        <div class="md:w-5/12 image-wrapper">
+          <Image src={service2} alt="Service-2" class="max-lg:w-full" />
         </div>
       </div>
 
@@ -70,9 +72,11 @@ import { Image } from "astro:assets";
             We offer everything from lighting design services for customized
             solutions to standard retrofits and LED re-lamping.
           </p>
-          <button class="text-base text-green font-roboto mt-5 flex item-center"
-            >More LED info →</button
-          >
+          <p class="mt-5">
+            <a class="body underline font-semibold text-green-700" href=""
+              >More LED info →</a
+            >
+          </p>
         </div>
         <div class="md:w-5/12 image-wrapper">
           <Image src={service3} alt="Service-3" class="max-lg:w-full" />
@@ -80,11 +84,8 @@ import { Image } from "astro:assets";
       </div>
 
       <div
-        class="flex flex-col md:flex-row shadow-2xl rounded-3xl overflow-hidden card mt-20"
+        class="flex flex-col md:flex-row-reverse shadow-2xl rounded-3xl overflow-hidden card mt-20"
       >
-        <div class="md:w-5/12 image-wrapper">
-          <Image src={service4} alt="Service-4" class="max-lg:w-full" />
-        </div>
         <div class="text-wrapper flex-1 p-16">
           <h3 class="w-3/4 mb-6 uppercase">installation excellence</h3>
           <p class="body">
@@ -95,6 +96,9 @@ import { Image } from "astro:assets";
             licensed electrical contractors and other skilled firms that have
             what it takes to complete your installation properly.
           </p>
+        </div>
+        <div class="md:w-5/12 image-wrapper">
+          <Image src={service4} alt="Service-4" class="max-lg:w-full" />
         </div>
       </div>
 
