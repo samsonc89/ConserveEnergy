@@ -7,3 +7,11 @@ export const indexHero = {
 };
 
 export const aboutHero = {};
+
+export const serviceHero = {
+  caption: "Turnkey solutions",
+  altText: "Hero image",
+  imagePath: "/src/images/homeHero.jpg",
+  title: "Top-notch services",
+  text: `Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.`,
+};
