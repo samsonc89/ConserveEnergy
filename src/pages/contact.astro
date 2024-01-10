@@ -7,6 +7,121 @@ import { contact, map } from "../images";
 
 <Layout title="Conserve Energy | Contact">
   <main>
-    <section></section>
+    <section>
+      <div class="flex justify-center items-center">
+        <div class="text-center w-full lg:w-8/12 px-6">
+          <h1 class="max-sm:text-4xl">We're here to help</h1>
+
+          <p class="mt-10">
+            Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit interdum, ac aliquet odio mattis. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex py-10 gap-10 max-lg:flex-col max-container max-xl:px-6 mt-10"
+      >
+        <Image
+          src={contact}
+          alt="contactImg"
+          class="max-md:hidden max-lg:w-full"
+        />
+
+        <div class="flex-col">
+          <div class="flex-col mb-6">
+            <div class="caption mb-6">Contact</div>
+
+            <h2 class="mb-6">Feel free to contact us anytime</h2>
+
+            <p class="mb-6">
+              Fill in the information below and we will contact you. Let's see
+              if we will start a new project. Don't hesitate to contact us.
+            </p>
+          </div>
+
+          <div class="flex-col mt-6">
+            <form method="POST">
+              <label>
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="Name"
+                  class="border border-color: text-title-color py-3 pl-4 pr-8 rounded-lg w-full mb-8"
+                  required
+                />
+              </label>
+              <label>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone"
+                  class="border border-color: text-title-color py-3 pl-4 pr-8 rounded-lg w-full mb-8"
+                  required
+                />
+              </label>
+              <label>
+                <label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    class="border border-color: text-title-color py-3 pl-4 pr-8 rounded-lg mb-8 w-full"
+                    required
+                  />
+                </label>
+                <a href="/ConserveEnergy/contact">
+                  <Button
+                    class="w-full flex justify-center"
+                    id="scheduleBtn"
+                    theme="button"
+                  >
+                    Submit
+                  </Button>
+                </a>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-between mt-8 max-md:flex-col max-lg:gap-5 max-lg:px-5"
+      >
+        <div class="flex-col rounded-xl shadow-2xl p-5">
+          <h4 class="">Seattle Headquarters</h4>
+          <p class="mt-2">14237 Interurban Ave. <br /> S. Tukwila, WA 98168</p>
+        </div>
+      </div>
+
+      <div class="flex-col rounded-xl shadow-2xl p-5">
+        <h4 class="">Portland Headquarters</h4>
+        <p class="mt-2">885 SW Cheltenham <br /> StreetPortland, OR 97239</p>
+      </div>
+    </section>
+
+    <div class="flex-col rounded-xl shadow-2xl p-5">
+      <h4 class="">Toll Free</h4>
+      <p class="mt-2">(800) 757-3469</p>
+    </div>
+
+    <div class="flex-col rounded-xl shadow-2xl p-5">
+      <h4 class="">Fax</h4>
+      <p class="mt-2">(888) 887-0939</p>
+    </div>
+
+    <div class="flex-col rounded-xl shadow-2xl p-5">
+      <h4 class="">Email</h4>
+      <p class="mt-2">info@ezmetro.com</p>
+    </div>
   </main>
+
+  <h4 class="text-green text-center mt-10 mb-5 max-sm:hidden">Close map</h4>
+  <Image src={map} class="pb-20 max-sm:hidden max-lg:px-5" alt="map" />
+
+  <div class="max-sm:block hidden">
+    <h3 class="text-green text-center mt-10">View Map</h3>
+  </div>
 </Layout>
