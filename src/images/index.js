@@ -14,3 +14,5 @@ export { default as service5 } from "./service5.jpeg";
 export { default as homeHero } from "./homeHero.jpg";
 export { default as aboutHero } from "./aboutHero.png";
 export { default as whyUs } from "./whyUs.jpeg";
+export { default as map } from "./map.png";
+export { default as contact } from "./contact.jpeg";
