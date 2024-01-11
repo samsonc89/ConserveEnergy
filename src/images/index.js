@@ -16,3 +16,6 @@ export { default as aboutHero } from "./aboutHero.png";
 export { default as whyUs } from "./whyUs.jpeg";
 export { default as map } from "./map.png";
 export { default as contact } from "./contact.jpeg";
+export { default as industrial1 } from "./industrial1.jpeg";
+export { default as industrial2 } from "./industrial2.jpeg";
+export { default as industrial3 } from "./industrial3.jpeg";
