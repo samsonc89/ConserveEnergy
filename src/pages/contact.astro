@@ -21,17 +21,17 @@ import { contact, map } from "../images";
         </div>
       </div>
 
-      <div
-        class="flex py-10 gap-10 max-lg:flex-col max-container max-xl:px-6 mt-10"
-      >
-        <Image
-          src={contact}
-          alt="contactImg"
-          class="max-md:hidden max-lg:w-full"
-        />
+      <div class="flex py-10 gap-16 max-lg:flex-col max-container mt-10">
+        <div class="image-wrapper w-[55%]">
+          <Image
+            src={contact}
+            alt="contactImg"
+            class="max-md:hidden w-full object-cover h-full"
+          />
+        </div>
 
-        <div class="flex-col">
-          <div class="flex-col mb-6">
+        <div class="form-wrapper flex-1">
+          <div class="mb-6">
             <div class="caption mb-6">Contact</div>
 
             <h2 class="mb-6">Feel free to contact us anytime</h2>
