@@ -30,40 +30,39 @@ import { Image } from "astro:assets";
         industrial buildings
       </h2>
 
-      <div class="w-full">
-        <div class="rounded-xl overflow-hidden">
+      <!-- Main image -->
+      <div class="rounded-xl overflow-hidden">
+        <Image
+          src={service3}
+          class="w-full max-h-[444px] object-cover object-[position:50%_70%]"
+          alt="industrial hero"
+        />
+      </div>
+
+      <!--3 smaller images -->
+      <div class="grid gap-8 mt-8 md:grid-cols-3">
+        <div class="h-3/5 rounded-xl overflow-hidden">
           <Image
-            src={service3}
-            class="w-full max-h-[444px] object-cover"
+            src={industrial1}
+            class="h-full object-cover object-[position:50%_85%]"
             alt="industrial hero"
           />
         </div>
 
-        <!--3 smaller images -->
-        <div class="grid gap-8 mt-8 md:grid-cols-3">
-          <div class="h-3/5 rounded-xl overflow-hidden">
-            <Image
-              src={industrial1}
-              class="h-full object-cover"
-              alt="industrial hero"
-            />
-          </div>
+        <div class="h-3/5 rounded-xl overflow-hidden">
+          <Image
+            src={industrial2}
+            class="h-full object-cover"
+            alt="industrial hero"
+          />
+        </div>
 
-          <div class="h-3/5 rounded-xl overflow-hidden">
-            <Image
-              src={industrial2}
-              class="h-full object-cover"
-              alt="industrial hero"
-            />
-          </div>
-
-          <div class="h-3/5 rounded-2xl overflow-hidden">
-            <Image
-              src={industrial3}
-              class="h-full object-cover"
-              alt="industrial hero"
-            />
-          </div>
+        <div class="h-3/5 rounded-2xl overflow-hidden">
+          <Image
+            src={industrial3}
+            class="h-full object-cover object-[position:50%_80%]"
+            alt="industrial hero"
+          />
         </div>
       </div>
 
