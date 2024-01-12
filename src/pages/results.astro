@@ -40,7 +40,6 @@ import { Image } from "astro:assets";
       </div>
 
       <!--3 smaller images large screen-->
-      <!-- <div class="parent grid gap-8 max-h-fit md:grid-cols-3"> -->
       <div class="parent flex mt-8 gap-8">
         <div class="h-44 w-full rounded-xl overflow-hidden">
           <Image
@@ -68,46 +67,39 @@ import { Image } from "astro:assets";
       </div>
 
       <!-- Stats -->
-      <div
-        class="flex justify-between max-xl:flex-col w-full max-xl:gap-5 gap-14"
-      >
-        <div class="flex w-full justify-between gap-5 max-xl:justify-center">
-          <div
-            class="p-6 gap-3 flex-col flex justify-center h-36 w-64 text-center shadow-3xl rounded-xl max-xl:w-full"
-          >
-            <h4 class="text-title-color">$75,000</h4>
-            <p class="text-center">Initial cost</p>
-          </div>
-
-          <div
-            class="p-6 gap-3 flex-col flex justify-center h-36 w-64 text-center shadow-3xl rounded-xl max-xl:w-full"
-          >
-            <h4 class="text-title-color">$37,000</h4>
-            <p class="text-center">Incentive</p>
-          </div>
+      <div class="flex justify-between flex-wrap mt-12 gap-8">
+        <div
+          class="p-6 flex-1 flex-col flex justify-center h-36 text-center shadow-2xl rounded-xl max-xl:w-full"
+        >
+          <h4 class="text-title-color mb-3">$75,000</h4>
+          <p class="text-center">Initial cost</p>
         </div>
 
         <div
-          class="flex max-sm:flex-col w-full justify-between gap-5 max-xl:justify-center"
+          class="p-6 flex-1 flex-col flex justify-center h-36 text-center shadow-2xl rounded-xl max-xl:w-full"
         >
-          <div
-            class="p-6 gap-3 flex-col flex justify-center h-36 w-64 text-center shadow-3xl rounded-xl max-xl:w-full"
-          >
-            <h4 class="text-title-color">$20,000</h4>
-            <p class="text-center">Annual energy savings</p>
-            <p class="text-center">(Assume 285,000 kWh)</p>
-          </div>
+          <h4 class="text-title-color mb-3">$37,000</h4>
+          <p class="text-center">Incentive</p>
+        </div>
 
-          <div
-            class="p-6 gap-3 flex-col flex justify-center h-36 w-64 text-center shadow-3xl rounded-xl max-xl:w-full"
-          >
-            <h4 class="text-title-color">53%</h4>
-            <p class="text-center">Expected RDI</p>
-            <p class="text-center">(1.9 Year payback)</p>
-          </div>
+        <div
+          class="p-6 flex-1 flex-col flex justify-center h-36 text-center shadow-2xl rounded-xl max-xl:w-full"
+        >
+          <h4 class="text-title-color mb-3">$20,000</h4>
+          <p class="text-center">Annual energy savings</p>
+          <p class="text-center">(Assume 285,000 kWh)</p>
+        </div>
+
+        <div
+          class="p-6 flex-1 flex-col flex justify-center h-36 text-center shadow-2xl rounded-xl max-xl:w-full"
+        >
+          <h4 class="text-title-color mb-3">53%</h4>
+          <p class="text-center">Expected RDI</p>
+          <p class="text-center">(1.9 Year payback)</p>
         </div>
       </div>
 
+      <!-- Results Text -->
       <div class="flex justify-between max-lg:flex-col max-lg:gap-10">
         <div class="flex-col flex gap-10 w-1/2 max-lg:w-full">
           <h3>Typical results for an LED lighting retrofit with controls</h3>
