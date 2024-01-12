@@ -30,90 +30,104 @@ import { Image } from "astro:assets";
         industrial buildings
       </h2>
 
-      <div class="flex-col gap-20 flex">
-        <div class="flex flex-col gap-10">
-          <Image
-            src={service3}
-            class="w-full"
-            alt="industrial hero"
-            class="max-lg:hidden"
-          />
+      <div class="w-full">
+        <Image
+          src={service3}
+          class="w-full max-h-[444px] object-cover"
+          alt="industrial hero"
+        />
 
-          <div class="flex max-w-full gap-5 max-xl:flex-col">
-            <Image src={industrial1} class="" alt="industrial hero" />
+        <!--3 smaller images -->
+        <div class="grid gap-8 items-center md:grid-cols-3">
+          <div class="h-3/5">
+            <Image
+              src={industrial1}
+              class="h-full object-cover"
+              alt="industrial hero"
+            />
+          </div>
 
-            <Image src={industrial2} class="" alt="industrial hero" />
+          <div class="h-3/5">
+            <Image
+              src={industrial2}
+              class="h-full object-cover"
+              alt="industrial hero"
+            />
+          </div>
 
-            <Image src={industrial3} class="" alt="industrial hero" />
+          <div class="h-3/5">
+            <Image
+              src={industrial3}
+              class="h-full object-cover"
+              alt="industrial hero"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-between max-xl:flex-col w-full max-xl:gap-5 gap-14"
+      >
+        <div class="flex w-full justify-between gap-5 max-xl:justify-center">
+          <div
+            class="p-6 gap-3 flex-col flex justify-center h-36 w-64 text-center shadow-3xl rounded-xl max-xl:w-full"
+          >
+            <h4 class="text-title-color">$75,000</h4>
+            <p class="text-center">Initial cost</p>
+          </div>
+
+          <div
+            class="p-6 gap-3 flex-col flex justify-center h-36 w-64 text-center shadow-3xl rounded-xl max-xl:w-full"
+          >
+            <h4 class="text-title-color">$37,000</h4>
+            <p class="text-center">Incentive</p>
           </div>
         </div>
 
         <div
-          class="flex justify-between max-xl:flex-col w-full max-xl:gap-5 gap-14"
+          class="flex max-sm:flex-col w-full justify-between gap-5 max-xl:justify-center"
         >
-          <div class="flex w-full justify-between gap-5 max-xl:justify-center">
-            <div
-              class="p-6 gap-3 flex-col flex justify-center h-36 w-64 text-center shadow-3xl rounded-xl max-xl:w-full"
-            >
-              <h4 class="text-title-color">$75,000</h4>
-              <p class="text-center">Initial cost</p>
-            </div>
-
-            <div
-              class="p-6 gap-3 flex-col flex justify-center h-36 w-64 text-center shadow-3xl rounded-xl max-xl:w-full"
-            >
-              <h4 class="text-title-color">$37,000</h4>
-              <p class="text-center">Incentive</p>
-            </div>
+          <div
+            class="p-6 gap-3 flex-col flex justify-center h-36 w-64 text-center shadow-3xl rounded-xl max-xl:w-full"
+          >
+            <h4 class="text-title-color">$20,000</h4>
+            <p class="text-center">Annual energy savings</p>
+            <p class="text-center">(Assume 285,000 kWh)</p>
           </div>
 
           <div
-            class="flex max-sm:flex-col w-full justify-between gap-5 max-xl:justify-center"
+            class="p-6 gap-3 flex-col flex justify-center h-36 w-64 text-center shadow-3xl rounded-xl max-xl:w-full"
           >
-            <div
-              class="p-6 gap-3 flex-col flex justify-center h-36 w-64 text-center shadow-3xl rounded-xl max-xl:w-full"
-            >
-              <h4 class="text-title-color">$20,000</h4>
-              <p class="text-center">Annual energy savings</p>
-              <p class="text-center">(Assume 285,000 kWh)</p>
-            </div>
-
-            <div
-              class="p-6 gap-3 flex-col flex justify-center h-36 w-64 text-center shadow-3xl rounded-xl max-xl:w-full"
-            >
-              <h4 class="text-title-color">53%</h4>
-              <p class="text-center">Expected RDI</p>
-              <p class="text-center">(1.9 Year payback)</p>
-            </div>
+            <h4 class="text-title-color">53%</h4>
+            <p class="text-center">Expected RDI</p>
+            <p class="text-center">(1.9 Year payback)</p>
           </div>
         </div>
+      </div>
 
-        <div class="flex justify-between max-lg:flex-col max-lg:gap-10">
-          <div class="flex-col flex gap-10 w-1/2 max-lg:w-full">
-            <h3>Typical results for an LED lighting retrofit with controls</h3>
-            <p>
-              High Bay overhead lighting in manufacturing and warehouse spaces
-              and large open offices with overhead and task lighting are common
-              in this type of building and can consume a lot of watts.
-            </p>
+      <div class="flex justify-between max-lg:flex-col max-lg:gap-10">
+        <div class="flex-col flex gap-10 w-1/2 max-lg:w-full">
+          <h3>Typical results for an LED lighting retrofit with controls</h3>
+          <p>
+            High Bay overhead lighting in manufacturing and warehouse spaces and
+            large open offices with overhead and task lighting are common in
+            this type of building and can consume a lot of watts.
+          </p>
 
-            <p>
-              Varying occupancy rates and windows or skylights are common and
-              often provide opportunities for savings from occupancy sensors and
-              daylight harvesting.
-            </p>
-          </div>
+          <p>
+            Varying occupancy rates and windows or skylights are common and
+            often provide opportunities for savings from occupancy sensors and
+            daylight harvesting.
+          </p>
+        </div>
 
-          <div class="flex-col flex gap-10">
-            <h3>Retrofits include:</h3>
-            <p>New High-bay LED lighting fixtures</p>
+        <div class="flex-col flex gap-10">
+          <h3>Retrofits include:</h3>
+          <p>New High-bay LED lighting fixtures</p>
 
-            <p>
-              Retrofit or replacement of older T12 or T8 fluorescent fixtures
-            </p>
-            <p>Occupancy/vacancy sensors</p>
-            <p>Daylight harvesting controls</p>
-          </div>
+          <p>Retrofit or replacement of older T12 or T8 fluorescent fixtures</p>
+          <p>Occupancy/vacancy sensors</p>
+          <p>Daylight harvesting controls</p>
         </div>
       </div>
     </section>
