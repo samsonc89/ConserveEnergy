@@ -147,6 +147,7 @@ import { service1, service2, service3, service4, service5 } from "../images";
   import { Carousel } from "flowbite";
   const carouselElement = document.getElementById("carousel-example");
 
+  //Add and subtract items ass needed, just make sure to add to appropriate ID on the HTML
   const items = [
     {
       position: 0,
@@ -175,6 +176,7 @@ import { service1, service2, service3, service4, service5 } from "../images";
     defaultPosition: 0,
     interval: 3000,
 
+    //Add and subtract items ass needed, just make sure to add to appropriate ID on the HTML
     indicators: {
       activeClasses: "bg-white dark:bg-gray-800",
       inactiveClasses:
@@ -224,7 +226,10 @@ import { service1, service2, service3, service4, service5 } from "../images";
     options,
     instanceOptions
   );
+
+  //This starts the cycle
   carousel.cycle();
+
   const $prevButton = document.getElementById("data-carousel-prev");
   const $nextButton = document.getElementById("data-carousel-next");
 
