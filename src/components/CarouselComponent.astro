@@ -139,6 +139,7 @@ import { service1, service2, service3, service4, service5 } from "../images";
 </div>
 
 <script>
+  import { Carousel } from "flowbite";
   const carouselElement = document.getElementById("carousel-example");
 
   const items = [
@@ -212,7 +213,6 @@ import { service1, service2, service3, service4, service5 } from "../images";
     override: true,
   };
 
-  import { Carousel } from "flowbite";
   const carousel = new Carousel(
     carouselElement,
     items,
