@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import { service1, service2, service3, service4, service5 } from "../images";
-import "flowbite";
+// import "flowbite";
 ---
 
 <div id="carousel-example" class="relative w-1/2 mx-auto">
@@ -138,7 +138,13 @@ import "flowbite";
   </button>
 </div>
 
+<script
+  is:inline
+  src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
+></script>
+
 <script>
+  import { Carousel } from "flowbite";
   const carouselElement = document.getElementById("carousel-example");
 
   const items = [
@@ -212,7 +218,6 @@ import "flowbite";
     override: true,
   };
 
-  import { Carousel } from "flowbite";
   const carousel = new Carousel(
     carouselElement,
     items,
