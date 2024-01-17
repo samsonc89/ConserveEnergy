@@ -16,15 +16,15 @@ import { Image } from "astro:assets";
       altText={serviceHero.altText}
       imagePath={serviceHero.imagePath}
     />
-    <section>
+    <section class="max-lg:mb-16">
       <h2 class="capitalize text-center my-10">our services</h2>
 
       <div class="px-4">
         <div
           class="flex flex-col lg:flex-row rounded-3xl overflow-hidden card shadow-3xl"
         >
-          <div class="text-wrapper flex-1 p-16">
-            <h3 class="w-3/4 mb-6 uppercase">The energy audit</h3>
+          <div class="text-wrapper flex-1 p-8 md:p-16">
+            <h3 class="md:w-3/4 mb-6 uppercase">The energy audit</h3>
             <p class="body">
               Following a detailed process, Conserve Energy reps bring their
               audit skills to bear. They develop an accurate understanding of
@@ -37,10 +37,10 @@ import { Image } from "astro:assets";
           </div>
         </div>
         <div
-          class="flex flex-col lg:flex-row-reverse shadow-2xl rounded-3xl overflow-hidden card mt-20"
+          class="flex flex-col lg:flex-row-reverse shadow-2xl rounded-3xl overflow-hidden card mt-16 lg:mt-20"
         >
-          <div class="text-wrapper flex-1 p-16">
-            <h3 class="w-3/4 mb-6 uppercase">Design solutions</h3>
+          <div class="text-wrapper flex-1 p-8 md:p-16">
+            <h3 class="md:w-3/4 mb-6 uppercase">Design solutions</h3>
             <p class="body">
               Following a detailed process, Conserve Energy reps bring their
               audit skills to bear. They develop an accurate understanding of
@@ -64,10 +64,11 @@ import { Image } from "astro:assets";
             <Image src={service2} alt="Service-2" class="max-lg:w-full" />
           </div>
         </div>
+
         <div
-          class="flex flex-col lg:flex-row shadow-2xl rounded-3xl overflow-hidden card mt-20"
+          class="flex flex-col lg:flex-row shadow-2xl rounded-3xl overflow-hidden card mt-16 lg:mt-20"
         >
-          <div class="text-wrapper flex-1 p-16">
+          <div class="text-wrapper flex-1 p-8 md:p-16">
             <h3 class="w-3/4 mb-6 uppercase">led lights and more</h3>
             <p class="body">
               No longer a niche product, LED lighting stands alone as the top
@@ -94,10 +95,11 @@ import { Image } from "astro:assets";
             <Image src={service3} alt="Service-3" class="max-lg:w-full" />
           </div>
         </div>
+
         <div
-          class="flex flex-col lg:flex-row-reverse shadow-2xl rounded-3xl overflow-hidden card mt-20"
+          class="flex flex-col lg:flex-row-reverse shadow-2xl rounded-3xl overflow-hidden card mt-16 lg:mt-20"
         >
-          <div class="text-wrapper flex-1 p-16">
+          <div class="text-wrapper flex-1 p-8 md:p-16">
             <h3 class="w-3/4 mb-6 uppercase">installation excellence</h3>
             <p class="body">
               How do we insure a successful install? Simple. Our rigorous
@@ -113,9 +115,9 @@ import { Image } from "astro:assets";
           </div>
         </div>
         <div
-          class="flex flex-col lg:flex-row shadow-2xl rounded-3xl overflow-hidden card mt-20"
+          class="flex flex-col lg:flex-row shadow-2xl rounded-3xl overflow-hidden card mt-16 lg:mt-20"
         >
-          <div class="text-wrapper flex-1 p-16">
+          <div class="text-wrapper flex-1 p-8 md:p-16">
             <h3 class="w-3/4 mb-6 uppercase">maximum utility incentives</h3>
             <p class="body">
               No rookie in this venture, Conserve Energy has worked with all of
