@@ -2,11 +2,10 @@
 import Button from "./Button.astro";
 import logo from "../images/CE-Logo.svg";
 import { Image } from "astro:assets";
-import hamburger from "../images/hamburgerIcon.svg";
 ---
 
 <nav
-  class="max-w-[1192px] mx-auto flex items-center justify-between max-lg:flex mb-10 max-container max-xl:px-5"
+  class="max-w-[1192px] mx-auto flex items-center justify-between max-lg:flex mb-10 max-container max-xl:px-5 max-lg:bg-bone"
 >
   <a href="/ConserveEnergy">
     <Image src={logo} alt="Logo" width={203} height={26} />
@@ -59,6 +58,17 @@ import hamburger from "../images/hamburgerIcon.svg";
   </div>
 
   <div class="hidden max-lg:block">
-    <Image src={hamburger} alt="Hamburger" width={25} height={25} />
+    <span class="material-symbols-outlined"> menu</span>
   </div>
 </nav>
+
+
+<style>
+    .material-symbols-outlined {
+    font-variation-settings:
+      "FILL" 0,
+      "wght" 400,
+      "GRAD" 0,
+      "opsz" 24;
+  }
+</style>

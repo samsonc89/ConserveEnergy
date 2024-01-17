@@ -2,7 +2,6 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import CTA from "../components/CTA.astro";
-import Carousel from "../components/CarouselComponent.astro";
 import { Image } from "astro:assets";
 
 import {
@@ -56,10 +55,6 @@ import { indexHero } from "../constants/index.js";
         </p>
       </div>
     </Hero>
-
-    <section class="">
-      <Carousel client:load />
-    </section>
 
     <!-- FEATURES -->
     <section class="md:grid-cols-3 grid px-4 justify-between gap-8">
