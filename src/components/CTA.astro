@@ -5,36 +5,40 @@ import Button from "./Button.astro";
 ---
 
 <section class="rounded-3xl shadow-2xl">
-  <div class="flex justify-center py-12 px-20 items-center max-lg:px-6 max-sm:hidden">
+  <div
+    class="flex justify-center py-12 px-20 items-center max-lg:px-6 max-sm:hidden"
+  >
     <div class="content-wrapper flex flex-col items-start gap-6 flex-1">
       <p class="caption uppercase">for a free consultation</p>
-      <h3 class="uppercase w-1/2 max-lg:w-full">
+      <h2 class="uppercase w-3/4 max-lg:w-full">
         looking at the bigger picture
-      </h3>
-      <p class="body mb-4">
+      </h2>
+      <p class="body xl:w-10/12 mb-4">
         By looking at your big picture, we find the cost-effective pathway to
         making the energy saving measures reality. Conserve Energy focuses
         solely on your energy needs, and how to trim your energy use. We provide
         the in-house expertise to be your turnkey solution for total energy
         efficiency.
       </p>
-      <p class="body">
+      <p class="body xl:w-10/12">
         Our experienced network of suppliers and subcontractors lets us specify
         and deliver the very best to you. Expect cutting-edge products at
         competitive prices when you work with Conserve Energy.
       </p>
       <a href="/ConserveEnergy">
         <Button class="mt-10" id="scheduleBtn" theme="button">
-            Schedule Now
+          Schedule Now
         </Button>
-    </a>
+      </a>
     </div>
     <div class="img-wrapper flex justify-center items-center max-lg:hidden">
       <Image src={phone} alt="phone" />
     </div>
   </div>
 
-  <div class="justify-center py-12 px-20 items-center max-lg:px-6 max-sm:block hidden">
+  <div
+    class="justify-center py-12 px-20 items-center max-lg:px-6 max-sm:block hidden"
+  >
     <div class="form-wrapper flex-1">
       <div class="mb-6">
         <div class="caption mb-6">Contact</div>
@@ -42,8 +46,8 @@ import Button from "./Button.astro";
         <h2 class="mb-6">Feel free to contact us anytime</h2>
 
         <p class="mb-6">
-          Fill in the information below and we will contact you. Let's see
-          if we will start a new project. Don't hesitate to contact us.
+          Fill in the information below and we will contact you. Let's see if we
+          will start a new project. Don't hesitate to contact us.
         </p>
       </div>
 
