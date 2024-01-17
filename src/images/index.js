@@ -19,3 +19,6 @@ export { default as contact } from "./contact.jpeg";
 export { default as industrial1 } from "./industrial1.jpeg";
 export { default as industrial2 } from "./industrial2.jpeg";
 export { default as industrial3 } from "./industrial3.jpeg";
+export { default as convenience1 } from "./convenience1.jpeg";
+export { default as convenience2 } from "./convenience2.jpeg";
+export { default as convenience3 } from "./convenience3.jpeg";

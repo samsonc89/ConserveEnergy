@@ -9,6 +9,9 @@ import {
   industrial1,
   industrial2,
   industrial3,
+  convenience1,
+  convenience2,
+  convenience3,
 } from "../images";
 import { Image } from "astro:assets";
 ---
@@ -102,13 +105,13 @@ import { Image } from "astro:assets";
       <div class="flex justify-between mt-16 max-lg:flex-col max-lg:gap-10">
         <div class="flex-col max-w-lg flex gap-10 w-1/2 max-lg:w-full">
           <h3>Typical results for an LED lighting retrofit with controls</h3>
-          <p>
+          <p class="body">
             High Bay overhead lighting in manufacturing and warehouse spaces and
             large open offices with overhead and task lighting are common in
             this type of building and can consume a lot of watts.
           </p>
 
-          <p>
+          <p class="body">
             Varying occupancy rates and windows or skylights are common and
             often provide opportunities for savings from occupancy sensors and
             daylight harvesting.
@@ -117,11 +120,13 @@ import { Image } from "astro:assets";
 
         <div class="flex-col flex max-w-xs gap-10">
           <h3>Retrofits include:</h3>
-          <p>New High-bay LED lighting fixtures</p>
+          <p class="body">New High-bay LED lighting fixtures</p>
 
-          <p>Retrofit or replacement of older T12 or T8 fluorescent fixtures</p>
-          <p>Occupancy/vacancy sensors</p>
-          <p>Daylight harvesting controls</p>
+          <p class="body">
+            Retrofit or replacement of older T12 or T8 fluorescent fixtures
+          </p>
+          <p class="body">Occupancy/vacancy sensors</p>
+          <p class="body">Daylight harvesting controls</p>
         </div>
       </div>
     </section>
@@ -145,7 +150,7 @@ import { Image } from "astro:assets";
       <div class="parent flex mt-8 gap-8">
         <div class="h-44 w-full rounded-xl overflow-hidden">
           <Image
-            src={industrial1}
+            src={convenience1}
             class="h-full object-cover object-[position:50%_85%]"
             alt="warehouse"
           />
@@ -153,7 +158,7 @@ import { Image } from "astro:assets";
 
         <div class="h-44 w-full rounded-xl overflow-hidden">
           <Image
-            src={industrial2}
+            src={convenience2}
             class="h-full object-cover object-bottom"
             alt="warehouse"
           />
@@ -161,7 +166,7 @@ import { Image } from "astro:assets";
 
         <div class="h-44 w-full rounded-xl overflow-hidden">
           <Image
-            src={industrial3}
+            src={convenience3}
             class="h-full object-cover object-[position:50%_80%]"
             alt="warehouse"
           />
@@ -173,21 +178,21 @@ import { Image } from "astro:assets";
         <div
           class="p-6 flex-1 flex-col flex justify-center h-36 text-center shadow-2xl rounded-xl max-xl:w-full"
         >
-          <h4 class="text-title-color mb-3">$75,000</h4>
+          <h4 class="text-title-color mb-3">$65,000</h4>
           <p class="text-center">Initial cost</p>
         </div>
 
         <div
           class="p-6 flex-1 flex-col flex justify-center h-36 text-center shadow-2xl rounded-xl max-xl:w-full"
         >
-          <h4 class="text-title-color mb-3">$37,000</h4>
+          <h4 class="text-title-color mb-3">$40,000</h4>
           <p class="text-center">Incentive</p>
         </div>
 
         <div
           class="p-6 flex-1 flex-col flex justify-center h-36 text-center shadow-2xl rounded-xl max-xl:w-full"
         >
-          <h4 class="text-title-color mb-3">$20,000</h4>
+          <h4 class="text-title-color mb-3">$16,000</h4>
           <p class="text-center">Annual energy savings</p>
           <p class="text-center">(Assume 285,000 kWh)</p>
         </div>
@@ -195,7 +200,7 @@ import { Image } from "astro:assets";
         <div
           class="p-6 flex-1 flex-col flex justify-center h-36 text-center shadow-2xl rounded-xl max-xl:w-full"
         >
-          <h4 class="text-title-color mb-3">53%</h4>
+          <h4 class="text-title-color mb-3">64%</h4>
           <p class="text-center">Expected RDI</p>
           <p class="text-center">(1.9 Year payback)</p>
         </div>
@@ -203,28 +208,22 @@ import { Image } from "astro:assets";
 
       <!-- Results Text -->
       <div class="flex justify-between mt-16 max-lg:flex-col max-lg:gap-10">
-        <div class="flex-col max-w-lg flex gap-10 w-1/2 max-lg:w-full">
-          <h3>Typical results for an LED lighting retrofit with controls</h3>
-          <p>
-            High Bay overhead lighting in manufacturing and warehouse spaces and
-            large open offices with overhead and task lighting are common in
-            this type of building and can consume a lot of watts.
-          </p>
-
-          <p>
-            Varying occupancy rates and windows or skylights are common and
-            often provide opportunities for savings from occupancy sensors and
-            daylight harvesting.
+        <div class="flex-col max-w-md flex gap-10 w-1/2 max-lg:w-full">
+          <h3>Typical results for convenience stores</h3>
+          <p class="body">
+            Although relatively small in footprint, a convenience store or gas
+            station generally has long operating hours and can be energy
+            intensive.
           </p>
         </div>
 
         <div class="flex-col flex max-w-xs gap-10">
           <h3>Retrofits include:</h3>
-          <p>New High-bay LED lighting fixtures</p>
+          <p class="body">Interior and exterior LED lighting</p>
 
-          <p>Retrofit or replacement of older T12 or T8 fluorescent fixtures</p>
-          <p>Occupancy/vacancy sensors</p>
-          <p>Daylight harvesting controls</p>
+          <p class="body">Refrigerated case lighting</p>
+          <p class="body">Anti-sweat door heater controls</p>
+          <p class="body">New fan motors</p>
         </div>
       </div>
     </section>
