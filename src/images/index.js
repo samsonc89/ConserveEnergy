@@ -22,3 +22,6 @@ export { default as industrial3 } from "./industrial3.jpeg";
 export { default as convenience1 } from "./convenience1.jpeg";
 export { default as convenience2 } from "./convenience2.jpeg";
 export { default as convenience3 } from "./convenience3.jpeg";
+export { default as grocery1 } from "./grocery1.jpeg";
+export { default as grocery2 } from "./grocery2.jpeg";
+export { default as grocery3 } from "./grocery3.jpeg";

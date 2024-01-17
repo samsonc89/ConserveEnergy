@@ -6,12 +6,16 @@ import { resultsHero } from "../constants/index.js";
 import {
   service3,
   service1,
+  service2,
   industrial1,
   industrial2,
   industrial3,
   convenience1,
   convenience2,
   convenience3,
+  grocery1,
+  grocery2,
+  grocery3,
 } from "../images";
 import { Image } from "astro:assets";
 ---
@@ -224,6 +228,99 @@ import { Image } from "astro:assets";
           <p class="body">Refrigerated case lighting</p>
           <p class="body">Anti-sweat door heater controls</p>
           <p class="body">New fan motors</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grocery section -->
+    <section>
+      <h2 class="uppercase text-center my-16 max-md:text-3xl max-sm:text-xl">
+        Grocery STORES
+      </h2>
+
+      <!-- Main image -->
+      <div class="rounded-xl overflow-hidden">
+        <Image
+          src={service2}
+          class="w-full max-h-[444px] object-cover"
+          alt="warehouse"
+        />
+      </div>
+
+      <!--3 smaller images large screen-->
+      <div class="parent flex mt-8 gap-8">
+        <div class="h-44 w-full rounded-xl overflow-hidden">
+          <Image
+            src={grocery1}
+            class="h-full object-cover object-[position:50%_85%]"
+            alt="warehouse"
+          />
+        </div>
+
+        <div class="h-44 w-full rounded-xl overflow-hidden">
+          <Image
+            src={grocery2}
+            class="h-full object-cover object-bottom"
+            alt="warehouse"
+          />
+        </div>
+
+        <div class="h-44 w-full rounded-xl overflow-hidden">
+          <Image
+            src={grocery3}
+            class="h-full object-cover object-[position:50%_80%]"
+            alt="warehouse"
+          />
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="flex justify-between flex-wrap mt-8 gap-8">
+        <div
+          class="p-6 flex-1 flex-col flex justify-center h-36 text-center shadow-2xl rounded-xl max-xl:w-full"
+        >
+          <h4 class="text-title-color mb-3">$65,000</h4>
+          <p class="text-center">Initial cost</p>
+        </div>
+
+        <div
+          class="p-6 flex-1 flex-col flex justify-center h-36 text-center shadow-2xl rounded-xl max-xl:w-full"
+        >
+          <h4 class="text-title-color mb-3">$40,000</h4>
+          <p class="text-center">Incentive</p>
+        </div>
+
+        <div
+          class="p-6 flex-1 flex-col flex justify-center h-36 text-center shadow-2xl rounded-xl max-xl:w-full"
+        >
+          <h4 class="text-title-color mb-3">$16,000</h4>
+          <p class="text-center">Annual energy savings</p>
+          <p class="text-center">(Assume 285,000 kWh)</p>
+        </div>
+
+        <div
+          class="p-6 flex-1 flex-col flex justify-center h-36 text-center shadow-2xl rounded-xl max-xl:w-full"
+        >
+          <h4 class="text-title-color mb-3">64%</h4>
+          <p class="text-center">Expected RDI</p>
+          <p class="text-center">(1.9 Year payback)</p>
+        </div>
+      </div>
+
+      <!-- Results Text -->
+      <div class="flex justify-between mt-16 max-lg:flex-col max-lg:gap-10">
+        <div class="flex-col max-w-md flex gap-10 w-1/2 max-lg:w-full">
+          <h3>Typical results for a mid-size grocery store project</h3>
+          <p class="body"></p>
+        </div>
+
+        <div class="flex-col flex max-w-xs gap-10">
+          <h3>Retrofits include:</h3>
+          <p class="body">Parking lot lighting</p>
+          <p class="body">Interior and exterior LED lighting</p>
+
+          <p class="body">Refrigerated case lighting</p>
+          <p class="body">Retail displayss</p>
         </div>
       </div>
     </section>
