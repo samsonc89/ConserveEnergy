@@ -159,12 +159,16 @@ import { indexHero } from "../constants/index.js";
     </section>
 
     <!-- WHY US -->
-    <div class="wrapper w-full bg-[var(--accent-color)] py-1">
+    <div class="wrapper w-full bg-[var(--accent-color)] px-4 py-1">
       <section class="bg-[var(--accent-color)]">
-        <div class="wrapper flex items-center justify-between gap-36">
-          <div class="col1 bg-white w-1/2 px-12 py-10 rounded-2xl">
+        <div
+          class="wrapper flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-36"
+        >
+          <div class="col1 bg-white lg:w-1/2 px-8 lg:px-12 py-10 rounded-2xl">
             <p class="caption mb-4">Why Us</p>
-            <h2 class="uppercase w-4/5 mb-8">team up with a proven leader</h2>
+            <h2 class="uppercase lg:w-4/5 mb-8">
+              team up with a proven leader
+            </h2>
             <p class="body mb-8">
               Conserve Energy, LLC has completed over 3,000 cost-effective
               energy efficiency retrofit projects for businesses ranging from
@@ -176,26 +180,26 @@ import { indexHero } from "../constants/index.js";
             </p>
             <ScheduleButton />
           </div>
-          <div class="col2 w-2/5 h-[34rem] relative">
+          <div class="col2 lg:w-2/5 h-[34rem] relative">
             <Image
               src={whyUs}
               alt="building at sunset"
               class="h-full w-full object-cover rounded-2xl"
             />
             <div
-              class="text-center absolute bg-white rounded-xl px-6 py-6 flex flex-col items-center gap-3.5 top-14 -left-24 right-80"
+              class="text-center absolute bg-white rounded-xl px-6 py-6 flex flex-col items-center gap-3.5 top-14 left-4 lg:-left-24 lg:right-50"
             >
               <h4>$100 Million+</h4>
               <p class="body">Completed energy projects</p>
             </div>
             <div
-              class="text-center absolute bg-white rounded-xl px-9 py-6 flex flex-col items-center gap-3.5 bottom-[13.5rem] -left-16 right-80"
+              class="text-center absolute bg-white rounded-xl px-9 py-6 flex flex-col items-center gap-3.5 bottom-[13.5rem] left-4 lg:-left-16 lg:right-50"
             >
               <h4>3500+</h4>
               <p class="body">Businesses helped</p>
             </div>
             <div
-              class="text-center absolute bg-white rounded-xl px-6 py-6 flex flex-col items-center gap-3.5 bottom-14 right-80 -left-10"
+              class="text-center absolute bg-white rounded-xl px-6 py-6 flex flex-col items-center gap-3.5 bottom-14 left-4 lg:right-50 lg:-left-10"
             >
               <h4>2008</h4>
               <p class="body">Year founded</p>
