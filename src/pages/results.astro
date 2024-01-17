@@ -3,16 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import CTA from "../components/CTA.astro";
 import { resultsHero } from "../constants/index.js";
-import {
-  service1,
-  service2,
-  service3,
-  service4,
-  service5,
-  industrial1,
-  industrial2,
-  industrial3,
-} from "../images";
+import { service3, industrial1, industrial2, industrial3 } from "../images";
 import { Image } from "astro:assets";
 ---
 
@@ -67,7 +58,7 @@ import { Image } from "astro:assets";
       </div>
 
       <!-- Stats -->
-      <div class="flex justify-between flex-wrap mt-12 gap-8">
+      <div class="flex justify-between flex-wrap mt-8 gap-8">
         <div
           class="p-6 flex-1 flex-col flex justify-center h-36 text-center shadow-2xl rounded-xl max-xl:w-full"
         >
@@ -100,8 +91,8 @@ import { Image } from "astro:assets";
       </div>
 
       <!-- Results Text -->
-      <div class="flex justify-between max-lg:flex-col max-lg:gap-10">
-        <div class="flex-col flex gap-10 w-1/2 max-lg:w-full">
+      <div class="flex justify-between mt-16 max-lg:flex-col max-lg:gap-10">
+        <div class="flex-col max-w-lg flex gap-10 w-1/2 max-lg:w-full">
           <h3>Typical results for an LED lighting retrofit with controls</h3>
           <p>
             High Bay overhead lighting in manufacturing and warehouse spaces and
@@ -116,7 +107,7 @@ import { Image } from "astro:assets";
           </p>
         </div>
 
-        <div class="flex-col flex gap-10">
+        <div class="flex-col flex max-w-xs gap-10">
           <h3>Retrofits include:</h3>
           <p>New High-bay LED lighting fixtures</p>
 
@@ -126,5 +117,6 @@ import { Image } from "astro:assets";
         </div>
       </div>
     </section>
+    <CTA />
   </main>
 </Layout>
