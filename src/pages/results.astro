@@ -3,7 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import CTA from "../components/CTA.astro";
 import { resultsHero } from "../constants/index.js";
-import { service3, industrial1, industrial2, industrial3 } from "../images";
+import {
+  service3,
+  service1,
+  industrial1,
+  industrial2,
+  industrial3,
+} from "../images";
 import { Image } from "astro:assets";
 ---
 
@@ -16,6 +22,8 @@ import { Image } from "astro:assets";
       altText={resultsHero.altText}
       imagePath={resultsHero.imagePath}
     />
+
+    <!-- Industrial section -->
     <section>
       <h2 class="uppercase text-center my-16 max-md:text-3xl max-sm:text-xl">
         industrial buildings
@@ -25,7 +33,110 @@ import { Image } from "astro:assets";
       <div class="rounded-xl overflow-hidden">
         <Image
           src={service3}
-          class="w-full max-h-[444px] object-cover object-[position:50%_70%]"
+          class="w-full max-h-[444px] object-cover object-[50%_70%]"
+          alt="warehouse"
+        />
+      </div>
+
+      <!--3 smaller images large screen-->
+      <div class="parent flex mt-8 gap-8">
+        <div class="h-44 w-full rounded-xl overflow-hidden">
+          <Image
+            src={industrial1}
+            class="h-full object-cover object-[50%_85%]"
+            alt="warehouse"
+          />
+        </div>
+
+        <div class="h-44 w-full rounded-xl overflow-hidden">
+          <Image
+            src={industrial2}
+            class="h-full object-cover object-bottom"
+            alt="warehouse"
+          />
+        </div>
+
+        <div class="h-44 w-full rounded-xl overflow-hidden">
+          <Image
+            src={industrial3}
+            class="h-full object-cover object-[50%_80%]"
+            alt="warehouse"
+          />
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="flex justify-between flex-wrap mt-8 gap-8">
+        <div
+          class="p-6 flex-1 flex-col flex justify-center h-36 text-center shadow-2xl rounded-xl max-xl:w-full"
+        >
+          <h4 class="text-title-color mb-3">$75,000</h4>
+          <p class="text-center">Initial cost</p>
+        </div>
+
+        <div
+          class="p-6 flex-1 flex-col flex justify-center h-36 text-center shadow-2xl rounded-xl max-xl:w-full"
+        >
+          <h4 class="text-title-color mb-3">$37,000</h4>
+          <p class="text-center">Incentive</p>
+        </div>
+
+        <div
+          class="p-6 flex-1 flex-col flex justify-center h-36 text-center shadow-2xl rounded-xl max-xl:w-full"
+        >
+          <h4 class="text-title-color mb-3">$20,000</h4>
+          <p class="text-center">Annual energy savings</p>
+          <p class="text-center">(Assume 285,000 kWh)</p>
+        </div>
+
+        <div
+          class="p-6 flex-1 flex-col flex justify-center h-36 text-center shadow-2xl rounded-xl max-xl:w-full"
+        >
+          <h4 class="text-title-color mb-3">53%</h4>
+          <p class="text-center">Expected RDI</p>
+          <p class="text-center">(1.9 Year payback)</p>
+        </div>
+      </div>
+
+      <!-- Results Text -->
+      <div class="flex justify-between mt-16 max-lg:flex-col max-lg:gap-10">
+        <div class="flex-col max-w-lg flex gap-10 w-1/2 max-lg:w-full">
+          <h3>Typical results for an LED lighting retrofit with controls</h3>
+          <p>
+            High Bay overhead lighting in manufacturing and warehouse spaces and
+            large open offices with overhead and task lighting are common in
+            this type of building and can consume a lot of watts.
+          </p>
+
+          <p>
+            Varying occupancy rates and windows or skylights are common and
+            often provide opportunities for savings from occupancy sensors and
+            daylight harvesting.
+          </p>
+        </div>
+
+        <div class="flex-col flex max-w-xs gap-10">
+          <h3>Retrofits include:</h3>
+          <p>New High-bay LED lighting fixtures</p>
+
+          <p>Retrofit or replacement of older T12 or T8 fluorescent fixtures</p>
+          <p>Occupancy/vacancy sensors</p>
+          <p>Daylight harvesting controls</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Convenience section -->
+    <section>
+      <h2 class="uppercase text-center my-16 max-md:text-3xl max-sm:text-xl">
+        CONVENIENCE STORES
+      </h2>
+
+      <!-- Main image -->
+      <div class="rounded-xl overflow-hidden">
+        <Image
+          src={service1}
+          class="w-full max-h-[444px] object-cover"
           alt="warehouse"
         />
       </div>
@@ -117,6 +228,7 @@ import { Image } from "astro:assets";
         </div>
       </div>
     </section>
+
     <CTA />
   </main>
 </Layout>
