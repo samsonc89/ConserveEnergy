@@ -5,80 +5,111 @@ import { Image } from "astro:assets";
 ---
 
 <nav class="bg-white border-gray-200 dark:bg-gray-900 max-md:bg-bone">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <div
+    class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+  >
     <a href="/ConserveEnergy">
       <Image src={logo} alt="Logo" width={203} height={26} />
     </a>
 
     <!-- Contact button -->
-  <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-    <div class="max-md:hidden">
-      <Button id="scheduleBtn" class="dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" isfilled theme="white">Contact us</Button>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <div class="max-md:hidden">
+        <Button
+          id="scheduleBtn"
+          isfilled
+          theme="white"
+        >
+          Contact us
+        </Button>
       </div>
 
       <!-- Hamburger -->
-      <button data-collapse-toggle="navbar-cta" id="scheduleBtn" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-caption-color dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+      <button
+        data-collapse-toggle="navbar-cta"
+        type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-caption-color dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-cta"
+        aria-expanded="false"
+      >
         <span class="sr-only">Open main menu</span>
         <div class="hidden max-lg:block">
           <span class="material-symbols-outlined"> menu</span>
         </div>
-    </button>
+      </button>
+    </div>
+
+    <!-- Navlinks -->
+    <div
+      class="items-center justify-between hidden md:flex md:w-auto md:order-1 w-full"
+      id="navbar-cta"
+    >
+      <ul
+        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 gap-2"
+      >
+        <li>
+          <a
+            href="/ConserveEnergy/services"
+            class="block py-2 px-3 md:p-0 max-md:hover:text-white max-md:hover:bg-caption-color rounded md:bg-transparent md:dark:text-blue-500 md:hover:text-caption-color group transition-all duration-300 ease-in-out hover:-translate-y-1"
+            aria-current="page"
+          >
+            <span
+              class="bg-left-bottom md:bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
+            >
+              Services
+            </span>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/ConserveEnergy/results"
+            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-caption-color d:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 group transition-all duration-300 ease-in-out hover:-translate-y-1 max-md:hover:text-white max-md:hover:bg-caption-color" aria-current="page"
+          >
+            <span
+              class="bg-left-bottom md:bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
+            >
+              Results
+            </span>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/ConserveEnergy/about"
+            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-caption-color d:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 group transition-all duration-300 ease-in-out hover:-translate-y-1 max-md:hover:text-white max-md:hover:bg-caption-color"
+          >
+            <span
+              class="bg-left-bottom md:bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
+            >
+              About
+            </span>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/ConserveEnergy/contact"
+            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-caption-color d:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 group transition-all duration-300 ease-in-out hover:-translate-y-1 max-md:hover:text-white max-md:hover:bg-caption-color"
+          >
+            <span
+              class="bg-left-bottom md:bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
+            >
+              Contact
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
-
-  <!-- Navlinks -->
-  <div class="items-center justify-between hidden md:flex md:w-auto md:order-1 w-full" id="navbar-cta">
-    <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 gap-2">
-      <li>
-        <a href="/ConserveEnergy/services" class="block py-2 px-3 md:p-0 max-md:hover:text-white max-md:hover:bg-caption-color rounded md:bg-transparent md:dark:text-blue-500 md:hover:text-caption-color group transition-all duration-300 ease-in-out hover:-translate-y-1 " aria-current="page">
-          <span
-          class="bg-left-bottom md:bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
-        >
-          Services
-        </span>
-        </a>
-      </li>
-
-      <li>
-        <a href="/ConserveEnergy/results" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-caption-color d:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 group transition-all duration-300 ease-in-out hover:-translate-y-1 max-md:hover:text-white max-md:hover:bg-caption-color">
-          <span
-          class="bg-left-bottom md:bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
-        >
-          Results
-        </span>
-        </a>
-      </li>
-
-
-      <li>
-        <a href="/ConserveEnergy/about" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-caption-color d:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 group transition-all duration-300 ease-in-out hover:-translate-y-1 max-md:hover:text-white max-md:hover:bg-caption-color">
-          <span
-          class="bg-left-bottom md:bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
-        >
-          About
-        </span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/ConserveEnergy/contact" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-caption-color d:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 group transition-all duration-300 ease-in-out hover:-translate-y-1 max-md:hover:text-white max-md:hover:bg-caption-color">
-          <span
-          class="bg-left-bottom md:bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
-        >
-          Contact
-        </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  </div>
-</nav>  
+</nav>
 
 <style>
-* {
-  /* border: 1px solid red; */
-}
+  * {
+    /* border: 1px solid red; */
+  }
 
-    .material-symbols-outlined {
+  .material-symbols-outlined {
     font-variation-settings:
       "FILL" 0,
       "wght" 400,
@@ -86,7 +117,3 @@ import { Image } from "astro:assets";
       "opsz" 24;
   }
 </style>
-
-<script>
-  document.querySelector("#scheduleBtn")?.addEventListener('click', () => alert('this is the schedule btn'));
-</script>
