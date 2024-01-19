@@ -14,12 +14,17 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 //   );
 ---
 
-<section class="flex flex-col overflow-hidden items-center gap-8">
+<section class="flex flex-col overflow-hidden items-center gap-4 md:gap-8">
   <p class="caption">Testimonials</p>
   <h2>What our clients say</h2>
-  <div id="carousel-example" class="relative w-3/4 mx-auto">
+  <div
+    id="carousel-example"
+    class="relative max-md:px-4 w-full lg:w-3/4 mx-auto"
+  >
     <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden w-3/4 mx-auto rounded-lg md:h-96">
+    <div
+      class="relative overflow-hidden lg:w-3/4 mx-auto rounded-lg min-h-[22rem]"
+    >
       {
         testimonials.map((card, index) => (
           <TestimonialCard
@@ -34,7 +39,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
     </div>
     <!-- Slider indicators -->
     <div
-      class="absolute z-30 flex -translate-x-1/2 bottom-2 left-1/2 space-x-3 rtl:space-x-reverse"
+      class="absolute z-30 flex -translate-x-1/2 bottom-0 md:bottom-8 left-1/2 space-x-3 rtl:space-x-reverse"
     >
       <button
         id="carousel-indicator-1"
@@ -71,7 +76,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
     <!-- Slider controls -->
     <button
       type="button"
-      class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      class="absolute -top-10 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
       id="data-carousel-prev"
     >
       <span
@@ -96,7 +101,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
     </button>
     <button
       type="button"
-      class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      class="absolute -top-10 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
       id="data-carousel-next"
     >
       <span
