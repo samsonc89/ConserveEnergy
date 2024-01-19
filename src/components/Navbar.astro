@@ -4,64 +4,6 @@ import logo from "../images/CE-Logo.svg";
 import { Image } from "astro:assets";
 ---
 
-<!-- <nav
-  class="max-w-[1192px] mx-auto flex items-center justify-between max-lg:flex mb-10 max-container max-xl:px-5 max-lg:bg-bone"
->
-  <a href="/ConserveEnergy">
-    <Image src={logo} alt="Logo" width={203} height={26} />
-  </a>
-
-  <p class="flex items-center justify-center gap-20 max-lg:hidden">
-    <a
-      class="group transition-all duration-300 ease-in-out hover:-translate-y-1"
-      href="/ConserveEnergy/services"
-    >
-      <span
-        class="bg-left-bottom bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
-      >
-        Services
-      </span>
-    </a>
-    <a
-      class="group transition-all duration-300 ease-in-out hover:-translate-y-1"
-      href="/ConserveEnergy/results"
-    >
-      <span
-        class="bg-left-bottom bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
-      >
-        Results
-      </span>
-    </a>
-    <a
-      class="group transition-all duration-300 ease-in-out hover:-translate-y-1"
-      href="/ConserveEnergy/about"
-    >
-      <span
-        class="bg-left-bottom bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
-      >
-        About
-      </span>
-    </a>
-    <a
-      class="group transition-all duration-300 ease-in-out hover:-translate-y-1"
-      href="/ConserveEnergy/contact"
-    >
-      <span
-        class="bg-left-bottom bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
-      >
-        Contact
-      </span>
-    </a>
-  </p>
-  <div class="max-lg:hidden">
-    <Button id="scheduleBtn" isfilled theme="white">Contact us</Button>
-  </div>
-
-  <div class="hidden max-lg:block">
-    <span class="material-symbols-outlined"> menu</span>
-  </div>
-</nav> -->
-
 <nav class="bg-white border-gray-200 dark:bg-gray-900 max-md:bg-bone">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="/ConserveEnergy">
@@ -75,7 +17,7 @@ import { Image } from "astro:assets";
       </div>
 
       <!-- Hamburger -->
-      <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-caption-color dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+      <button data-collapse-toggle="navbar-cta" id="scheduleBtn" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-caption-color dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <div class="hidden max-lg:block">
           <span class="material-symbols-outlined"> menu</span>
@@ -133,7 +75,7 @@ import { Image } from "astro:assets";
 
 <style>
 * {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
     .material-symbols-outlined {
@@ -144,3 +86,7 @@ import { Image } from "astro:assets";
       "opsz" 24;
   }
 </style>
+
+<script>
+  document.querySelector("#scheduleBtn")?.addEventListener('click', () => alert('this is the schedule btn'));
+</script>
