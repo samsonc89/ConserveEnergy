@@ -16,106 +16,120 @@ import { Image } from "astro:assets";
       altText={serviceHero.altText}
       imagePath={serviceHero.imagePath}
     />
-    <section>
+    <section class="max-lg:mb-16">
       <h2 class="capitalize text-center my-10">our services</h2>
 
-      <div
-        class="flex flex-col md:flex-row shadow-2xl rounded-3xl overflow-hidden card"
-      >
-        <div class="text-wrapper flex-1 p-16">
-          <h3 class="w-3/4 mb-6 uppercase">The energy audit</h3>
-          <p class="body">
-            Following a detailed process, Conserve Energy reps bring their audit
-            skills to bear. They develop an accurate understanding of your
-            current systems. This serves as the foundation for an effective
-            retrofit, expansion or remodel.
-          </p>
+      <div class="px-4">
+        <div
+          class="flex flex-col lg:flex-row rounded-3xl overflow-hidden card shadow-2xl"
+        >
+          <div class="text-wrapper flex-1 p-8 md:p-16">
+            <h3 class="md:w-3/4 mb-6 uppercase">The energy audit</h3>
+            <p class="body">
+              Following a detailed process, Conserve Energy reps bring their
+              audit skills to bear. They develop an accurate understanding of
+              your current systems. This serves as the foundation for an
+              effective retrofit, expansion or remodel.
+            </p>
+          </div>
+          <div class="lg:w-5/12 image-wrapper">
+            <Image src={service1} alt="Service-1" class="max-lg:w-full" />
+          </div>
         </div>
-        <div class="md:w-5/12 image-wrapper">
-          <Image src={service1} alt="Service-1" class="max-lg:w-full" />
+        <div
+          class="flex flex-col lg:flex-row-reverse shadow-2xl rounded-3xl overflow-hidden card mt-16 lg:mt-20"
+        >
+          <div class="text-wrapper flex-1 p-8 md:p-16">
+            <h3 class="md:w-3/4 mb-6 uppercase">Design solutions</h3>
+            <p class="body">
+              Following a detailed process, Conserve Energy reps bring their
+              audit skills to bear. They develop an accurate understanding of
+              your current systems. This serves as the foundation for an
+              effective retrofit, expansion or remodel.
+            </p>
+            <p class="flex mt-5">
+              <a
+                class="body font-semibold text-green group transition-all duration-300 ease-in-out hover:-translate-y-1"
+                href="/ConserveEnergy/results"
+              >
+                <span
+                  class="bg-left-bottom bg-gradient-to-r from-green to-green bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
+                >
+                  See our results →
+                </span>
+              </a>
+            </p>
+          </div>
+          <div class="lg:w-5/12 image-wrapper">
+            <Image src={service2} alt="Service-2" class="max-lg:w-full" />
+          </div>
         </div>
-      </div>
 
-      <div
-        class="flex flex-col md:flex-row-reverse shadow-2xl rounded-3xl overflow-hidden card mt-20"
-      >
-        <div class="text-wrapper flex-1 p-16">
-          <h3 class="w-3/4 mb-6 uppercase">Design solutions</h3>
-          <p class="body">
-            Following a detailed process, Conserve Energy reps bring their audit
-            skills to bear. They develop an accurate understanding of your
-            current systems. This serves as the foundation for an effective
-            retrofit, expansion or remodel.
-          </p>
-          <p class="mt-5">
-            <a class="body underline font-semibold text-green-700" href=""
-              >See our results →</a
-            >
-          </p>
+        <div
+          class="flex flex-col lg:flex-row shadow-2xl rounded-3xl overflow-hidden card mt-16 lg:mt-20"
+        >
+          <div class="text-wrapper flex-1 p-8 md:p-16">
+            <h3 class="w-3/4 mb-6 uppercase">led lights and more</h3>
+            <p class="body">
+              No longer a niche product, LED lighting stands alone as the top
+              dog in energy saving lighting options. With hundreds of LED
+              retrofits under our collective belts (including highly specialized
+              projects), consider the Conserve Energy team your energy-efficient
+              LED expert. We offer everything from lighting design services for
+              customized solutions to standard retrofits and LED re-lamping.
+            </p>
+            <p class="mt-5 flex">
+              <a
+                class="body font-semibold text-green group transition-all duration-300 ease-in-out hover:-translate-y-1"
+                href="/ConserveEnergy/results"
+              >
+                <span
+                  class="bg-left-bottom bg-gradient-to-r from-green to-green bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out scale-75"
+                >
+                  More LED info →
+                </span>
+              </a>
+            </p>
+          </div>
+          <div class="lg:w-5/12 image-wrapper">
+            <Image src={service3} alt="Service-3" class="max-lg:w-full" />
+          </div>
         </div>
-        <div class="md:w-5/12 image-wrapper">
-          <Image src={service2} alt="Service-2" class="max-lg:w-full" />
-        </div>
-      </div>
 
-      <div
-        class="flex flex-col md:flex-row shadow-2xl rounded-3xl overflow-hidden card mt-20"
-      >
-        <div class="text-wrapper flex-1 p-16">
-          <h3 class="w-3/4 mb-6 uppercase">led lights and more</h3>
-          <p class="body">
-            No longer a niche product, LED lighting stands alone as the top dog
-            in energy saving lighting options. With hundreds of LED retrofits
-            under our collective belts (including highly specialized projects),
-            consider the Conserve Energy team your energy-efficient LED expert.
-            We offer everything from lighting design services for customized
-            solutions to standard retrofits and LED re-lamping.
-          </p>
-          <p class="mt-5">
-            <a class="body underline font-semibold text-green-700" href=""
-              >More LED info →</a
-            >
-          </p>
+        <div
+          class="flex flex-col lg:flex-row-reverse shadow-2xl rounded-3xl overflow-hidden card mt-16 lg:mt-20"
+        >
+          <div class="text-wrapper flex-1 p-8 md:p-16">
+            <h3 class="w-3/4 mb-6 uppercase">installation excellence</h3>
+            <p class="body">
+              How do we insure a successful install? Simple. Our rigorous
+              installation process ensures your project will be a success. We
+              are there every step of the way, so problems are not. We assign a
+              Conserve Energy Project Coordinator to each job and choose only
+              licensed electrical contractors and other skilled firms that have
+              what it takes to complete your installation properly.
+            </p>
+          </div>
+          <div class="lg:w-5/12 image-wrapper">
+            <Image src={service4} alt="Service-4" class="max-lg:w-full" />
+          </div>
         </div>
-        <div class="md:w-5/12 image-wrapper">
-          <Image src={service3} alt="Service-3" class="max-lg:w-full" />
-        </div>
-      </div>
-
-      <div
-        class="flex flex-col md:flex-row-reverse shadow-2xl rounded-3xl overflow-hidden card mt-20"
-      >
-        <div class="text-wrapper flex-1 p-16">
-          <h3 class="w-3/4 mb-6 uppercase">installation excellence</h3>
-          <p class="body">
-            How do we insure a successful install? Simple. Our rigorous
-            installation process ensures your project will be a success. We are
-            there every step of the way, so problems are not. We assign a
-            Conserve Energy Project Coordinator to each job and choose only
-            licensed electrical contractors and other skilled firms that have
-            what it takes to complete your installation properly.
-          </p>
-        </div>
-        <div class="md:w-5/12 image-wrapper">
-          <Image src={service4} alt="Service-4" class="max-lg:w-full" />
-        </div>
-      </div>
-
-      <div
-        class="flex flex-col md:flex-row shadow-2xl rounded-3xl overflow-hidden card mt-20"
-      >
-        <div class="text-wrapper flex-1 p-16">
-          <h3 class="w-3/4 mb-6 uppercase">maximum utility incentives</h3>
-          <p class="body">
-            No rookie in this venture, Conserve Energy has worked with all of
-            the major utility programs in the Northwest. We’re adept at securing
-            the maximum incentives available. We do the paperwork, handle the
-            headaches, and negotiate to secure the energy incentives, which
-            generally range from 20-70% of the project cost.
-          </p>
-        </div>
-        <div class="md:w-5/12 image-wrapper">
-          <Image src={service5} alt="Service-5" class="max-lg:w-full" />
+        <div
+          class="flex flex-col lg:flex-row shadow-2xl rounded-3xl overflow-hidden card mt-16 lg:mt-20"
+        >
+          <div class="text-wrapper flex-1 p-8 md:p-16">
+            <h3 class="w-3/4 mb-6 uppercase">maximum utility incentives</h3>
+            <p class="body">
+              No rookie in this venture, Conserve Energy has worked with all of
+              the major utility programs in the Northwest. We’re adept at
+              securing the maximum incentives available. We do the paperwork,
+              handle the headaches, and negotiate to secure the energy
+              incentives, which generally range from 20-70% of the project cost.
+            </p>
+          </div>
+          <div class="lg:w-5/12 image-wrapper">
+            <Image src={service5} alt="Service-5" class="max-lg:w-full" />
+          </div>
         </div>
       </div>
     </section>

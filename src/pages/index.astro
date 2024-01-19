@@ -2,7 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import CTA from "../components/CTA.astro";
+import Carousel from "../components/CarouselComponent.astro";
 import { Image } from "astro:assets";
+import "flowbite";
 
 import {
   icon1,
@@ -87,8 +89,8 @@ import { indexHero } from "../constants/index.js";
     </section>
 
     <!-- COMPANIES WE WORKED WITH -->
-    <div class="w-full bg-[var(--accent-color)] h-48 mx-auto">
-      <div class="container flex flex-col items-center">
+    <div class="w-full bg-[var(--accent-color)] h-48">
+      <div class="container mx-auto flex flex-col items-center">
         <h4>Companies We've Helped</h4>
         <div class="logos-wrapper"></div>
       </div>
@@ -99,7 +101,7 @@ import { indexHero } from "../constants/index.js";
       <h2>Our Services</h2>
       <div class="container grid md:grid-cols-3 md:grid-rows-2 gap-8">
         <div
-          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-xl rounded-xl bg-slate-400 col-span-1 row-span-2 md:h-[31rem] overflow-hidden relative"
+          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 col-span-1 row-span-2 md:h-[31rem] overflow-hidden relative"
         >
           <Image src={service1} alt="services" class="object-cover h-full" />
           <div
@@ -110,7 +112,7 @@ import { indexHero } from "../constants/index.js";
           </div>
         </div>
         <div
-          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-xl rounded-xl bg-slate-400 overflow-hidden relative"
+          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
         >
           <Image src={service2} alt="services" class="object-cover h-full" />
           <div
@@ -121,7 +123,7 @@ import { indexHero } from "../constants/index.js";
           </div>
         </div>
         <div
-          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-xl rounded-xl bg-slate-400 overflow-hidden relative"
+          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
         >
           <Image src={service5} alt="services" class="object-cover h-full" />
           <div
@@ -132,7 +134,7 @@ import { indexHero } from "../constants/index.js";
           </div>
         </div>
         <div
-          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-xl rounded-xl bg-slate-400 overflow-hidden relative"
+          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
         >
           <Image src={service3} alt="services" class="object-cover h-full" />
           <div
@@ -143,7 +145,7 @@ import { indexHero } from "../constants/index.js";
           </div>
         </div>
         <div
-          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-xl rounded-xl bg-slate-400 overflow-hidden relative"
+          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
         >
           <Image src={service4} alt="services" class="object-cover h-full" />
           <div
@@ -157,12 +159,16 @@ import { indexHero } from "../constants/index.js";
     </section>
 
     <!-- WHY US -->
-    <div class="wrapper w-full bg-[var(--accent-color)] py-1">
+    <div class="wrapper w-full bg-[var(--accent-color)] px-4 py-1">
       <section class="bg-[var(--accent-color)]">
-        <div class="wrapper flex items-center justify-between gap-36">
-          <div class="col1 bg-white w-1/2 px-12 py-10 rounded-2xl">
+        <div
+          class="wrapper flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-36"
+        >
+          <div class="col1 bg-white lg:w-1/2 px-8 lg:px-12 py-10 rounded-2xl">
             <p class="caption mb-4">Why Us</p>
-            <h2 class="uppercase w-4/5 mb-8">team up with a proven leader</h2>
+            <h2 class="uppercase lg:w-4/5 mb-8">
+              team up with a proven leader
+            </h2>
             <p class="body mb-8">
               Conserve Energy, LLC has completed over 3,000 cost-effective
               energy efficiency retrofit projects for businesses ranging from
@@ -174,26 +180,26 @@ import { indexHero } from "../constants/index.js";
             </p>
             <ScheduleButton />
           </div>
-          <div class="col2 w-2/5 h-[34rem] relative">
+          <div class="col2 lg:w-2/5 h-[34rem] relative">
             <Image
               src={whyUs}
               alt="building at sunset"
               class="h-full w-full object-cover rounded-2xl"
             />
             <div
-              class="text-center absolute bg-white rounded-xl px-6 py-6 flex flex-col items-center gap-3.5 top-14 -left-24 right-80"
+              class="text-center absolute bg-white rounded-xl px-6 py-6 flex flex-col items-center gap-3.5 top-14 left-4 lg:-left-24 lg:right-50"
             >
               <h4>$100 Million+</h4>
               <p class="body">Completed energy projects</p>
             </div>
             <div
-              class="text-center absolute bg-white rounded-xl px-9 py-6 flex flex-col items-center gap-3.5 bottom-[13.5rem] -left-16 right-80"
+              class="text-center absolute bg-white rounded-xl px-9 py-6 flex flex-col items-center gap-3.5 bottom-[13.5rem] left-4 lg:-left-16 lg:right-50"
             >
               <h4>3500+</h4>
               <p class="body">Businesses helped</p>
             </div>
             <div
-              class="text-center absolute bg-white rounded-xl px-6 py-6 flex flex-col items-center gap-3.5 bottom-14 right-80 -left-10"
+              class="text-center absolute bg-white rounded-xl px-6 py-6 flex flex-col items-center gap-3.5 bottom-14 left-4 lg:right-50 lg:-left-10"
             >
               <h4>2008</h4>
               <p class="body">Year founded</p>
@@ -202,6 +208,10 @@ import { indexHero } from "../constants/index.js";
         </div>
       </section>
     </div>
+
+    <section class="carousel">
+      <Carousel />
+    </section>
 
     <!-- TESTIMONIALS -->
     <!-- <section class="flex flex-col items-center gap-8">

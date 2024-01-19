@@ -1,8 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  content: [
+    "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
+    "./node_modules/flowbite/**/*.js",
+  ],
   theme: {
     extend: {
+      boxShadow: {
+        "2xl": "0 4px 28px 0px #00000026",
+      },
       colors: {
         green: "#247B46",
         "caption-color": "#E06127",
@@ -14,5 +20,4 @@ export default {
       },
     },
   },
-  plugins: [],
 };
