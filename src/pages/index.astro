@@ -221,17 +221,19 @@ import { indexHero } from "../constants/index.js";
         class="testimonials-wrapper overflow-hidden relative flex flex-nowrap"
       >
         {
-          testimonials.map((card) => (
+          testimonials.map((card, i) => (
             <TestimonialCard
               name={card.title}
               text={card.content}
               imagePath={card.imagePath}
               altText={card.altText}
+              index={i + 1}
             />
           ))
         }
       </div>
     </section> -->
+
     <CTA />
   </main>
 </Layout>

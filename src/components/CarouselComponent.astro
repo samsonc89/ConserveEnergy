@@ -1,142 +1,126 @@
 ---
 import { Image } from "astro:assets";
 import { service1, service2, service3, service4, service5 } from "../images";
-// import "flowbite";
+import testimonials from "../data/testimonials.json";
+import TestimonialCard from "../components/TestimonialCard.astro";
+import type { ImageMetadata } from "astro";
+const { imagePath, altText, name, text, index } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/images/*.{jpeg,jpg,png,gif}"
+);
+// if (!images[imagePath])
+//   throw new Error(
+//     `"${imagePath}" does not exist in glob: "/src/images/*.{jpeg,jpg,png,gif}"`
+//   );
 ---
 
-<div id="carousel-example" class="relative w-1/2 mx-auto">
-  <!-- Carousel wrapper -->
-  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-    <!-- Item 1 -->
-    <div id="carousel-item-1" class="hidden duration-700 ease-in-out">
-      <Image
-        src={service1}
-        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-        alt="..."
-      />
+<section class="flex flex-col overflow-hidden items-center gap-8">
+  <p class="caption">Testimonials</p>
+  <h2>What our clients say</h2>
+  <div id="carousel-example" class="relative w-3/4 mx-auto">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden w-3/4 mx-auto rounded-lg md:h-96">
+      {
+        testimonials.map((card, index) => (
+          <TestimonialCard
+            name={card.title}
+            text={card.content}
+            imagePath={card.imagePath}
+            altText={card.altText}
+            index={index + 1}
+          />
+        ))
+      }
     </div>
-    <!-- Item 2 -->
-    <div id="carousel-item-2" class="hidden duration-700 ease-in-out">
-      <Image
-        src={service2}
-        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-        alt="..."
-      />
-    </div>
-    <!-- Item 3 -->
-    <div id="carousel-item-3" class="hidden duration-700 ease-in-out">
-      <Image
-        src={service3}
-        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-        alt="..."
-      />
-    </div>
-    <!-- Item 4 -->
-    <div id="carousel-item-4" class="hidden duration-700 ease-in-out">
-      <Image
-        src={service4}
-        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-        alt="..."
-      />
-    </div>
-    <!-- Item 5 -->
-    <div id="carousel-item-5" class="hidden duration-700 ease-in-out">
-      <Image
-        src={service5}
-        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-        alt="..."
-      />
-    </div>
-  </div>
-
-  <!-- Slider indicators -->
-  <div
-    class="absolute z-30 flex -translate-x-1/2 bottom-2 left-1/2 space-x-3 rtl:space-x-reverse"
-  >
-    <button
-      id="carousel-indicator-1"
-      type="button"
-      class="w-3 h-3 rounded-full"
-      aria-current="true"
-      aria-label="Slide 1"></button>
-    <button
-      id="carousel-indicator-2"
-      type="button"
-      class="w-3 h-3 rounded-full"
-      aria-current="false"
-      aria-label="Slide 2"></button>
-    <button
-      id="carousel-indicator-3"
-      type="button"
-      class="w-3 h-3 rounded-full"
-      aria-current="false"
-      aria-label="Slide 3"></button>
-    <button
-      id="carousel-indicator-4"
-      type="button"
-      class="w-3 h-3 rounded-full"
-      aria-current="false"
-      aria-label="Slide 4"></button>
-    <button
-      id="carousel-indicator-5"
-      type="button"
-      class="w-3 h-3 rounded-full"
-      aria-current="false"
-      aria-label="Slide 5"></button>
-  </div>
-
-  <!-- Slider controls -->
-  <button
-    type="button"
-    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-    id="data-carousel-prev"
-  >
-    <span
-      class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+    <!-- Slider indicators -->
+    <div
+      class="absolute z-30 flex -translate-x-1/2 bottom-2 left-1/2 space-x-3 rtl:space-x-reverse"
     >
-      <svg
-        class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 6 10"
-      >
-        <path
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M5 1 1 5l4 4"></path>
-      </svg>
-      <span class="sr-only">Previous</span>
-    </span>
-  </button>
-  <button
-    type="button"
-    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-    id="data-carousel-next"
-  >
-    <span
-      class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+      <button
+        id="carousel-indicator-1"
+        type="button"
+        class="w-3 h-3 rounded-full"
+        aria-current="true"
+        aria-label="Slide 1"></button>
+      <button
+        id="carousel-indicator-2"
+        type="button"
+        class="w-3 h-3 rounded-full"
+        aria-current="false"
+        aria-label="Slide 2"></button>
+      <button
+        id="carousel-indicator-3"
+        type="button"
+        class="w-3 h-3 rounded-full"
+        aria-current="false"
+        aria-label="Slide 3"></button>
+      <button
+        id="carousel-indicator-4"
+        type="button"
+        class="w-3 h-3 rounded-full"
+        aria-current="false"
+        aria-label="Slide 4"></button>
+      <button
+        id="carousel-indicator-5"
+        type="button"
+        class="w-3 h-3 rounded-full"
+        aria-current="false"
+        aria-label="Slide 5"></button>
+    </div>
+
+    <!-- Slider controls -->
+    <button
+      type="button"
+      class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      id="data-carousel-prev"
     >
-      <svg
-        class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 6 10"
+      <span
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-zinc-300 group-hover:bg-zinc-400 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
       >
-        <path
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="m1 9 4-4-4-4"></path>
-      </svg>
-      <span class="sr-only">Next</span>
-    </span>
-  </button>
-</div>
+        <svg
+          class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 6 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 1 1 5l4 4"></path>
+        </svg>
+        <span class="sr-only">Previous</span>
+      </span>
+    </button>
+    <button
+      type="button"
+      class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      id="data-carousel-next"
+    >
+      <span
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-zinc-300 group-hover:bg-zinc-400 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+      >
+        <svg
+          class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 6 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m1 9 4-4-4-4"></path>
+        </svg>
+        <span class="sr-only">Next</span>
+      </span>
+    </button>
+  </div>
+</section>
 
 <script>
   import { Carousel } from "flowbite";
@@ -173,9 +157,8 @@ import { service1, service2, service3, service4, service5 } from "../images";
 
     //Add and subtract items ass needed, just make sure to add to appropriate ID on the HTML
     indicators: {
-      activeClasses: "bg-white dark:bg-gray-800",
-      inactiveClasses:
-        "bg-black dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800",
+      activeClasses: "bg-zinc-200",
+      inactiveClasses: "bg-zinc-400 hover:bg-zinc-300",
       items: [
         {
           position: 0,
