@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       boxShadow: {
-        "3xl": "0 35px 60px 30px rgba(0, 0, 0, 0.3)",
+        "2xl": "0 4px 28px 0px #00000026",
       },
       colors: {
         green: "#247B46",

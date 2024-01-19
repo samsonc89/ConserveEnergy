@@ -3,79 +3,79 @@ import { Image } from "astro:assets";
 import logo from "../images/logoBW.svg";
 ---
 
-<footer class="body">
-  <section class="py-12">
-    <div class="flex justify-between max-xl:flex-col max-xl:px-7">
+<footer>
+  <div class="body max-w-[1192px] mx-auto py-12">
+    <div class="flex justify-between max-lg:flex-col lg:flex-row max-xl:px-7">
       <a href="/ConserveEnergy">
-        <Image src={logo} alt="LogoB&W" width={203} height={26} />
+        <Image src={logo} alt="LogoB&W" class="object-cover" width={203} />
       </a>
 
-      <div class="flex justify-between flex-col gap-12 max-lg:gap-5">
-        <p
-          class="flex items-center justify-center gap-10 text-bone max-xl:flex-col max-xl:gap-3 max-xl:items-start max-xl:px-7 max-xl:py-7"
+      <!-- Navlinks -->
+      <div
+        class="flex items-start justify-center gap-12 text-bone max-lg:flex-col max-xl:gap-4 max-xl:px-8 max-lg:py-8"
+      >
+        <a
+          class="group transition-all duration-300 ease-in-out hover:-translate-y-1"
+          href="/ConserveEnergy/services"
         >
-          <a
-            class="group transition-all duration-300 ease-in-out hover:-translate-y-1"
-            href="/ConserveEnergy/services"
+          <span
+            class="bg-left-bottom bg-gradient-to-r from-gray to-gray bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
           >
-            <span
-              class="bg-left-bottom bg-gradient-to-r from-gray to-gray bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
-            >
-              Services
-            </span>
-          </a>
-          <a
-            class="group transition-all duration-300 ease-in-out hover:-translate-y-1"
-            href="/ConserveEnergy/results"
+            Services
+          </span>
+        </a>
+        <a
+          class="group transition-all duration-300 ease-in-out hover:-translate-y-1"
+          href="/ConserveEnergy/results"
+        >
+          <span
+            class="bg-left-bottom bg-gradient-to-r from-gray to-gray bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
           >
-            <span
-              class="bg-left-bottom bg-gradient-to-r from-gray to-gray bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
-            >
-              Results
-            </span>
-          </a>
-          <a
-            class="group transition-all duration-300 ease-in-out hover:-translate-y-1"
-            href="/ConserveEnergy/about"
+            Results
+          </span>
+        </a>
+        <a
+          class="group transition-all duration-300 ease-in-out hover:-translate-y-1"
+          href="/ConserveEnergy/about"
+        >
+          <span
+            class="bg-left-bottom bg-gradient-to-r from-gray to-gray bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
           >
-            <span
-              class="bg-left-bottom bg-gradient-to-r from-gray to-gray bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
-            >
-              About
-            </span>
-          </a>
-          <a
-            class="group transition-all duration-300 ease-in-out hover:-translate-y-1"
-            href="/ConserveEnergy/contact"
+            About
+          </span>
+        </a>
+        <a
+          class="group transition-all duration-300 ease-in-out hover:-translate-y-1"
+          href="/ConserveEnergy/contact"
+        >
+          <span
+            class="bg-left-bottom bg-gradient-to-r from-gray to-gray bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
           >
-            <span
-              class="bg-left-bottom bg-gradient-to-r from-gray to-gray bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
-            >
-              Contact
-            </span>
-          </a>
-        </p>
-        <p class="text-gray text-center max-xl:hidden">
-          ©Copyright. All rights reserved.ConserveEnergy2023
-        </p>
+            Contact
+          </span>
+        </a>
       </div>
 
-      <div class="flex-col flex gap-4 max-lg:py-5 max-xl:flex-col-reverse">
-        <p class="text-gray text-center xl:hidden max-xl:mt-5">
-          ©Copyright. All rights reserved.ConserveEnergy2023
-        </p>
-
-        <div class="flex items-center mb-4 gap-3">
-          <span class="material-symbols-outlined "> call</span>
+      <!-- Contact info -->
+      <div class="flex-col flex max-lg:py-4">
+        <div class="flex items-center mb-4 gap-4">
+          <span class="material-symbols-outlined"> call</span>
           <p class="text-white">(800)757-3469</p>
         </div>
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-4">
           <span class="material-symbols-outlined"> mail</span>
           <p class="text-white">info@ezmetro.com</p>
         </div>
       </div>
+
+      <!-- Copyright -->
     </div>
-  </section>
+    <div>
+      <p class="text-gray text-center max-xl:mt-4">
+        ©Copyright. All rights reserved. ConserveEnergy2023
+      </p>
+    </div>
+  </div>
 </footer>
 
 <style>
@@ -92,5 +92,3 @@ import logo from "../images/logoBW.svg";
       "opsz" 24;
   }
 </style>
-
-
