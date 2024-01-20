@@ -1,0 +1,89 @@
+---
+import {
+    company1,
+    company2,
+    company3,
+    company4,
+    company5,
+    company6,
+    company7,
+    company8,
+    company9,
+    company10,
+} from "../images";
+import { Image } from "astro:assets";
+---
+
+<section class="flex flex-col items-center gap-4 overflow-hidden p-8">
+    <h2 class="text-caption-color">Companies We've Helped</h2>
+
+    <div class="flex-col w-full mt-5 border-b-2 pb-7">
+        <h4 class="capitalize">trade ally relationships</h4>
+        <div
+            class="flex justify-between flex-wrap max-lg:justify-center bg-white rounded-2xl mt-5"
+        >
+                    <button
+                        data-tooltip-target="dropdown-navbar-example-full-screen-tooltip"
+                        class="flex items-center justify-center text-xs font-medium text-gray-700 bg-white rounded-lg toggle-full-view hover:bg-gray-100 hover:text-caption-color focus:z-10 focus:ring-2 focus:ring-caption-color"
+                    >
+                        <Image
+                            src={company1}
+                            alt="Northwest"
+                            width={225.5}
+                            height={182.5}
+                            class="rounded-2xl"
+                        />
+                    </button>
+                    <div
+                        id="dropdown-navbar-example-full-screen-tooltip"
+                        role="tooltip"
+                        class="absolute z-10 inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-black rounded-lg shadow-sm tooltip dark:bg-gray-700 opacity-0 invisible w-64"
+                        style="position: absolute; inset: auto auto 0px 0px; margin: 0px;"
+                        data-popper-placement="top"
+                    >
+                        The Northwest Lighting Network is a partnership with
+                        regional utilities and trade ally networks to form a
+                        central hub of resources for lighting contractors.
+            </div>
+            <Image
+                src={company2}
+                alt="Northwest"
+                width={225.5}
+                height={182.5}
+                class="bg-white"
+            />
+            <Image
+                src={company3}
+                alt="Northwest"
+                width={225.5}
+                height={182.5}
+            />
+            <Image
+                src={company4}
+                alt="Northwest"
+                width={225.5}
+                height={182.5}
+            />
+        </div>
+    </div>
+
+    <div class="flex-col w-full">
+        <h4 class="capitalize">manufacturers and distributors</h4>
+        <div
+            class="flex justify-center gap-2 flex-wrap rounded-2xl bg-white mt-5"
+        >
+            <Image src={company5} alt="Northwest" />
+            <Image src={company6} alt="Northwest" />
+            <Image src={company7} alt="Northwest" />
+            <Image src={company8} alt="Northwest" />
+            <Image src={company9} alt="Northwest" />
+            <Image src={company10} alt="Northwest" />
+        </div>
+    </div>
+</section>
+
+<style>
+    * {
+        /* border: 1px solid red; */
+    }
+</style>
