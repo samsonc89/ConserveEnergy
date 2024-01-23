@@ -32,13 +32,12 @@ export { default as grocery1 } from "./grocery1.jpeg";
 export { default as grocery2 } from "./grocery2.jpeg";
 export { default as grocery3 } from "./grocery3.jpeg";
 
-export { default as company1 } from "./company1.jpeg";
-export { default as company2 } from "./company2.jpeg";
-export { default as company3 } from "./company3.jpeg";
-export { default as company4 } from "./company4.jpeg";
-export { default as company5 } from "./company5.jpeg";
-export { default as company6 } from "./company6.jpeg";
-export { default as company7 } from "./company7.jpeg";
-export { default as company8 } from "./company8.jpeg";
-export { default as company9 } from "./company9.jpeg";
-export { default as company10 } from "./company10.jpeg";
+export { default as company1 } from "./company1.png";
+export { default as company2 } from "./company2.png";
+export { default as company3 } from "./company3.png";
+export { default as company4 } from "./company4.png";
+export { default as company5 } from "./company5.png";
+export { default as company6 } from "./company6.png";
+
+
+
