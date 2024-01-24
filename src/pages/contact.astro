@@ -21,7 +21,7 @@ import { contact, map } from "../images";
       </div>
 
       <div
-        class="flex lg:py-10 gap-8 lg:gap-16 max-lg:flex-col max-container mt-10 px-4"
+        class="flex gap-8 lg:gap-16 max-lg:flex-col max-container mt-8 lg:mt-16 px-4"
       >
         <div class="image-wrapper lg:w-[55%] rounded-2xl overflow-hidden">
           <Image
@@ -32,18 +32,18 @@ import { contact, map } from "../images";
         </div>
 
         <div class="form-wrapper flex-1">
-          <div class="mb-6">
+          <div class="mb-8">
             <div class="caption mb-2">Contact</div>
 
             <!-- <h2 class="mb-6">Let's see how we can help your business</h2> -->
 
-            <p class="mb-6">
+            <p class="mb-8">
               Fill in the information below and we will reach out as soon as we
               receive your contact information.
             </p>
           </div>
 
-          <div class="mt-6">
+          <div class="">
             <form
               id="contactForm"
               action="https://api.web3forms.com/submit"
@@ -59,12 +59,23 @@ import { contact, map } from "../images";
                 name="subject"
                 value="New Submission from Website"
               />
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://samsonc89.github.io/ConserveEnergy/thanks"
+              />
+              <input
+                type="checkbox"
+                name="botcheck"
+                class="hidden"
+                style="display: none;"
+              />
 
               <input
                 type="text"
                 name="username"
                 placeholder="Name*"
-                class="border border-color: text-title-color py-3 pl-4 pr-8 rounded-lg w-full mb-4"
+                class="border py-3 pl-4 rounded-lg w-full mb-4"
                 required
               />
 
@@ -72,7 +83,7 @@ import { contact, map } from "../images";
                 type="tel"
                 name="phone"
                 placeholder="Phone*"
-                class="border border-color: text-title-color py-3 pl-4 pr-8 rounded-lg w-full mb-4"
+                class="border py-3 pl-4 rounded-lg w-full mb-4"
                 required
               />
 
@@ -80,26 +91,15 @@ import { contact, map } from "../images";
                 type="email"
                 name="email"
                 placeholder="Email*"
-                class="border border-color: text-title-color py-3 pl-4 pr-8 rounded-lg mb-4 w-full"
+                class="border py-3 pl-4 rounded-lg mb-4 w-full"
                 required
               />
               <textarea
                 name="message"
                 placeholder="When's the best time to reach out?"
-                class="border border-color: text-title-color py-3 pl-4 pr-8 rounded-lg mb-4 w-full"
-              ></textarea>
-              <input
-                type="checkbox"
-                name="botcheck"
-                class="hidden"
-                style="display: none;"
-              />
+                class="border py-3 pl-4 rounded-lg mb-4 w-full"></textarea>
             </form>
-            <input
-              type="hidden"
-              name="redirect"
-              value="https://samsonc89.github.io/ConserveEnergy/thanks"
-            />
+
             <Button
               class="w-full flex justify-center"
               id="scheduleBtn"
@@ -143,7 +143,7 @@ import { contact, map } from "../images";
       </div>
     </div>
 
-    <div class="mt-16">
+    <section>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2698.197091997638!2d-122.25514052309425!3d47.44709739897771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549042da3030ba39%3A0xf963f23a2a8f8ac3!2sConserve%20Energy%2C%20LLC!5e0!3m2!1sen!2sus!4v1705669991610!5m2!1sen!2sus"
         class="w-full"
@@ -153,7 +153,7 @@ import { contact, map } from "../images";
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+    </section>
   </main>
 
   <style>
