@@ -19,8 +19,8 @@ export default {
         white: "#FFFFFF",
       },
       animation: {
-        marquee: 'marquee 25s linear infinite',
-        marquee2: 'marquee2 25s linear infinite',
+        marquee: 'marquee 9s linear infinite',
+        marquee2: 'marquee2 9s linear infinite',
       },
       keyframes: {
         marquee: {
