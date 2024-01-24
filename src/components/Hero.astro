@@ -1,5 +1,5 @@
 ---
-import ScheduleButton from "./ScheduleButton.astro";
+import Button from "./Button.astro";
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 
@@ -23,7 +23,8 @@ if (!images[imagePath])
       <h1>{title}</h1>
       <p class="body md:mr-4">{text}</p>
     </div>
-    <ScheduleButton />
+
+    <a href="/ConserveEnergy/contact"><Button>Schedule A Call</Button></a>
   </div>
   <div class="md:flex-1 lg:w-1/2 h-[30rem] lg:aspect-square">
     <div
