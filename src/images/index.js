@@ -38,6 +38,8 @@ export { default as company3 } from "./company3.png";
 export { default as company4 } from "./company4.png";
 export { default as company5 } from "./company5.png";
 export { default as company6 } from "./company6.png";
+export { default as company7 } from "./company7.png";
+export { default as company8 } from "./company8.png";
 
 
 
