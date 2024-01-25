@@ -43,3 +43,5 @@ export { default as company8 } from "./company8.png";
 
 export { default as audit } from "./audit.jpg";
 export { default as ev } from "./ev.jpg";
+export { default as pthp } from "./pthp.jpg";
+export { default as solar } from "./solar.jpg";
