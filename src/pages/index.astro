@@ -17,6 +17,7 @@ import {
   service4,
   service5,
   whyUs,
+  audit,
 } from "../images";
 import ScheduleButton from "../components/ScheduleButton.astro";
 
@@ -27,193 +28,184 @@ import Button from "../components/Button.astro";
 ---
 
 <Layout title="Conserve Energy">
-
-    <Hero
-      title={indexHero.title}
-      text={indexHero.text}
-      caption={indexHero.caption}
-      altText={indexHero.altText}
-      imagePath={indexHero.imagePath}
-      extraClass="relative"
+  <Hero
+    title={indexHero.title}
+    text={indexHero.text}
+    caption={indexHero.caption}
+    altText={indexHero.altText}
+    imagePath={indexHero.imagePath}
+    extraClass="relative"
+  >
+    <div
+      class="text-center absolute bg-white shadow-2xl rounded-xl p-4 md:px-8 md:py-4 flex flex-col items-center gap-2 bottom-12 left-8"
     >
-      <div
-        class="text-center absolute bg-white shadow-2xl rounded-xl p-4 md:px-8 md:py-4 flex flex-col items-center gap-2 bottom-12 left-8"
-      >
-        <p
-          class="text-[var(--caption-color)] text-xl md:text-2xl font-semibold"
-        >
-          Outdoor lighting
-        </p>
-        <p class="body">
-          Pole lights, flood lights, ,<br /> canopy lights & more.
-        </p>
-      </div>
-      <div
-        class="text-center absolute bg-white shadow-2xl rounded-xl p-4 md:px-8 md:py-4 flex flex-col items-center gap-2 top-12 right-8"
-      >
-        <p class="text-[#247B46] text-xl md:text-2xl font-semibold">
-          Indoor lighting
-        </p>
-        <p class="body">
-          High bays, troffers, panels,<br />tubes, bulbs & more.
-        </p>
-      </div>
-    </Hero>
+      <p class="text-[var(--caption-color)] text-xl md:text-2xl font-semibold">
+        Outdoor lighting
+      </p>
+      <p class="body">
+        Pole lights, flood lights, ,<br /> canopy lights & more.
+      </p>
+    </div>
+    <div
+      class="text-center absolute bg-white shadow-2xl rounded-xl p-4 md:px-8 md:py-4 flex flex-col items-center gap-2 top-12 right-8"
+    >
+      <p class="text-[#247B46] text-xl md:text-2xl font-semibold">
+        Indoor lighting
+      </p>
+      <p class="body">
+        High bays, troffers, panels,<br />tubes, bulbs & more.
+      </p>
+    </div>
+  </Hero>
 
-    <!-- FEATURES -->
-    <section class="md:grid-cols-3 grid px-4 justify-between gap-8">
-      <div class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl">
-        <Image src={icon1} alt="icon 1" />
-        <h4 class="w-4/5">The total energy effeciency package</h4>
-        <p class="body">
-          Conserve Energy’s turnkey approach to energy efficiency puts your
-          business in a better competitive position. Energy saving solutions
-          trim energy consumption and capture utility incentives.
-        </p>
+  <!-- FEATURES -->
+  <section class="md:grid-cols-3 grid px-4 justify-between gap-8">
+    <div class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl">
+      <Image src={icon1} alt="icon 1" />
+      <h4 class="w-4/5">The total energy effeciency package</h4>
+      <p class="body">
+        Conserve Energy’s turnkey approach to energy efficiency puts your
+        business in a better competitive position. Energy saving solutions trim
+        energy consumption and capture utility incentives.
+      </p>
+    </div>
+    <div class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl">
+      <Image src={icon2} alt="icon 2" />
+      <h4 class="w-3/5">Capture utility incentives</h4>
+      <p class="body">
+        Let us show you how specific energy-saving measures can earn generous
+        incentives from utilities and third parties in the Northwest. These
+        incentives typically cover 40-70%, of up-front costs.
+      </p>
+    </div>
+    <div class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl">
+      <Image src={icon3} alt="icon 3" />
+      <h4 class="w-4/5">Reasonable costs, predictable results</h4>
+      <p class="body">
+        Every dollar you can save on energy drops immediately to the bottom
+        line. Cost-effective energy-efficiency retrofits pay back. Fast.
+      </p>
+    </div>
+  </section>
+
+  <!-- COMPANIES WE WORKED WITH -->
+  <div class="bg-bone">
+    <Company />
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services flex flex-col px-4 items-center gap-16">
+    <h2>Our Services</h2>
+    <div class="container grid md:grid-cols-3 md:grid-rows-2 gap-8">
+      <div
+        class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 col-span-1 row-span-2 md:h-[31rem] overflow-hidden relative"
+      >
+        <Image src={audit} alt="services" class="object-cover h-full" />
+        <div
+          class="absolute bg-white/90 w-full h-16 bottom-0 flex justify-between items-center px-4"
+        >
+          <h5 class="uppercase">the energy audit</h5>
+          <span class="material-symbols-outlined"> east</span>
+        </div>
       </div>
-      <div class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl">
-        <Image src={icon2} alt="icon 2" />
-        <h4 class="w-3/5">Capture utility incentives</h4>
-        <p class="body">
-          Let us show you how specific energy-saving measures can earn generous
-          incentives from utilities and third parties in the Northwest. These
-          incentives typically cover 40-70%, of up-front costs.
-        </p>
+      <div
+        class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
+      >
+        <Image src={service2} alt="services" class="object-cover h-full" />
+        <div
+          class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
+        >
+          <h5 class="uppercase">design solutions</h5>
+          <span class="material-symbols-outlined"> east</span>
+        </div>
       </div>
-      <div class="cards shadow-2xl p-8 flex flex-col gap-4 rounded-xl">
-        <Image src={icon3} alt="icon 3" />
-        <h4 class="w-4/5">Reasonable costs, predictable results</h4>
-        <p class="body">
-          Every dollar you can save on energy drops immediately to the bottom
-          line. Cost-effective energy-efficiency retrofits pay back. Fast.
-        </p>
+      <div
+        class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
+      >
+        <Image src={service5} alt="services" class="object-cover h-full" />
+        <div
+          class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
+        >
+          <h5 class="uppercase">maximum utility incentives</h5>
+          <span class="material-symbols-outlined"> east</span>
+        </div>
+      </div>
+      <div
+        class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
+      >
+        <Image src={service3} alt="services" class="object-cover h-full" />
+        <div
+          class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
+        >
+          <h5 class="uppercase">led lights and more</h5>
+          <span class="material-symbols-outlined"> east</span>
+        </div>
+      </div>
+      <div
+        class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
+      >
+        <Image src={service4} alt="services" class="object-cover h-full" />
+        <div
+          class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
+        >
+          <h5 class="uppercase">installation excellence</h5>
+          <span class="material-symbols-outlined"> east</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <div class="wrapper w-full bg-[var(--accent-color)] px-4 py-1">
+    <section class="bg-[var(--accent-color)]">
+      <div
+        class="wrapper flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-36"
+      >
+        <div class="col1 bg-white lg:w-1/2 px-8 lg:px-12 py-10 rounded-2xl">
+          <p class="caption mb-4">Why Us</p>
+          <h2 class="uppercase lg:w-4/5 mb-8">team up with a proven leader</h2>
+          <p class="body mb-8">
+            Conserve Energy, LLC has completed over 3,000 cost-effective energy
+            efficiency retrofit projects for businesses ranging from small
+            retailers to large industrial facilities. Our turnkey solutions
+            include top-quality products at very competitive prices. We work
+            closely with all major utility programs to maximize incentives for
+            our customers and deliver great value and unbeatable ROI.
+          </p>
+          <a href="/ConserveEnergy/contact"><Button>Schedule A Call</Button></a>
+        </div>
+        <div class="col2 lg:w-2/5 h-[34rem] relative">
+          <Image
+            src={whyUs}
+            alt="building at sunset"
+            class="h-full w-full object-cover rounded-2xl"
+          />
+          <div
+            class="text-center absolute bg-white rounded-xl px-6 py-6 flex flex-col items-center gap-3.5 top-14 left-4 lg:-left-24 lg:right-50"
+          >
+            <h4>$100 Million+</h4>
+            <p class="body">Completed energy projects</p>
+          </div>
+          <div
+            class="text-center absolute bg-white rounded-xl px-9 py-6 flex flex-col items-center gap-3.5 bottom-[13.5rem] left-4 lg:-left-16 lg:right-50"
+          >
+            <h4>3500+</h4>
+            <p class="body">Businesses helped</p>
+          </div>
+          <div
+            class="text-center absolute bg-white rounded-xl px-6 py-6 flex flex-col items-center gap-3.5 bottom-14 left-4 lg:right-50 lg:-left-10"
+          >
+            <h4>2008</h4>
+            <p class="body">Year founded</p>
+          </div>
+        </div>
       </div>
     </section>
+  </div>
 
-    <!-- COMPANIES WE WORKED WITH -->
-    <div class="bg-bone">
-      <Company />
-    </div>
-
-    <!-- SERVICES -->
-    <section class="services flex flex-col px-4 items-center gap-16">
-      <h2>Our Services</h2>
-      <div class="container grid md:grid-cols-3 md:grid-rows-2 gap-8">
-        <div
-          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 col-span-1 row-span-2 md:h-[31rem] overflow-hidden relative"
-        >
-          <Image src={service1} alt="services" class="object-cover h-full" />
-          <div
-            class="absolute bg-white/90 w-full h-16 bottom-0 flex justify-between items-center px-4"
-          >
-            <h5 class="uppercase">the energy audit</h5>
-            <span class="material-symbols-outlined"> east</span>
-          </div>
-        </div>
-        <div
-          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
-        >
-          <Image src={service2} alt="services" class="object-cover h-full" />
-          <div
-            class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
-          >
-            <h5 class="uppercase">design solutions</h5>
-            <span class="material-symbols-outlined"> east</span>
-          </div>
-        </div>
-        <div
-          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
-        >
-          <Image src={service5} alt="services" class="object-cover h-full" />
-          <div
-            class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
-          >
-            <h5 class="uppercase">maximum utility incentives</h5>
-            <span class="material-symbols-outlined"> east</span>
-          </div>
-        </div>
-        <div
-          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
-        >
-          <Image src={service3} alt="services" class="object-cover h-full" />
-          <div
-            class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
-          >
-            <h5 class="uppercase">led lights and more</h5>
-            <span class="material-symbols-outlined"> east</span>
-          </div>
-        </div>
-        <div
-          class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
-        >
-          <Image src={service4} alt="services" class="object-cover h-full" />
-          <div
-            class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
-          >
-            <h5 class="uppercase">installation excellence</h5>
-            <span class="material-symbols-outlined"> east</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY US -->
-    <div class="wrapper w-full bg-[var(--accent-color)] px-4 py-1">
-      <section class="bg-[var(--accent-color)]">
-        <div
-          class="wrapper flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-36"
-        >
-          <div class="col1 bg-white lg:w-1/2 px-8 lg:px-12 py-10 rounded-2xl">
-            <p class="caption mb-4">Why Us</p>
-            <h2 class="uppercase lg:w-4/5 mb-8">
-              team up with a proven leader
-            </h2>
-            <p class="body mb-8">
-              Conserve Energy, LLC has completed over 3,000 cost-effective
-              energy efficiency retrofit projects for businesses ranging from
-              small retailers to large industrial facilities. Our turnkey
-              solutions include top-quality products at very competitive prices.
-              We work closely with all major utility programs to maximize
-              incentives for our customers and deliver great value and
-              unbeatable ROI.
-            </p>
-            <a href="/ConserveEnergy/contact"
-              ><Button>Schedule A Call</Button></a
-            >
-          </div>
-          <div class="col2 lg:w-2/5 h-[34rem] relative">
-            <Image
-              src={whyUs}
-              alt="building at sunset"
-              class="h-full w-full object-cover rounded-2xl"
-            />
-            <div
-              class="text-center absolute bg-white rounded-xl px-6 py-6 flex flex-col items-center gap-3.5 top-14 left-4 lg:-left-24 lg:right-50"
-            >
-              <h4>$100 Million+</h4>
-              <p class="body">Completed energy projects</p>
-            </div>
-            <div
-              class="text-center absolute bg-white rounded-xl px-9 py-6 flex flex-col items-center gap-3.5 bottom-[13.5rem] left-4 lg:-left-16 lg:right-50"
-            >
-              <h4>3500+</h4>
-              <p class="body">Businesses helped</p>
-            </div>
-            <div
-              class="text-center absolute bg-white rounded-xl px-6 py-6 flex flex-col items-center gap-3.5 bottom-14 left-4 lg:right-50 lg:-left-10"
-            >
-              <h4>2008</h4>
-              <p class="body">Year founded</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- <section class="carousel">
+  <!-- <section class="carousel">
       <Carousel />
     </section> -->
 
-    <CTA />
-
+  <CTA />
 </Layout>
