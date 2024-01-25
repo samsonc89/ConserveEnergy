@@ -1,5 +1,6 @@
 ---
 import {
+<<<<<<< HEAD
     company1,
     company2,
     company3,
@@ -8,14 +9,53 @@ import {
     company6,
     company7,
     company8
+=======
+  company1,
+  company2,
+  company3,
+  company4,
+  company5,
+  company6,
+>>>>>>> develop
 } from "../images";
 import { Image } from "astro:assets";
 ---
 
+<div class="w-full pt-8">
+  <h4 class="text-center">Companies We've Helped</h4>
 
-<div class="w-full">
-    <h4 class="text-center">Companies We've Helped</h4>
+  <div class="relative flex overflow-x-hidden">
+    <div
+      class="py-12 flex items-center gap-10 animate-marquee whitespace-nowrap"
+    >
+      <span class="text-4xl mx-10 max-lg:mx-6 max-md:mx-4 max-md:w-32">
+        <Image src={company1} alt="chevron" />
+      </span>
+      <span class="text-4xl mx-10 max-lg:mx-6 max-md:mx-4 max-md:w-32">
+        <Image src={company2} alt="usBank" />
+      </span>
+      <span class="text-4xl mx-10 max-lg:mx-6 max-md:mx-4 max-md:w-32">
+        <Image src={company3} alt="EdwardJones" />
+      </span>
+      <span class="text-4xl mx-10 max-lg:mx-6 max-md:mx-4 max-md:w-32">
+        <Image src={company4} alt="HamptonInn" width={150} height={150} />
+      </span>
+      <span class="text-4xl mx-10 max-lg:mx-6 max-md:mx-4 max-md:w-32">
+        <Image src={company5} alt="GroceryOutlets" />
+      </span>
+      <span
+        class="text-4xl mx-10 max-lg:mx-6 max-md:mx-4 max-md:w-32 bg-red-400"
+      >
+        <Image src={company6} alt="Subway" />
+      </span>
+      <span
+        class="text-4xl mx-10 max-lg:mx-6 max-md:mx-4 max-md:w-32 bg-blue-400 max-sm:pr-6"
+      >
+        <Image src={company6} alt="Subway" />
+      </span>
+    </div>
 
+<<<<<<< HEAD
     <div class="relative flex overflow-x-hidden">
         <div class="py-12 flex items-center animate-marquee whitespace-nowrap">
           <span class="text-4xl mx-10 max-xl:mx-8 max-lg:mx-6 max-md:mx-4 max-sm:w-12">
@@ -87,9 +127,41 @@ import { Image } from "astro:assets";
         </div>
       </div>
       
+=======
+    <div
+      class="absolute flex items-center gap-10 top-0 py-12 ml-10 animate-marquee2 whitespace-nowrap"
+    >
+      <span class="text-4xl mx-10 max-lg:mx-6 max-md:mx-4 max-md:w-32">
+        <Image src={company1} alt="chevron" />
+      </span>
+      <span class="text-4xl mx-10 max-lg:mx-6 max-md:mx-4 max-md:w-32">
+        <Image src={company2} alt="usBank" />
+      </span>
+      <span class="text-4xl mx-10 max-lg:mx-6 max-md:mx-4 max-md:w-32">
+        <Image src={company3} alt="EdwardJones" />
+      </span>
+      <span class="text-4xl mx-10 max-lg:mx-6 max-md:mx-4 max-md:w-32">
+        <Image src={company4} alt="HamptonInn" width={150} height={150} />
+      </span>
+      <span class="text-4xl mx-10 max-lg:mx-6 max-md:mx-4 max-md:w-32">
+        <Image src={company5} alt="GroceryOutlets" />
+      </span>
+      <span
+        class="text-4xl mx-10 max-lg:mx-6 max-md:mx-4 max-md:w-32 bg-blue-400"
+      >
+        <Image src={company6} alt="Subway" />
+      </span>
+      <span
+        class="text-4xl mx-10 max-lg:mx-6 max-md:mx-4 max-md:w-32 bg-red-400"
+      >
+        <Image src={company6} alt="Subway" />
+      </span>
+    </div>
+  </div>
+>>>>>>> develop
 </div>
 <style>
-    * {
-      /* border: 1px solid red; */
-    }
+  * {
+    /* border: 1px solid red; */
+  }
 </style>

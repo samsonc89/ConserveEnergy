@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import CTA from "../components/CTA.astro";
 import Carousel from "../components/CarouselComponent.astro";
-import Company from '../components/CompanyCard.astro';
+import Company from "../components/CompanyCard.astro";
 import { Image } from "astro:assets";
 import "flowbite";
 
@@ -23,6 +23,7 @@ import ScheduleButton from "../components/ScheduleButton.astro";
 import testimonials from "../data/testimonials.json";
 import TestimonialCard from "../components/TestimonialCard.astro";
 import { indexHero } from "../constants/index.js";
+import Button from "../components/Button.astro";
 ---
 
 <Layout title="Conserve Energy">
@@ -176,7 +177,9 @@ import { indexHero } from "../constants/index.js";
               incentives for our customers and deliver great value and
               unbeatable ROI.
             </p>
-            <ScheduleButton />
+            <a href="/ConserveEnergy/contact"
+              ><Button>Schedule A Call</Button></a
+            >
           </div>
           <div class="col2 lg:w-2/5 h-[34rem] relative">
             <Image
@@ -207,29 +210,8 @@ import { indexHero } from "../constants/index.js";
       </section>
     </div>
 
-    <section class="carousel">
+    <!-- <section class="carousel">
       <Carousel />
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <!-- <section class="flex flex-col items-center gap-8">
-      <p class="caption">Testimonials</p>
-      <h2>What our clients say</h2>
-      <div
-        class="testimonials-wrapper overflow-hidden relative flex flex-nowrap"
-      >
-        {
-          testimonials.map((card, i) => (
-            <TestimonialCard
-              name={card.title}
-              text={card.content}
-              imagePath={card.imagePath}
-              altText={card.altText}
-              index={i + 1}
-            />
-          ))
-        }
-      </div>
     </section> -->
 
     <CTA />

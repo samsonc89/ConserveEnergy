@@ -13,16 +13,15 @@ import { contact, map } from "../images";
           <h1 class="max-sm:text-4xl">We're here to help</h1>
 
           <p class="mt-10">
-            Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos.
+            Ready to explore energy-efficient solutions for your business? We're
+            here to help. Contact us today for expert advice, consultations, and
+            personalized service.
           </p>
         </div>
       </div>
 
       <div
-        class="flex lg:py-10 gap-8 lg:gap-16 max-lg:flex-col max-container mt-10 px-4"
+        class="flex gap-8 lg:gap-16 max-lg:flex-col max-container mt-8 lg:mt-16 px-4"
       >
         <div class="image-wrapper lg:w-[55%] rounded-2xl overflow-hidden">
           <Image
@@ -33,91 +32,117 @@ import { contact, map } from "../images";
         </div>
 
         <div class="form-wrapper flex-1">
-          <div class="mb-6">
-            <div class="caption mb-6">Contact</div>
+          <div class="mb-8">
+            <div class="caption mb-2">Contact</div>
 
-            <h2 class="mb-6">Feel free to contact us anytime</h2>
+            <!-- <h2 class="mb-6">Let's see how we can help your business</h2> -->
 
-            <p class="mb-6">
-              Fill in the information below and we will contact you. Let's see
-              if we will start a new project. Don't hesitate to contact us.
+            <p class="mb-8">
+              Fill in the information below and we will reach out as soon as we
+              receive your contact information.
             </p>
           </div>
 
-          <div class="flex-col mt-6">
-            <form method="POST">
-              <label>
-                <input
-                  type="text"
-                  name="username"
-                  placeholder="Name"
-                  class="border border-color: text-title-color py-3 pl-4 pr-8 rounded-lg w-full mb-8"
-                  required
-                />
-              </label>
-              <label>
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="Phone"
-                  class="border border-color: text-title-color py-3 pl-4 pr-8 rounded-lg w-full mb-8"
-                  required
-                />
-              </label>
-              <label>
-                <label>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    class="border border-color: text-title-color py-3 pl-4 pr-8 rounded-lg mb-8 w-full"
-                    required
-                  />
-                </label>
-                <label>
-                <a href="/ConserveEnergy/contact">
-                  <Button
-                    class="w-full flex justify-center"
-                    id="scheduleBtn"
-                    theme="button"
-                  >
-                    Submit
-                  </Button>
-                </a>
-              </label>
+          <div class="">
+            <form
+              id="contactForm"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="e58412c6-15cb-4142-a129-a79382f45736"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New Submission from Website"
+              />
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://samsonc89.github.io/ConserveEnergy/thanks"
+              />
+              <input
+                type="checkbox"
+                name="botcheck"
+                class="hidden"
+                style="display: none;"
+              />
+
+              <input
+                type="text"
+                name="username"
+                placeholder="Name*"
+                class="border py-3 pl-4 rounded-lg w-full mb-4"
+                required
+              />
+
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone*"
+                class="border py-3 pl-4 rounded-lg w-full mb-4"
+                required
+              />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Email*"
+                class="border py-3 pl-4 rounded-lg mb-4 w-full"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="When's the best time to reach out?"
+                class="border py-3 pl-4 rounded-lg mb-4 w-full"></textarea>
             </form>
+
+            <Button
+              class="w-full flex justify-center"
+              id="scheduleBtn"
+              theme="button"
+              type="submit"
+            >
+              Submit
+            </Button>
           </div>
         </div>
       </div>
-
-      <!-- COMPANY INFO -->
-      <div
-        class="flex justify-center items-stretch flex-wrap px-4 gap-4 max-lg:mt-8"
-      >
-        <div class="rounded-xl shadow-2xl p-5">
-          <h4 class="">Seattle Headquarters</h4>
-          <p class="mt-2">
-            14237 Interurban Ave. <br /> S. Tukwila, WA 98168
-          </p>
-        </div>
-        <div class="rounded-xl shadow-2xl p-5">
-          <h4 class="">Portland Headquarters</h4>
-          <p class="mt-2">885 SW Cheltenham <br /> StreetPortland, OR 97239</p>
-        </div>
-        <div class="rounded-xl shadow-2xl p-5">
-          <h4 class="">Toll Free</h4>
-          <p class="mt-2">(800) 757-3469</p>
-        </div>
-        <div class="rounded-xl shadow-2xl p-5">
-          <h4 class="">Fax</h4>
-          <p class="mt-2">(888) 887-0939</p>
-        </div>
-        <div class="rounded-xl shadow-2xl p-5">
-          <h4 class="">Email</h4>
-          <p class="mt-2">info@ezmetro.com</p>
-        </div>
-      </div>
     </section>
+
+    <!-- COMPANY INFO -->
+    <div
+      class="flex justify-center items-stretch flex-wrap px-4 gap-4 max-lg:mt-8"
+    >
+      <div class="rounded-xl shadow-2xl p-5">
+        <h4 class="">Seattle Headquarters</h4>
+        <p class="mt-2">
+          1045 Andover Park E #200,<br /> S. Tukwila, WA 98188
+        </p>
+      </div>
+      <div class="rounded-xl shadow-2xl p-5">
+        <h4 class="">Portland Headquarters</h4>
+        <p class="mt-2">
+          885 SW Cheltenham <br /> StreetPortland, OR 97239
+        </p>
+      </div>
+      <div class="rounded-xl shadow-2xl p-5">
+        <h4 class="">Toll Free</h4>
+        <p class="mt-2">(800) 757-3469</p>
+      </div>
+      <div class="rounded-xl shadow-2xl p-5">
+        <h4 class="">Fax</h4>
+        <p class="mt-2">(888) 887-0939</p>
+      </div>
+      <div class="rounded-xl shadow-2xl p-5">
+        <h4 class="">Email</h4>
+        <p class="mt-2">info@ezmetro.com</p>
+      </div>
+    </div>
+
     <section>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2698.197091997638!2d-122.25514052309425!3d47.44709739897771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549042da3030ba39%3A0xf963f23a2a8f8ac3!2sConserve%20Energy%2C%20LLC!5e0!3m2!1sen!2sus!4v1705669991610!5m2!1sen!2sus"
@@ -130,11 +155,12 @@ import { contact, map } from "../images";
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
+
+  <style>
+    * {
+      /* border: 1px solid red; */
+    }
+  </style>
 </Layout>
 
-
-<style>
-  * {
-    /* border: 1px solid red; */
-  }
-</style>
+<script src="https://web3forms.com/client/script.js" async defer></script>
