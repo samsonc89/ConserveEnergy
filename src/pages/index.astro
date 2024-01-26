@@ -163,7 +163,14 @@ import Button from "../components/Button.astro";
       <div
         class="services-card hover:scale-110 hover:text-[var(--caption-color)] cursor-pointer shadow-2xl rounded-xl bg-slate-400 overflow-hidden relative"
       >
+        <div class="bg-white opacity-60 absolute w-full h-full"></div>
+        <div class="bg-red-600 top-40 opacity-60 absolute -rotate-12 w-full">
+          <p class="text-white text-3xl text-center my-auto py-2">
+            Coming soon
+          </p>
+        </div>
         <Image src={solar} alt="services" class="object-cover h-full" />
+
         <div
           class="absolute bg-white/70 w-full h-16 bottom-0 flex justify-between items-center px-4"
         >
