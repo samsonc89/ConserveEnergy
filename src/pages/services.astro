@@ -3,7 +3,16 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import CTA from "../components/CTA.astro";
 import { serviceHero } from "../constants/index.js";
-import { audit, service2, service3, service4, service5 } from "../images";
+import {
+  audit,
+  service2,
+  service3,
+  service4,
+  service5,
+  ev,
+  pthp,
+  solar,
+} from "../images";
 import { Image } from "astro:assets";
 ---
 
@@ -68,7 +77,7 @@ import { Image } from "astro:assets";
         class="flex flex-col lg:flex-row shadow-2xl rounded-3xl overflow-hidden card mt-16 lg:mt-20"
       >
         <div class="text-wrapper flex-1 p-8 md:p-16">
-          <h3 class="w-3/4 mb-6 uppercase">led lights and more</h3>
+          <h3 class="w-3/4 mb-6 uppercase">led lights</h3>
           <p class="body">
             No longer a niche product, LED lighting stands alone as the top dog
             in energy saving lighting options. With hundreds of LED retrofits
@@ -113,6 +122,7 @@ import { Image } from "astro:assets";
           <Image src={service4} alt="Service-4" class="max-lg:w-full" />
         </div>
       </div>
+
       <div
         class="flex flex-col lg:flex-row shadow-2xl rounded-3xl overflow-hidden card mt-16 lg:mt-20"
       >
@@ -128,6 +138,60 @@ import { Image } from "astro:assets";
         </div>
         <div class="lg:w-5/12 image-wrapper">
           <Image src={service5} alt="Service-5" class="max-lg:w-full" />
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col lg:flex-row-reverse shadow-2xl rounded-3xl overflow-hidden card mt-16 lg:mt-20"
+      >
+        <div class="text-wrapper flex-1 p-8 md:p-16">
+          <h3 class="w-3/4 mb-6 uppercase">EV Charger installation</h3>
+          <p class="body">
+            <!-- No rookie in this venture, Conserve Energy has worked with all of
+            the major utility programs in the Northwest. We’re adept at securing
+            the maximum incentives available. We do the paperwork, handle the
+            headaches, and negotiate to secure the energy incentives, which
+            generally range from 20-70% of the project cost. -->
+          </p>
+        </div>
+        <div class="lg:w-5/12 image-wrapper">
+          <Image src={ev} alt="Service-5" class="max-lg:w-full" />
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col lg:flex-row shadow-2xl rounded-3xl overflow-hidden card mt-16 lg:mt-20"
+      >
+        <div class="text-wrapper flex-1 p-8 md:p-16">
+          <h3 class="w-3/4 mb-6 uppercase">PTHP</h3>
+          <p class="body">
+            <!-- No rookie in this venture, Conserve Energy has worked with all of
+            the major utility programs in the Northwest. We’re adept at securing
+            the maximum incentives available. We do the paperwork, handle the
+            headaches, and negotiate to secure the energy incentives, which
+            generally range from 20-70% of the project cost. -->
+          </p>
+        </div>
+        <div class="lg:w-5/12 image-wrapper">
+          <Image src={pthp} alt="Service-5" class="max-lg:w-full" />
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col lg:flex-row-reverse shadow-2xl rounded-3xl overflow-hidden card mt-16 lg:mt-20"
+      >
+        <div class="text-wrapper flex-1 p-8 md:p-16">
+          <h3 class="w-3/4 mb-6 uppercase">solar</h3>
+          <p class="body">
+            <!-- No rookie in this venture, Conserve Energy has worked with all of
+            the major utility programs in the Northwest. We’re adept at securing
+            the maximum incentives available. We do the paperwork, handle the
+            headaches, and negotiate to secure the energy incentives, which
+            generally range from 20-70% of the project cost. -->
+          </p>
+        </div>
+        <div class="lg:w-5/12 image-wrapper">
+          <Image src={solar} alt="Service-5" class="max-lg:w-full" />
         </div>
       </div>
     </div>
