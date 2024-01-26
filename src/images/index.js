@@ -45,3 +45,5 @@ export { default as audit } from "./audit.jpg";
 export { default as ev } from "./ev.jpg";
 export { default as pthp } from "./pthp.jpg";
 export { default as solar } from "./solar.jpg";
+
+export { default as aboutBg } from "./aboutBg.webp";
