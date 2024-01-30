@@ -15,8 +15,10 @@ import { Image } from "astro:assets";
 <div class="w-full pt-8">
   <h4 class="text-center">Companies We've Worked With</h4>
 
-  <div class="relative flex overflow-x-hidden">
-    <div class="py-12 flex items-center animate-marquee whitespace-nowrap">
+  <div class="relative w-full flex overflow-x-hidden">
+    <div
+      class="py-12 w-full flex items-center animate-marquee whitespace-nowrap"
+    >
       <span class="mx-10 max-xl:mx-8 max-lg:mx-6 max-md:mx-4 max-sm:w-12">
         <Image src={company1} alt="chevron logo" />
       </span>
@@ -44,7 +46,7 @@ import { Image } from "astro:assets";
     </div>
 
     <div
-      class="absolute flex items-center top-0 py-12 animate-marquee2 whitespace-nowrap"
+      class="absolute w-full flex items-center top-0 py-12 animate-marquee2 whitespace-nowrap"
     >
       <span class="mx-10 max-xl:mx-8 max-lg:mx-6 max-md:mx-4 max-sm:w-12">
         <Image src={company1} alt="Chevron logo" />
