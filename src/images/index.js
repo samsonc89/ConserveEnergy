@@ -33,13 +33,13 @@ export { default as grocery2 } from "./grocery2.jpeg";
 export { default as grocery3 } from "./grocery3.jpeg";
 
 export { default as company1 } from "./company1.png";
-export { default as company2 } from "./company2.png";
+export { default as company2 } from "./company2.svg";
 export { default as company3 } from "./company3.png";
-export { default as company4 } from "./company4.png";
+export { default as company4 } from "./company4.svg";
 export { default as company5 } from "./company5.png";
 export { default as company6 } from "./company6.png";
-export { default as company7 } from "./company7.png";
-export { default as company8 } from "./company8.png";
+export { default as company7 } from "./company7.svg";
+export { default as company8 } from "./company8.svg";
 
 export { default as audit } from "./audit.jpg";
 export { default as ev } from "./ev.jpg";
