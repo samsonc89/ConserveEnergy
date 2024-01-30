@@ -2,8 +2,8 @@ export const indexHero = {
   caption: "Power Up Your Business",
   altText: "Hero image",
   imagePath: "/src/images/homeHero.jpg",
-  title: "Illuminate Smarter and Save Bigger",
-  text: `Your unique energy solution begins with a consultation. See how we’ve helped thousands of businesses discover the brilliance of customized energy efficiency—schedule your consultation now.`,
+  title: "Your PNW Partner to Smart Savings",
+  text: `Discover the key to cutting-edge energy efficiency in the heart of the Pacific Northwest. Our focus on low-cost upgrades, retrofits, and strategic use of utility rebates ensures your business stays ahead. Illuminate your success with us!`,
 };
 
 export const aboutHero = {};
