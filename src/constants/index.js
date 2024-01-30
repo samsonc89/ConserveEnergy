@@ -13,7 +13,7 @@ export const serviceHero = {
   altText: "Hero image",
   imagePath: "/src/images/serviceHero.png",
   title: "Top-notch services",
-  text: `Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.`,
+  text: `Unlock the full potential of your energy systems with the guidance of our seasoned consultants. From comprehensive energy audits to strategic planning, we're here to optimize your energy usage and boost your bottom line.`,
 };
 
 export const resultsHero = {

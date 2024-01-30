@@ -5,17 +5,17 @@ import { Image } from "astro:assets";
 ---
 
 <nav
-  class="bg-[--accent-color] fixed w-full z-20 top-0 start-0 border-gray-200 max-md:bg-bone"
+  class="bg-[--accent-color] fixed w-full z-20 top-0 start-0 border-gray-200 max-lg:bg-bone"
 >
   <div
-    class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto max-md:pb-4 px-4"
+    class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto max-lg:pb-4 px-4"
   >
     <a href="/ConserveEnergy">
       <Image src={logo} alt="Logo" width={203} height={26} />
     </a>
 
     <!-- Contact button -->
-    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+    <div class="flex lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
       <div class="max-md:hidden">
         <a href="/ConserveEnergy/contact"
           ><Button id="scheduleBtn" isfilled theme="white">
@@ -45,16 +45,16 @@ import { Image } from "astro:assets";
       id="navbar-cta"
     >
       <ul
-        class="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 dark:bg-gray-800 lg:dark:bg-gray-900 gap-2"
+        class="flex flex-col font-medium p-4 lg:p-0 my-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 dark:bg-gray-800 lg:dark:bg-gray-900 gap-2"
       >
         <li>
           <a
             href="/ConserveEnergy/services"
-            class="block py-2 px-3 lg:p-0 max-lg:hover:text-white max-md:hover:bg-caption-color rounded md:bg-transparent group transition-all duration-300 ease-in-out hover:-translate-y-1"
+            class="block py-2 px-3 lg:p-0 max-lg:hover:text-white max-lg:hover:bg-caption-color rounded lg:bg-transparent group transition-all duration-300 ease-in-out hover:-translate-y-1"
             aria-current="page"
           >
             <span
-              class="bg-left-bottom md:bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
+              class="bg-left-bottom lg:bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
             >
               Services
             </span>
@@ -64,11 +64,11 @@ import { Image } from "astro:assets";
         <li>
           <a
             href="/ConserveEnergy/HIW"
-            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent group transition-all duration-300 ease-in-out hover:-translate-y-1 max-md:hover:text-white max-md:hover:bg-caption-color"
+            class="block py-2 px-3 lg:p-0 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent group transition-all duration-300 ease-in-out hover:-translate-y-1 max-lg:hover:text-white max-lg:hover:bg-caption-color"
             aria-current="page"
           >
             <span
-              class="bg-left-bottom md:bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out capitalize"
+              class="bg-left-bottom lg:bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out capitalize"
             >
               how it works
             </span>
@@ -78,10 +78,10 @@ import { Image } from "astro:assets";
         <li>
           <a
             href="/ConserveEnergy/about"
-            class="block py-2 px-3 md:p-0 rounded hover:bg-gray-100 md:hover:bg-transparent group transition-all duration-300 ease-in-out hover:-translate-y-1 max-md:hover:text-white max-md:hover:bg-caption-color"
+            class="block py-2 px-3 lg:p-0 rounded hover:bg-gray-100 lg:hover:bg-transparent group transition-all duration-300 ease-in-out hover:-translate-y-1 max-lg:hover:text-white max-lg:hover:bg-caption-color"
           >
             <span
-              class="bg-left-bottom md:bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out capitalize"
+              class="bg-left-bottom lg:bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out capitalize"
             >
               About us
             </span>
@@ -91,12 +91,25 @@ import { Image } from "astro:assets";
         <li>
           <a
             href="/ConserveEnergy/results"
-            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent group transition-all duration-300 ease-in-out hover:-translate-y-1 max-md:hover:text-white max-md:hover:bg-caption-color"
+            class="block py-2 px-3 lg:p-0 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent group transition-all duration-300 ease-in-out hover:-translate-y-1 max-lg:hover:text-white max-lg:hover:bg-caption-color"
           >
             <span
-              class="bg-left-bottom md:bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out capitalize"
+              class="bg-left-bottom lg:bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out capitalize"
             >
               Results
+            </span>
+          </a>
+        </li>
+
+        <li class="md:hidden">
+          <a
+            href="/ConserveEnergy/contact"
+            class="block py-2 px-3 lg:p-0 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent group transition-all duration-300 ease-in-out hover:-translate-y-1 max-lg:hover:text-white max-lg:hover:bg-caption-color"
+          >
+            <span
+              class="bg-left-bottom lg:bg-gradient-to-r from-caption-color to-caption-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out capitalize"
+            >
+              contact
             </span>
           </a>
         </li>
