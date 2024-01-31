@@ -3,9 +3,15 @@ import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.astro";
 import { Image } from "astro:assets";
 import { contact, map } from "../images";
+
+const metaData = {
+  title: "Contact Us | Conserve Energy",
+  description:
+    "We've helped thousands of businesses lower their energy costs over the years. Contact us to see how we can help you.",
+};
 ---
 
-<Layout title="Conserve Energy | Contact">
+<Layout title={metaData.title} metaDescription={metaData.description}>
   <section>
     <div class="flex justify-center items-center">
       <div class="text-center w-full lg:w-9/12 px-6">
