@@ -13,7 +13,7 @@ export const serviceHero = {
   altText: "Hero image",
   imagePath: "/src/images/serviceHero.png",
   title: "Top-notch services",
-  text: `Unlock the full potential of your energy systems with the guidance of our seasoned consultants. From comprehensive energy audits to strategic planning, we're here to optimize your energy usage and boost your bottom line.`,
+  text: `Unlock the full potential of your energy systems with the guidance of our seasoned consultants. From comprehensive energy audits to strategic planning, we're here to optimize your energy usage and boost your bottom line. Get a free no obligation consultation!`,
 };
 
 export const resultsHero = {

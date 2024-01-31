@@ -14,9 +14,15 @@ import {
   solar,
 } from "../images";
 import { Image } from "astro:assets";
+
+const metaData = {
+  title: "Conserve Energy - Top Notch Services",
+  description:
+    "We help our PNW customers with a range of services from an energy audit to lighting retrofits. Get a free no obligation consultation.",
+};
 ---
 
-<Layout title="Services">
+<Layout title={metaData.title} metaDescription={metaData.description}>
   <Hero
     title={serviceHero.title}
     text={serviceHero.text}
