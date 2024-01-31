@@ -22,9 +22,15 @@ import {
 
 import { indexHero } from "../constants/index.js";
 import Button from "../components/Button.astro";
+
+const metaData = {
+  title: "Conserve Energy - Your Commerical Energy Efficiency Partner",
+  description:
+    "With locations in the Seattle and Portland area, we help our customers with energy efficiency upgrades, retrofits, and strategic use of utility rebates.",
+};
 ---
 
-<Layout title="Conserve Energy">
+<Layout title={metaData.title} metaDescription={metaData.description}>
   <Hero
     title={indexHero.title}
     text={indexHero.text}
