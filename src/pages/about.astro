@@ -22,9 +22,15 @@ import {
   about5,
   aboutBg,
 } from "../images";
+
+const metaData = {
+  title: "Your Energy Efficiency Partner | Conserve Energy",
+  description:
+    "We've been in businesses since 2008, completing thousands of lighting and energy efficiency projects at reasonable prices.",
+};
 ---
 
-<Layout title="Conserve Energy | About Us">
+<Layout title={metaData.title} metaDescription={metaData.description}>
   <h1 class="text-center pt-12">About Us</h1>
   <section class="overflow-hidden rounded-2xl max-xl:mx-4 my-12">
     <div class="">
