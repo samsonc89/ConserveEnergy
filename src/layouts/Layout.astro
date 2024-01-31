@@ -5,14 +5,14 @@ import "@fontsource/roboto";
 import Footer from "../components/Footer.astro";
 import "flowbite";
 
-const { title } = Astro.props;
+const { title, metaDescription } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta name="description" content={metaDescription} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image" href="./favicon.png" />
     <script
