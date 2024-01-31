@@ -1,8 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const metaData = {
+  title: "How It All Works | Conserve Energy",
+  description:
+    "We'll walk you through step-by-step on how we help you lower your out-of-pocket costs to do your energy efficieny upgrades.",
+};
 ---
 
-<Layout title="Conserve Energy | How It Works">
+<Layout title={metaData.title} metaDescription={metaData.description}>
   <div class="flex-col justify-center items-center">
     <div class="text-center w-full">
       <h1>How It All Works</h1>
@@ -28,9 +34,7 @@ import Layout from "../layouts/Layout.astro";
             </p>
           </div>
         </div>
-        <div
-          class="relative col-span-1 w-full pt-12  flex justify-center"
-        >
+        <div class="relative col-span-1 w-full pt-12 flex justify-center">
           <div class="h-full w-2 bg-gray"></div>
           <div
             class="absolute w-12 h-12 rounded-full bg-caption-color z-10 text-white text-center flex justify-center items-center"
@@ -169,9 +173,7 @@ import Layout from "../layouts/Layout.astro";
       </p>
       <div class="max-w-7xl mx-auto grid grid-cols-9 px-2">
         <!-- Stack 1 -->
-        <div
-          class="relative col-span-1 w-full h-full flex justify-center"
-        >
+        <div class="relative col-span-1 w-full h-full flex justify-center">
           <div class="h-full w-2 bg-gray"></div>
           <div
             class="absolute w-12 h-12 rounded-full bg-caption-color z-10 text-white text-center flex justify-center items-center"
