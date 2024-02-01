@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import { utilityGraph } from "../images";
 
 const metaData = {
   title: "How It All Works | Conserve Energy",
@@ -261,26 +263,60 @@ const metaData = {
     <!-- End -->
 
     <!-- Incentives -->
-    <div class="my-10 p-6">
-      <h2 class="capitalize text-center py-10">Our Process</h2>
+    
+    <section>
+      <h2 class="capitalize text-center py-10">
+        The incentives behind energy utility incentives
+      </h2>
       <p class="body text-center mb-5">
-        Conserve Energy offers complete turnkey energy efficiency upgrades. As
-        you move forward with a project, we provide these services:
+        Utility Companies must meet energy demand from all users … all the time.
+        <br /> They have multiple options to meet this requirement, but offering
+        incentives to drive energy efficiency is usually the lowest cost.
+      </p>
+
+    <div class="border-t-2 w-full pb-6"></div>
+
+    <Image src={utilityGraph} alt="utilityGraph"
+    class="flex justify-center shadow-2xl rounded-lg"/>
+    
+    <div class="w-full flex justify-between">
+
+      <div class="w-1/2">
+      <h4 class="caption uppercase py-5">what company utilities do</h4>
+      <p class="text-body-color">
+        Reducing demand through improved energy efficiency is the most
+        cost-effective way for utilities to assure they have sufficient
+        capacity to meet the needs of all customers.
       </p>
     </div>
+      <div>
+      <h4 class="caption uppercase py-5">what conserve energy does</h4>
+      <li class="text-body-color">
+        We make sure you receive maximum incentives
+      </li>
+      <li class=text-body-color>
+        Work closely with your energy provider      </li>
+        <li class=text-body-color>
+        Typical incentives range from 40-70% of project cost
+      </li>
+    </div>
+
+    </div>
+  </section>
   </div>
-
-  <style>
-    * {
-      /* border: 1px solid red; */
-    }
-
-    .material-symbols-outlined {
-      font-variation-settings:
-        "FILL" 0,
-        "wght" 400,
-        "GRAD" 0,
-        "opsz" 24;
-    }
-  </style>
+</div>
 </Layout>
+
+<style>
+  * {
+    /* border: 1px solid red; */
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings:
+      "FILL" 0,
+      "wght" 400,
+      "GRAD" 0,
+      "opsz" 24;
+  }
+</style>
