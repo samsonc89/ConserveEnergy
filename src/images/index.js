@@ -51,3 +51,7 @@ export { default as aboutBg } from "./aboutBg.webp";
 export { default as copy1 } from "./copy1.png";
 export { default as utilityGraph } from "./utilityGraph.png";
 export { default as utilityGraphMobile } from "./utilityGraphMobile.jpeg";
+
+export { default as office } from "./office.jpg";
+export { default as warehouse } from "./warehouse.jpg";
+export { default as retail } from "./retail.jpeg";

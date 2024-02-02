@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Retail",
+    "imagePath": "/src/images/retail.jpeg",
+    "altText": "retail store"
+  },
+  {
+    "name": "Office",
+    "imagePath": "/src/images/office.jpg",
+    "altText": "office space"
+  },
+  {
+    "name": "Hospitality",
+    "imagePath": "/src/images/hospitality.jpg",
+    "altText": "hotel room"
+  },
+  {
+    "name": "Industrial",
+    "imagePath": "/src/images/industrial.jpg",
+    "altText": "industrial building"
+  },
+  {
+    "name": "warehouse",
+    "imagePath": "/src/images/warehouse.jpg",
+    "altText": "warehouse"
+  },
+  {
+    "name": "municipal",
+    "imagePath": "/src/images/municipal.jpg",
+    "altText": "municipal building"
+  },
+  {
+    "name": "auto dealer",
+    "imagePath": "/src/images/autodealer.jpg",
+    "altText": "auto dealer"
+  },
+  {
+    "name": "education",
+    "imagePath": "/src/images/education.jpg",
+    "altText": "classroom"
+  },
+  {
+    "name": "place of worship",
+    "imagePath": "/src/images/worship.jpg",
+    "altText": "church"
+  },
+
+  {
+    "name": "healthcare",
+    "imagePath": "/src/images/healthcare.jpg",
+    "altText": "clinic"
+  },
+  {
+    "name": "parking",
+    "imagePath": "/src/images/parking.jpg",
+    "altText": "parking garage"
+  }
+]
