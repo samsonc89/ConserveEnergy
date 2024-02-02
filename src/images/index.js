@@ -48,3 +48,4 @@ export { default as solar } from "./solar.jpg";
 
 export { default as aboutBg } from "./aboutBg.webp";
 export { default as utilityGraph } from "./utilityGraph.png";
+export { default as utilityGraphMobile } from "./utilityGraphMobile.jpeg";
