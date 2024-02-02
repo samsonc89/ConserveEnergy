@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import { utilityGraph } from "../images";
+import { utilityGraph, utilityGraphCopy2 } from "../images";
 
 const metaData = {
   title: "How It All Works | Conserve Energy",
@@ -12,299 +12,245 @@ const metaData = {
 
 <Layout title={metaData.title} metaDescription={metaData.description}>
   <div class="flex-col justify-center items-center">
-    <div class="text-center w-full">
-      <h1>How It All Works</h1>
+    <div class="w-full flex flex-col items-center">
+      <p class="caption mb-4">How it Works</p>
+      <h2
+        class="max-container text-center w-1/2 max-sm:text-xl max-lg:w-full max-md:text-2xl max-lg:text-3xl"
+      >
+        A visual guide to the benefits of energy efficiency
+      </h2>
+      <!-- <p class="body text-center mb-5 w-1/2 py-4">
+  <p class="body text-center mb-5 w-1/2 py-4">
+        Conserve Energy offers complete turnkey energy efficiency upgrades. As
+        you move forward with a project, we provide these services:
+      </p>
+      </p> -->
     </div>
 
     <!-- How it works div -->
 
-    <div class="my-10 p-6 bg-bone">
-      <h2 class="capitalize text-center py-10">Our Process</h2>
-      <p class="body text-center mb-5">
-        Conserve Energy offers complete turnkey energy efficiency upgrades. As
-        you move forward with a project, we provide these services:
-      </p>
+    <section class="bg-bone rounded-lg shadow-2xl">
+      <div class="my-10 p-6">
+        <h3 class="capitalize text-center py-10">Our Process</h3>
+        <p class="body text-center mb-5">
+          Conserve Energy offers complete turnkey energy efficiency upgrades. As
+          you move forward with a project, we provide these services:
+        </p>
 
-      <div class="max-w-7xl mx-auto w-full px-2 p-8">
-        <!-- Stack 1 -->
-        <div class="flex max-sm:flex-row-reverse max-sm:gap-4">
-          <div class="col-span-4 w-full pb-10">
-            <div class="w-full shadow-2xl rounded-xl p-6 md:pl-4 bg-white">
-              <h5 class="uppercase py-2">1. audit</h5>
-              <p class="body">
-                Conserve Energy conducts a thorough energy audit so we may
-                intelligently advise you.
-              </p>
+        <div class="max-w-7xl mx-auto w-full px-2 p-8">
+          <!-- Stack 1 -->
+          <div class="flex max-sm:flex-row-reverse max-sm:gap-4">
+            <div class="col-span-4 w-full pb-10">
+              <div class="w-full shadow-2xl rounded-xl p-6 md:pl-4 bg-white">
+                <h5 class="uppercase py-2">1. audit</h5>
+                <p class="body">
+                  Conserve Energy conducts a thorough energy audit so we may
+                  intelligently advise you.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="relative w-1/2 max-sm:w-12 pt-12 flex justify-center">
-            <div class="h-full w-2 bg-gray"></div>
-            <div
-              class="absolute w-12 h-12 rounded-full bg-caption-color z-10 text-white text-center flex justify-center items-center max-sm:w-8 max-sm:h-8"
-            >
-              <span class="material-symbols-outlined text-4xl max-sm:text-xl">
-                inventory</span
+            <div class="relative w-1/2 max-sm:w-12 pt-12 flex justify-center">
+              <div class="h-full w-2 bg-gray"></div>
+              <div
+                class="absolute w-12 h-12 rounded-full bg-caption-color z-10 text-white text-center flex justify-center items-center max-sm:w-8 max-sm:h-8"
               >
+                <span class="material-symbols-outlined text-4xl max-sm:text-xl">
+                  inventory</span
+                >
+              </div>
             </div>
+            <div class="col-span-4 w-full h-full max-sm:hidden"></div>
           </div>
-          <div class="col-span-4 w-full h-full max-sm:hidden"></div>
-        </div>
-        <!-- Stack 2 -->
-        <div class="flex max-sm:gap-4">
-          <div class="col-span-4 w-full h-full max-sm:hidden"></div>
-          <div
-            class="relative w-1/2 max-sm:w-12 flex justify-center items-center"
-          >
-            <div class="h-full w-2 bg-gray"></div>
+          <!-- Stack 2 -->
+          <div class="flex max-sm:gap-4">
+            <div class="col-span-4 w-full h-full max-sm:hidden"></div>
             <div
-              class="absolute w-12 h-12 rounded-full bg-caption-color z-10 text-white text-center flex justify-center items-center max-sm:w-8 max-sm:h-8"
+              class="relative w-1/2 max-sm:w-12 flex justify-center items-center"
             >
-              <span class="material-symbols-outlined text-4xl max-sm:text-xl">
-                description</span
+              <div class="h-full w-2 bg-gray"></div>
+              <div
+                class="absolute w-12 h-12 rounded-full bg-caption-color z-10 text-white text-center flex justify-center items-center max-sm:w-8 max-sm:h-8"
               >
+                <span class="material-symbols-outlined text-4xl max-sm:text-xl">
+                  description</span
+                >
+              </div>
             </div>
-          </div>
-          <div class="col-span-4 w-full py-10">
-            <div
-              class="w-full h-full shadow-2xl rounded-xl p-6 md:pl-4 bg-white"
-            >
-              <h5 class="uppercase py-2">2. proposal</h5>
-              <p class="body">
-                We prepare a proposal for potential upgrades & retrofits to
-                improve your energy efficiency
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Stack 3 -->
-        <div class="flex max-sm:flex-row-reverse max-sm:gap-4">
-          <div class="col-span-4 w-full py-10">
-            <div
-              class="w-full h-full shadow-2xl rounded-xl p-6 md:pl-4 bg-white"
-            >
-              <h5 class="uppercase py-2">3. submit application</h5>
-              <p class="body">
-                We process & submit the application to your energy provider and
-                get a commitment for incentives prior to starting work.
-              </p>
-            </div>
-          </div>
-          <div
-            class="relative w-1/2 max-sm:w-12 flex justify-center items-center"
-          >
-            <div class="h-full w-2 bg-gray"></div>
-            <div
-              class="absolute w-12 h-12 rounded-full bg-caption-color z-10 text-white text-center flex justify-center items-center max-sm:w-8 max-sm:h-8"
-            >
-              <span class="material-symbols-outlined text-4xl max-sm:text-lg"
-                >forward_to_inbox</span
+            <div class="col-span-4 w-full py-10">
+              <div
+                class="w-full h-full shadow-2xl rounded-xl p-6 md:pl-4 bg-white"
               >
+                <h5 class="uppercase py-2">2. proposal</h5>
+                <p class="body">
+                  We prepare a proposal for potential upgrades & retrofits to
+                  improve your energy efficiency
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col-span-4 w-full h-full max-sm:hidden"></div>
-        </div>
+          <!-- Stack 3 -->
+          <div class="flex max-sm:flex-row-reverse max-sm:gap-4">
+            <div class="col-span-4 w-full py-10">
+              <div
+                class="w-full h-full shadow-2xl rounded-xl p-6 md:pl-4 bg-white"
+              >
+                <h5 class="uppercase py-2">3. submit application</h5>
+                <p class="body">
+                  We process & submit the application to your energy provider
+                  and get a commitment for incentives prior to starting work.
+                </p>
+              </div>
+            </div>
+            <div
+              class="relative w-1/2 max-sm:w-12 flex justify-center items-center"
+            >
+              <div class="h-full w-2 bg-gray"></div>
+              <div
+                class="absolute w-12 h-12 rounded-full bg-caption-color z-10 text-white text-center flex justify-center items-center max-sm:w-8 max-sm:h-8"
+              >
+                <span class="material-symbols-outlined text-4xl max-sm:text-lg"
+                  >forward_to_inbox</span
+                >
+              </div>
+            </div>
+            <div class="col-span-4 w-full h-full max-sm:hidden"></div>
+          </div>
 
-        <!-- Stack 4 -->
-        <div class="flex max-sm:gap-4">
-          <div class="col-span-4 w-full h-full max-sm:hidden"></div>
-          <div
-            class="relative w-1/2 flex justify-center items-center max-sm:w-12"
-          >
-            <div class="h-full w-2 bg-gray"></div>
+          <!-- Stack 4 -->
+          <div class="flex max-sm:gap-4">
+            <div class="col-span-4 w-full h-full max-sm:hidden"></div>
             <div
-              class="absolute w-12 h-12 rounded-full bg-caption-color z-10 text-white text-center flex justify-center items-center max-sm:w-8 max-sm:h-8"
+              class="relative w-1/2 flex justify-center items-center max-sm:w-12"
             >
-              <span class="material-symbols-outlined text-4xl max-sm:text-xl"
-                >local_shipping</span
+              <div class="h-full w-2 bg-gray"></div>
+              <div
+                class="absolute w-12 h-12 rounded-full bg-caption-color z-10 text-white text-center flex justify-center items-center max-sm:w-8 max-sm:h-8"
               >
+                <span class="material-symbols-outlined text-4xl max-sm:text-xl"
+                  >local_shipping</span
+                >
+              </div>
             </div>
-          </div>
-          <div class="col-span-4 w-full py-10">
-            <div
-              class="w-full h-full shadow-2xl rounded-xl p-6 md:pl-4 bg-white"
-            >
-              <h5 class="uppercase py-2">4. Order parts</h5>
-              <p class="body">
-                Upon review & approval of the application, Conserve Energy
-                orders parts—top quality, always at competitive pricing.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Stack 5 -->
-        <div class="flex max-sm:flex-row-reverse max-sm:gap-4">
-          <div class="col-span-4 w-full py-10">
-            <div
-              class="w-full h-full shadow-2xl rounded-xl p-6 md:pl-4 bg-white"
-            >
-              <h5 class="uppercase py-2">5. installation</h5>
-              <p class="body">
-                We schedule installation and deal with highly qualified
-                contractors for you. All installations include materials, labor
-                & disposal.
-              </p>
-            </div>
-          </div>
-          <div
-            class="relative w-1/2 max-sm:w-12 flex justify-center items-center"
-          >
-            <div class="h-full w-2 bg-gray"></div>
-            <div
-              class="absolute w-12 h-12 rounded-full bg-caption-color z-10 text-white text-center flex justify-center items-center max-sm:w-8 max-sm:h-8"
-            >
-              <span class="material-symbols-outlined text-4xl max-sm:text-lg">
-                construction
-              </span>
-            </div>
-          </div>
-          <div class="col-span-4 w-full h-full max-sm:hidden"></div>
-        </div>
-        <!-- Stack 6 -->
-        <div class="flex max-sm:gap-4">
-          <div class="col-span-4 w-full h-full max-sm:hidden"></div>
-          <div
-            class="relative w-1/2 flex justify-center items-end pb-12 max-sm:w-12"
-          >
-            <div class="w-2 bg-gray pb-5 h-full"></div>
-            <div
-              class="absolute w-12 h-12 rounded-full bg-caption-color z-10 text-white text-center flex justify-center items-center max-sm:w-8 max-sm:h-8"
-            >
-              <span class="material-symbols-outlined text-4xl max-sm:text-xl">
-                check</span
+            <div class="col-span-4 w-full py-10">
+              <div
+                class="w-full h-full shadow-2xl rounded-xl p-6 md:pl-4 bg-white"
               >
+                <h5 class="uppercase py-2">4. Order parts</h5>
+                <p class="body">
+                  Upon review & approval of the application, Conserve Energy
+                  orders parts—top quality, always at competitive pricing.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col-span-4 w-full pt-10">
+          <!-- Stack 5 -->
+          <div class="flex max-sm:flex-row-reverse max-sm:gap-4">
+            <div class="col-span-4 w-full py-10">
+              <div
+                class="w-full h-full shadow-2xl rounded-xl p-6 md:pl-4 bg-white"
+              >
+                <h5 class="uppercase py-2">5. installation</h5>
+                <p class="body">
+                  We schedule installation and deal with highly qualified
+                  contractors for you. All installations include materials,
+                  labor & disposal.
+                </p>
+              </div>
+            </div>
             <div
-              class="w-full h-full shadow-2xl rounded-xl p-6 md:pl-4 bg-white"
+              class="relative w-1/2 max-sm:w-12 flex justify-center items-center"
             >
-              <h5 class="uppercase py-2">6. follow-up</h5>
-              <p class="body">
-                Upon completion, we submit the final paperwork to your energy
-                provider for incentive reimbursement.
-              </p>
+              <div class="h-full w-2 bg-gray"></div>
+              <div
+                class="absolute w-12 h-12 rounded-full bg-caption-color z-10 text-white text-center flex justify-center items-center max-sm:w-8 max-sm:h-8"
+              >
+                <span class="material-symbols-outlined text-4xl max-sm:text-lg">
+                  construction
+                </span>
+              </div>
+            </div>
+            <div class="col-span-4 w-full h-full max-sm:hidden"></div>
+          </div>
+          <!-- Stack 6 -->
+          <div class="flex max-sm:gap-4">
+            <div class="col-span-4 w-full h-full max-sm:hidden"></div>
+            <div
+              class="relative w-1/2 flex justify-center items-end pb-12 max-sm:w-12"
+            >
+              <div class="w-2 bg-gray pb-5 h-full"></div>
+              <div
+                class="absolute w-12 h-12 rounded-full bg-caption-color z-10 text-white text-center flex justify-center items-center max-sm:w-8 max-sm:h-8"
+              >
+                <span class="material-symbols-outlined text-4xl max-sm:text-xl">
+                  check</span
+                >
+              </div>
+            </div>
+            <div class="col-span-4 w-full pt-10">
+              <div
+                class="w-full h-full shadow-2xl rounded-xl p-6 md:pl-4 bg-white"
+              >
+                <h5 class="uppercase py-2">6. follow-up</h5>
+                <p class="body">
+                  Upon completion, we submit the final paperwork to your energy
+                  provider for incentive reimbursement.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Savings div -->
-    <div class="my-10 p-6">
-      <h4 class="capitalize text-center py-10">
-        how much you save with LED lighting
-      </h4>
-      <p class="body text-center mb-7">
-        The amount you save in energy cost will, of course, vary greatly based
-        on the type of equipment you already have and the duty cycle, what type
-        of business you run and the scope of your needs.
-      </p>
-      <div class="max-w-7xl mx-auto grid grid-cols-9 px-2">
-        <!-- Stack 1 -->
-        <div class="relative col-span-1 w-full h-full flex justify-center">
-          <div class="h-full w-2 bg-gray"></div>
-          <div
-            class="absolute w-12 h-12 rounded-full bg-caption-color z-10 text-white text-center flex justify-center items-center"
-          >
-            <span class="material-symbols-outlined text-4xl"> light_mode</span>
-          </div>
-        </div>
-        <div class="col-span-4 w-full h-full pb-5">
-          <div class="w-full h-full shadow-2xl rounded-xl p-6 md:pl-4 bg-white">
-            <h5 class="uppercase py-2">save 30 - 45%</h5>
-            <p class="body text-gray">
-              Replacing fluorescent lighting with LED
-            </p>
-          </div>
-        </div>
-
-        <!-- Stack 2 -->
-        <div class="col-span-4 w-full h-full"></div>
-        <div
-          class="relative col-span-1 w-full h-full flex justify-center items-center"
-        >
-          <div class="h-full w-2 bg-gray"></div>
-          <div
-            class="absolute w-12 h-12 rounded-full bg-caption-color z-10 text-white text-center flex justify-center items-center"
-          >
-            <span class="material-symbols-outlined text-4xl"> light_mode</span>
-          </div>
-        </div>
-        <div class="col-span-4 w-full h-full pb-6">
-          <div class="w-full h-full shadow-2xl rounded-xl p-6 md:pl-4 bg-white">
-            <h5 class="uppercase py-2">save 50 - 75%</h5>
-            <p class="body text-gray">Replacing HID lighting with LED</p>
-          </div>
-        </div>
-
-        <!-- Stack 3 -->
-
-        <div class="col-span-4 w-full h-full"></div>
-        <div
-          class="relative col-span-1 w-full h-full flex justify-center items-end"
-        >
-          <div class="h-full w-2 bg-gray rounded-b-full"></div>
-          <div
-            class="absolute w-12 h-12 rounded-full bg-caption-color z-10 text-white text-center flex justify-center items-center"
-          >
-            <span class="material-symbols-outlined text-4xl"> light_mode</span>
-          </div>
-        </div>
-        <div class="col-span-4 w-full h-full">
-          <div class="w-full h-full shadow-2xl rounded-xl p-6 md:pl-4 bg-white">
-            <h5 class="uppercase py-2">save 80%</h5>
-            <p class="body text-gray">
-              Replacing incandescent lighting with LED
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End -->
+    </section>
 
     <!-- Incentives -->
-    
-    <section>
-      <h2 class="capitalize text-center py-10">
+
+    <section class="flex items-center flex-col px-4">
+      <h3 class="capitalize text-center py-10 w-1/2 max-lg:w-full">
         The incentives behind energy utility incentives
-      </h2>
-      <p class="body text-center mb-5">
+      </h3>
+      <p class="body text-center mb-5 w-">
         Utility Companies must meet energy demand from all users … all the time.
         <br /> They have multiple options to meet this requirement, but offering
         incentives to drive energy efficiency is usually the lowest cost.
       </p>
 
-    <div class="border-t-2 w-full pb-6"></div>
+      <div class="border-t-2 w-full pb-6"></div>
 
-    <Image src={utilityGraph} alt="utilityGraph"
-    class="flex justify-center shadow-2xl rounded-lg"/>
-    
-    <div class="w-full flex justify-between">
+      <Image
+        src={utilityGraphCopy2}
+        alt="copy"
+        class="hidden max-sm:block px-4"
+      />
+      <Image
+        src={utilityGraph}
+        alt="utilityGraph"
+        class="flex justify-center shadow-2xl rounded-lg max-sm:hidden"
+      />
 
-      <div class="w-1/2">
-      <h4 class="caption uppercase py-5">what company utilities do</h4>
-      <p class="text-body-color">
-        Reducing demand through improved energy efficiency is the most
-        cost-effective way for utilities to assure they have sufficient
-        capacity to meet the needs of all customers.
-      </p>
-    </div>
-      <div>
-      <h4 class="caption uppercase py-5">what conserve energy does</h4>
-      <li class="text-body-color">
-        We make sure you receive maximum incentives
-      </li>
-      <li class=text-body-color>
-        Work closely with your energy provider      </li>
-        <li class=text-body-color>
-        Typical incentives range from 40-70% of project cost
-      </li>
-    </div>
-
-    </div>
-  </section>
+      <div class="w-full flex justify-between max-md:flex-col py-4 max-md:px-4 gap-4">
+        <div class="w-1/2 max-md:w-full rounded-2xl shadow-2xl p-4">
+          <h4 class="caption uppercase py-5">what company utilities do</h4>
+          <p class="text-body-color">
+            Reducing demand through improved energy efficiency is the most
+            cost-effective way for utilities to assure they have sufficient
+            capacity to meet the needs of all customers.
+          </p>
+        </div>
+        <div class="max-md:w-full rounded-2xl shadow-2xl p-4">
+          <h4 class="caption uppercase py-5">what conserve energy does</h4>
+          <li class="text-body-color">
+            We make sure you receive maximum incentives
+          </li>
+          <li class="text-body-color">
+            Work closely with your energy provider
+          </li>
+          <li class="text-body-color">
+            Typical incentives range from 40-70% of project cost
+          </li>
+        </div>
+      </div>
+    </section>
   </div>
-</div>
 </Layout>
 
 <style>
