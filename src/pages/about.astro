@@ -1,10 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
 import CTA from "../components/CTA.astro";
 
+// import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
+// const images = import.meta.glob<{ default: ImageMetadata }>(
+//   "/src/images/*.{jpeg,jpg,png,gif}"
+// );
+// if (!images[imagePath])
+//   throw new Error(
+//     `"${imagePath}" does not exist in glob: "/src/images/*.{jpeg,jpg,png,gif}"`
+//   );
 import { office, retail, warehouse, aboutBg } from "../images";
+import markets from "../data/markets.json";
 
 const metaData = {
   title: "Experts in our field | Conserve Energy",
@@ -72,87 +80,35 @@ const metaData = {
   </section>
 
   <section>
-    <h2 class="text-center">Markets We Serve</h2>
-    <ul class="grid gap-8 grid-cols-4">
-      <li>
-        <div class="card aspect-square">
-          <Image src={retail} alt="retail" />
-          <h4 class="text-center">Retail</h4>
-        </div>
-      </li>
-
-      <li>
-        <div class="card aspect-square rounded-2xl">
-          <Image src={office} alt="office" />
-          <h4>Office</h4>
-        </div>
-      </li>
-      <li>
+    <h2 class="text-center mb-8">Markets We Serve</h2>
+    <ul class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4">
+      {
+        markets.map((card) => (
+          <li>
+            <div class="card aspect-square">
+              <img
+                src={card.imagePath}
+                alt={card.altText}
+                class="object-cover w-full rounded-2xl"
+              />
+              <h4 class="text-center capitalize mt-4">{card.name}</h4>
+            </div>
+          </li>
+        ))
+      }
+      <li class="h-full flex justify-center items-end">
         <div class="card">
-          <Image src={office} alt="office" class="aspect-square rounded-2xl" />
-          <h4>Hospitality</h4>
-        </div>
-      </li>
-      <li>
-        <div class="card aspect-square">
-          <Image src={office} alt="office" />
-          <h4>Industrial</h4>
-        </div>
-      </li>
-      <li>
-        <div class="card aspect-square">
-          <Image src={warehouse} alt="office" />
-          <h4>Warehouse</h4>
-        </div>
-      </li>
-      <li>
-        <div class="card">
-          <h4>Municipal</h4>
-        </div>
-      </li>
-
-      <li>
-        <div class="card">
-          <h4>Auto Dealer</h4>
-        </div>
-      </li>
-
-      <li>
-        <div class="card">
-          <h4>Education</h4>
-        </div>
-      </li>
-      <li>
-        <div class="card">
-          <h4>Place of Worship</h4>
-        </div>
-      </li>
-
-      <li>
-        <div class="card">
-          <h4>Healthcare</h4>
-        </div>
-      </li>
-
-      <li>
-        <div class="card">
-          <h4>Parking</h4>
-        </div>
-      </li>
-
-      <li>
-        <div class="card">
-          <h4>...And More!</h4>
+          <h4 class="text-center">...Andy More!</h4>
         </div>
       </li>
     </ul>
   </section>
   <CTA />
-</Layout>
 
-<style>
-  img {
-    height: 100%;
-    object-fit: cover;
-  }
-</style>
+  <style>
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</Layout>
