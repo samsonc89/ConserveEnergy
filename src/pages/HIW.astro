@@ -211,16 +211,22 @@ const metaData = {
       <div class="border-t-2 opacity-25 w-full pb-6"></div>
 
       <Image
-        src={utilityGraphMobile}
-        alt="UtilityGraphMobileImage"
-        class="hidden max-sm:block rounded-lg shadow-2xl"
+      src={utilityGraphMobile}
+      alt="UtilityGraphMobileImage"
+      class="hidden max-sm:block rounded-lg shadow-2xl"
       />
+      
+      <div class="relative">
       <Image
         src={utilityGraph}
         alt="utilityGraph"
         class="flex justify-center shadow-2xl rounded-lg max-sm:hidden"
       />
 
+      <div class="absolute bg-white left-1/3 bottom-12 rounded-full h-12 w-12 cursor-pointer">
+      <p class="flex justify-center items-center h-full">1</p>
+    </div>
+    </div>
       <div
         class="w-full flex justify-between max-md:flex-col py-4 gap-4"
       >
