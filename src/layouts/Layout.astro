@@ -34,6 +34,11 @@ const { title, metaDescription } = Astro.props;
   </body>
 </html>
 <style is:global>
+
+@tailwind base;
+  @tailwind components;
+
+  
   :root {
     --button: #247b46;
     --body-color: #3a3a3a;
@@ -139,6 +144,13 @@ const { title, metaDescription } = Astro.props;
   section {
     margin: 2rem auto;
     max-width: 1192px;
+  }
+
+  @layer components {
+    .max-container {
+      max-width: 1192px;
+      margin: 0 auto;
+    }
   }
 
   @media screen and (min-width: 768px) {
