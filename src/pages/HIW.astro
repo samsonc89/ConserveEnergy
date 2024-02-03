@@ -210,23 +210,54 @@ const metaData = {
 
       <div class="border-t-2 opacity-25 w-full pb-6"></div>
 
+
+<div class=""> 
       <Image
       src={utilityGraphMobile}
       alt="UtilityGraphMobileImage"
       class="hidden max-sm:block rounded-lg shadow-2xl"
       />
-      
-      <div class="relative">
+
+      <div class="relative flex justify-center top-20 w-full max-lg:top-16 max-md:top-8 max-sm:hidden">
+
+      <!-- Hover 2 -->
+
+      <span class="relative flex h-6 w-6 left-[1%]">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75 "></span>
+        <span class="relative inline-flex rounded-full h-6 w-6 bg-white">
+          <p class="text-base flex justify-center items-center w-full">2</p>
+        </span>
+      </span> 
+
+      <!-- Hover 3 -->
+      <span class="relative flex h-6 w-6 left-[13.5%]">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-6 w-6 bg-white">
+          <p class="text-base flex justify-center items-center w-full">3</p>
+        </span>
+      </span> 
+
+          <!-- Hover 4 -->
+      <span class="relative flex h-6 w-6 left-[25%]">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75 "></span>
+        <span class="relative inline-flex rounded-full h-6 w-6 bg-white">
+          <p class="text-base flex justify-center items-center w-full">4</p>
+        </span>
+      </span> 
+    </div>
       <Image
         src={utilityGraph}
         alt="utilityGraph"
         class="flex justify-center shadow-2xl rounded-lg max-sm:hidden"
-      />
+        />
 
-      <div class="absolute bg-white left-1/3 bottom-12 rounded-full h-12 w-12 cursor-pointer">
-      <p class="flex justify-center items-center h-full">1</p>
-    </div>
-    </div>
+        <span class="relative flex h-6 w-6 bottom-20 left-[40%] max-sm:hidden">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75 "></span>
+          <span class="relative inline-flex rounded-full h-6 w-6 bg-white">
+            <p class="text-base flex justify-center items-center w-full">1</p>
+          </span>
+        </span> 
+  </div>
       <div
         class="w-full flex justify-between max-md:flex-col py-4 gap-4"
       >
@@ -314,7 +345,6 @@ const metaData = {
           >
             construction</span
           >
-
           <h4 class="caption uppercase py-5">better business valuation</h4>
           <p class="text-body-color">
             Since improved energy efficiency increases profitability by reducing operating costs, business valuations often rise, an important point for those considering a sale or refinance.
@@ -327,7 +357,7 @@ const metaData = {
 
 <style>
   * {
-    /* border: 1px solid red; */
+  border: 1px solid red
   }
 
   .material-symbols-outlined {
