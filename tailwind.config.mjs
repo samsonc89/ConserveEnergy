@@ -21,6 +21,7 @@ export default {
       animation: {
         marquee: "marquee 20s linear infinite",
         marquee2: "marquee2 20s linear infinite",
+        // ping: "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite,"
       },
       keyframes: {
         marquee: {
@@ -31,6 +32,16 @@ export default {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0%)" },
         },
+        // ping: {
+        //   "75%": {
+        //     transform: "scale(1)",
+        //     opacity: "0"
+        //   },
+        //   "100%": {
+        //     transform: "scale(2)",
+        //     opacity: "0"
+        //   },
+        // },
       },
     },
   },
