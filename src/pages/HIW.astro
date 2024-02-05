@@ -77,7 +77,8 @@ const metaData = {
                 <h5 class="uppercase py-2">2. proposal</h5>
                 <p class="body text-body-color">
                   We prepare a proposal for potential upgrades & retrofits to
-                  improve your energy efficiency
+                  improve your energy efficiency, and work with you to review
+                  and adjust the propsal to your approval.
                 </p>
               </div>
             </div>
@@ -132,7 +133,7 @@ const metaData = {
                 <h5 class="uppercase py-2">4. Order parts</h5>
                 <p class="body text-body-color">
                   Upon review & approval of the application, Conserve Energy
-                  orders parts—top quality, always at competitive pricing.
+                  orders your parts—top quality, always at competitive pricing.
                 </p>
               </div>
             </div>
@@ -210,57 +211,63 @@ const metaData = {
 
       <div class="border-t-2 opacity-25 w-full pb-6"></div>
 
+      <div class="">
+        <Image
+          src={utilityGraphMobile}
+          alt="UtilityGraphMobileImage"
+          class="hidden max-sm:block rounded-lg shadow-2xl"
+        />
 
-<div class=""> 
-      <Image
-      src={utilityGraphMobile}
-      alt="UtilityGraphMobileImage"
-      class="hidden max-sm:block rounded-lg shadow-2xl"
-      />
+        <div
+          class="relative flex justify-center top-20 w-full max-lg:top-16 max-md:top-8 max-sm:hidden"
+        >
+          <!-- Hover 2 -->
 
-      <div class="relative flex justify-center top-20 w-full max-lg:top-16 max-md:top-8 max-sm:hidden">
+          <span class="relative flex h-6 w-6 left-[1%]">
+            <span
+              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"
+            ></span>
+            <span class="relative inline-flex rounded-full h-6 w-6 bg-white">
+              <p class="text-base flex justify-center items-center w-full">2</p>
+            </span>
+          </span>
 
-      <!-- Hover 2 -->
-
-      <span class="relative flex h-6 w-6 left-[1%]">
-        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75 "></span>
-        <span class="relative inline-flex rounded-full h-6 w-6 bg-white">
-          <p class="text-base flex justify-center items-center w-full">2</p>
-        </span>
-      </span> 
-
-      <!-- Hover 3 -->
-      <span class="relative flex h-6 w-6 left-[13.5%]">
-        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-        <span class="relative inline-flex rounded-full h-6 w-6 bg-white">
-          <p class="text-base flex justify-center items-center w-full">3</p>
-        </span>
-      </span> 
+          <!-- Hover 3 -->
+          <span class="relative flex h-6 w-6 left-[13.5%]">
+            <span
+              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"
+            ></span>
+            <span class="relative inline-flex rounded-full h-6 w-6 bg-white">
+              <p class="text-base flex justify-center items-center w-full">3</p>
+            </span>
+          </span>
 
           <!-- Hover 4 -->
-      <span class="relative flex h-6 w-6 left-[25%]">
-        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75 "></span>
-        <span class="relative inline-flex rounded-full h-6 w-6 bg-white">
-          <p class="text-base flex justify-center items-center w-full">4</p>
-        </span>
-      </span> 
-    </div>
-      <Image
-        src={utilityGraph}
-        alt="utilityGraph"
-        class="flex justify-center shadow-2xl rounded-lg max-sm:hidden"
+          <span class="relative flex h-6 w-6 left-[25%]">
+            <span
+              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"
+            ></span>
+            <span class="relative inline-flex rounded-full h-6 w-6 bg-white">
+              <p class="text-base flex justify-center items-center w-full">4</p>
+            </span>
+          </span>
+        </div>
+        <Image
+          src={utilityGraph}
+          alt="utilityGraph"
+          class="flex justify-center shadow-2xl rounded-lg max-sm:hidden"
         />
 
         <span class="relative flex h-6 w-6 bottom-20 left-[40%] max-sm:hidden">
-          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75 "></span>
+          <span
+            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"
+          ></span>
           <span class="relative inline-flex rounded-full h-6 w-6 bg-white">
             <p class="text-base flex justify-center items-center w-full">1</p>
           </span>
-        </span> 
-  </div>
-      <div
-        class="w-full flex justify-between max-md:flex-col py-4 gap-4"
-      >
+        </span>
+      </div>
+      <div class="w-full flex justify-between max-md:flex-col py-4 gap-4">
         <div class="w-1/2 max-md:w-full rounded-2xl shadow-2xl p-4">
           <h4 class="caption uppercase py-5">what company utilities do</h4>
           <p class="text-body-color">
@@ -283,7 +290,6 @@ const metaData = {
         </div>
       </div>
     </section>
-    
 
     <!-- ROI -->
     <section class="flex flex-col shadow-2xl rounded-lg bg-bone pb-6">
@@ -323,7 +329,9 @@ const metaData = {
 
           <h4 class="caption uppercase py-5">quick payback period</h4>
           <p class="text-body-color">
-            Conserve Energy’s customers typically recover their investment within 2 years. After that, it’s all additional profit at the bottom line
+            Conserve Energy’s customers typically recover their investment
+            within 2 years. After that, it’s all additional profit at the bottom
+            line
           </p>
         </div>
         <!-- Stack 3 -->
@@ -336,7 +344,9 @@ const metaData = {
 
           <h4 class="caption uppercase py-5">additional roi</h4>
           <p class="text-body-color">
-            When retrofits include LED lighting, expect significant savings on maintenance, and potential improvements in sales, productivity and safety from enhanced lighting.
+            When retrofits include LED lighting, expect significant savings on
+            maintenance, and potential improvements in sales, productivity and
+            safety from enhanced lighting.
           </p>
         </div>
         <!-- Stack 4 -->
@@ -348,7 +358,9 @@ const metaData = {
           >
           <h4 class="caption uppercase py-5">better business valuation</h4>
           <p class="text-body-color">
-            Since improved energy efficiency increases profitability by reducing operating costs, business valuations often rise, an important point for those considering a sale or refinance.
+            Since improved energy efficiency increases profitability by reducing
+            operating costs, business valuations often rise, an important point
+            for those considering a sale or refinance.
           </p>
         </div>
       </div>
