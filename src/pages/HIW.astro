@@ -170,9 +170,9 @@ const metaData = {
           <div class="flex max-sm:gap-4">
             <div class="col-span-4 w-full h-full max-sm:hidden"></div>
             <div
-              class="relative w-1/2 flex justify-center items-end pb-12 max-sm:w-12"
+              class="relative w-1/2 flex justify-center items-center max-sm:w-12"
             >
-              <div class="w-2 bg-gray pb-5 h-full"></div>
+              <div class="w-2 bg-gray h-full"></div>
               <div
                 class="absolute w-12 h-12 rounded-full bg-caption-color z-10 text-white text-center flex justify-center items-center max-sm:w-8 max-sm:h-8"
               >
@@ -181,7 +181,7 @@ const metaData = {
                 >
               </div>
             </div>
-            <div class="col-span-4 w-full pt-10">
+            <div class="col-span-4 w-full py-10">
               <div
                 class="w-full h-full shadow-2xl rounded-xl p-6 md:pl-4 bg-white"
               >
@@ -192,6 +192,35 @@ const metaData = {
                 </p>
               </div>
             </div>
+          </div>
+
+          <!-- Stack 7 -->
+          <div class="flex max-sm:flex-row-reverse max-sm:gap-4">
+            <div class="col-span-4 w-full pt-10">
+              <div
+                class="w-full h-full shadow-2xl rounded-xl p-6 md:pl-4 bg-white"
+              >
+                <h5 class="uppercase py-2">5. After sales support</h5>
+                <p class="body text-body-color">
+                  We offer a full 1-year parts and labor warranty for all
+                  products and services we provide. Manufacturer's warranty on
+                  most fixtures and equipment we supply is 3 to 7 years.
+                </p>
+              </div>
+            </div>
+            <div
+              class="relative w-1/2 max-sm:w-12 flex justify-center items-end pb-12"
+            >
+              <div class="h-full w-2 bg-gray"></div>
+              <div
+                class="absolute w-12 h-12 rounded-full bg-caption-color z-10 text-white text-center flex justify-center items-center max-sm:w-8 max-sm:h-8"
+              >
+                <span class="material-symbols-outlined text-4xl max-sm:text-lg">
+                  verified_user
+                </span>
+              </div>
+            </div>
+            <div class="col-span-4 w-full h-full max-sm:hidden"></div>
           </div>
         </div>
       </div>
@@ -223,49 +252,135 @@ const metaData = {
         >
           <!-- Hover 2 -->
 
-          <span class="relative flex h-6 w-6 left-[1%]">
+          <div
+            data-tooltip-target="default-navbar-example-full-screen-tooltip"
+            class="flex items-center justify-center relative left-[1%] w-6 h-6 text-xs font-medium bg-white rounded-full cursor-pointer"
+          >
             <span
               class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"
             ></span>
             <span class="relative inline-flex rounded-full h-6 w-6 bg-white">
               <p class="text-base flex justify-center items-center w-full">2</p>
             </span>
-          </span>
+          </div>
+          <div
+            id="default-navbar-example-full-screen-tooltip"
+            role="tooltip"
+            class="absolute z-10 inline-block px-3 py-6 bg-white transition-opacity duration-300 bg-gray-900 rounded-2xl shadow-2xl tooltip dark:bg-gray-700 opacity-0 invisible"
+            data-popper-placement="top"
+          >
+            <div class="">
+              <h4 class="caption uppercase py-5">what conserve energy does</h4>
+              <li class="text-body-color">
+                We make sure you receive maximum incentives
+              </li>
+              <li class="text-body-color">
+                Work closely with your energy provider
+              </li>
+              <li class="text-body-color">
+                Typical incentives range from 40-70% of project cost
+              </li>
+            </div>
+          </div>
 
           <!-- Hover 3 -->
-          <span class="relative flex h-6 w-6 left-[13.5%]">
+          <div
+            data-tooltip-target="default-navbar-example-full-screen-tooltip"
+            class="flex items-center justify-center relative left-[13.5%] w-6 h-6 bg-white rounded-full cursor-pointer"
+          >
             <span
               class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"
             ></span>
             <span class="relative inline-flex rounded-full h-6 w-6 bg-white">
               <p class="text-base flex justify-center items-center w-full">3</p>
             </span>
-          </span>
+          </div>
+          <div
+            id="default-navbar-example-full-screen-tooltip"
+            role="tooltip"
+            class="absolute z-10 inline-block px-3 py-6 bg-white transition-opacity duration-300 bg-gray-900 rounded-2xl shadow-2xl tooltip dark:bg-gray-700 opacity-0 invisible"
+            data-popper-placement="top"
+          >
+            <div class="">
+              <h4 class="caption uppercase py-5">what conserve energy does</h4>
+              <li class="text-body-color">
+                We make sure you receive maximum incentives
+              </li>
+              <li class="text-body-color">
+                Work closely with your energy provider
+              </li>
+              <li class="text-body-color">
+                Typical incentives range from 40-70% of project cost
+              </li>
+            </div>
+          </div>
 
           <!-- Hover 4 -->
-          <span class="relative flex h-6 w-6 left-[25%]">
+          <div
+            data-tooltip-target="hover_4"
+            class="flex items-center justify-center relative left-[25%] w-6 h-6 bg-white rounded-full cursor-pointer"
+          >
             <span
               class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"
             ></span>
             <span class="relative inline-flex rounded-full h-6 w-6 bg-white">
               <p class="text-base flex justify-center items-center w-full">4</p>
             </span>
-          </span>
+          </div>
+          <div
+            id="hover_4"
+            role="tooltip"
+            class="absolute z-10 inline-block px-3 py-6 bg-white transition-opacity duration-300 bg-gray-900 rounded-2xl shadow-2xl tooltip dark:bg-gray-700 opacity-0 invisible"
+            data-popper-placement="top"
+          >
+            <div class="">
+              <p class="caption capitalize"><strong>Increasing capacity</strong><p class=text-body-color>
+                by building new power plants, transmission lines, adding other sources of energy.</p></p>
+              <li class="text-body-color mt-2">
+                We make sure you receive maximum incentives
+              </li>
+              <li class="text-body-color">
+                Work closely with your energy provider
+              </li>
+              <li class="text-body-color mb-2">
+                Typical incentives range from 40-70% of project cost
+              </li>
+            </div>
+          </div>
         </div>
+
         <Image
           src={utilityGraph}
           alt="utilityGraph"
           class="flex justify-center shadow-2xl rounded-lg max-sm:hidden"
         />
 
-        <span class="relative flex h-6 w-6 bottom-20 left-[40%] max-sm:hidden">
+        <div
+          data-tooltip-target="hover_1"
+          class="flex items-center justify-center relative left-[40%] bottom-20 w-6 h-6 bg-white rounded-full cursor-pointer max-sm:hidden"
+        >
           <span
             class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"
           ></span>
           <span class="relative inline-flex rounded-full h-6 w-6 bg-white">
             <p class="text-base flex justify-center items-center w-full">1</p>
           </span>
-        </span>
+        </div>
+        <div
+          id="hover_1"
+          role="tooltip"
+          class="absolute z-10 inline-block p-4 bg-white transition-opacity duration-300 bg-gray-900 rounded-2xl shadow-2xl tooltip dark:bg-gray-700 opacity-0 invisible"
+          data-popper-placement="top"
+        >
+          <div class="">
+            <p class="py-1">
+              Over time, demand increases and utilities must keep up.
+            </p>
+            <li class="text-body-color">Populations grow</li>
+            <li class="text-body-color">Houses sprout up</li>
+            <li class="text-body-color">Businesses are built</li>
+          </div>
+        </div>
       </div>
       <div class="w-full flex justify-between max-md:flex-col py-4 gap-4">
         <div class="w-1/2 max-md:w-full rounded-2xl shadow-2xl p-4">
