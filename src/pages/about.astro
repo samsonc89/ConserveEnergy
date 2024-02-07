@@ -1,17 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import CTA from "../components/CTA.astro";
-
-// import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
-// const images = import.meta.glob<{ default: ImageMetadata }>(
-//   "/src/images/*.{jpeg,jpg,png,gif}"
-// );
-// if (!images[imagePath])
-//   throw new Error(
-//     `"${imagePath}" does not exist in glob: "/src/images/*.{jpeg,jpg,png,gif}"`
-//   );
-import { office, retail, warehouse, aboutBg } from "../images";
+import { aboutBg } from "../images";
 import markets from "../data/markets.json";
 
 const metaData = {
@@ -19,6 +10,7 @@ const metaData = {
   description:
     "We've been in businesses since 2008, completing thousands of lighting and energy efficiency projects at reasonable prices.",
 };
+import MarketCard from "../components/MarketCard.astro";
 ---
 
 <Layout title={metaData.title} metaDescription={metaData.description}>
@@ -86,16 +78,11 @@ const metaData = {
     <ul class="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4">
       {
         markets.map((card) => (
-          <li>
-            <div class="card aspect-square">
-              <img
-                src={card.imagePath}
-                alt={card.altText}
-                class="object-cover w-full rounded-2xl"
-              />
-              <h4 class="text-center capitalize mt-4">{card.name}</h4>
-            </div>
-          </li>
+          <MarketCard
+            name={card.name}
+            imagePath={card.imagePath}
+            altText={card.altText}
+          />
         ))
       }
       <li class="h-full flex justify-center items-end">
