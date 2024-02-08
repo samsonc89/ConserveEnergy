@@ -248,7 +248,7 @@ const metaData = {
         />
 
         <div
-          class="relative flex justify-center top-20 w-full max-lg:top-16 max-md:top-8 max-sm:hidden"
+          class="relative flex justify-center top-20 max-lg:top-16 max-md:top-12 max-sm:hidden"
         >
           <!-- Hover 2 -->
 
@@ -359,9 +359,10 @@ const metaData = {
         />
 
         <!-- Hover 1 -->
+        <div class="relative bottom-20 max-lg:bottom-16 max-md:bottom-12 max-sm:hidden">
         <div
           data-tooltip-target="hover_1"
-          class="flex items-center justify-center relative left-[40%] bottom-20 w-6 h-6 bg-white rounded-full cursor-pointer max-sm:hidden"
+          class="flex items-center justify-center relative left-[40%] w-6 h-6 bg-white rounded-full cursor-pointer"
         >
           <span
             class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"
@@ -387,79 +388,113 @@ const metaData = {
             <li class="text-body-color">Businesses are built</li>
           </div>
         </div>
+      </div>
 
         <!--Mobile Hover Card -->
 
-        <!--Mobile Hover Card 1-->
-
-        <div class="py-4 gap-4 flex-col flex">
-          <div class="bg-white shadow-2xl rounded-lg p-4">
-            <p class="caption capitalize">
-              <strong>Over time,</strong><p class="text-body-color">
-                demand increases and utilities must keep up.
-              </p>
-            </p>
-            <li class="text-body-color">Populations grow</li>
-            <li class="text-body-color">Houses sprout up</li>
-            <li class="text-body-color">Businesses are built</li>
-          </div>
-
-          <!--Mobile Hover Card 2-->
-
-          <div class="bg-white shadow-2xl rounded-lg p-4">
-            <p class="caption capitalize">
-              <strong>Increasing capacity</strong><p class="text-body-color">
-                by building new power plants, transmission lines, adding other
-                sources of energy.
-              </p>
-            </p>
-            <li class="text-body-color mt-2">Expensive</li>
-            <li class="text-body-color">Complex regulatory process</li>
-            <li class="text-body-color mb-2">Negative environmental impact</li>
-          </div>
-
-          <!--Mobile Hover Card 3-->
-
-          <div class="bg-white shadow-2xl rounded-lg p-4">
-            <p class="caption capitalize">
-              <strong>purchasing energy</strong><p class="text-body-color">
-                from other utilities on the open market.
-              </p>
-            </p>
-            <li class="text-body-color mt-2">Very expensive</li>
-            <li class="text-body-color mb-2">
-              May be limited by transmission capacity
-            </li>
-          </div>
-
-          <!--Mobile Hover Card 4-->
-
-          <div class="flex gap-4">
-            <span class="rounded-full h-6 w-6 bg-caption-color p-4 mt-4 ml-2">
-              <p class="text-base flex justify-center items-center h-full w-full text-white">4</p>
-            </span>
-            <div class="bg-white shadow-2xl rounded-lg p-4">
-              <p class="caption capitalize">
-                <strong>Reducing Demand</strong><p class="text-body-color">
-                  by offering energy efficiency incentives.
+        <div class="max-sm:block hidden">
+          <!--Mobile Hover Card 1-->
+          <div class="py-4 gap-4 flex-col flex">
+            <div class="flex gap-4">
+              <span class="rounded-full h-6 w-6 bg-caption-color p-4 mt-4 ml-2">
+                <p
+                  class="text-base flex justify-center items-center h-full w-full text-white font-bold"
+                >
+                  1
                 </p>
-              </p>
-              <li class="text-body-color mt-2">
-                Much less expensive than adding capacity or purchasing energy
-              </li>
-              <li class="text-body-color">
-                Cost-effective for the utility and rate-payers
-              </li>
-              <li class="text-body-color mb-2">
-                Positive environmental impact
-              </li>
+              </span>
+              <div class="bg-white shadow-2xl rounded-lg p-4 w-full">
+                <p class="caption capitalize">
+                  <strong>Over time,</strong><p class="text-body-color">
+                    demand increases and utilities must keep up.
+                  </p>
+                </p>
+                <li class="text-body-color">Populations grow</li>
+                <li class="text-body-color">Houses sprout up</li>
+                <li class="text-body-color">Businesses are built</li>
+              </div>
+            </div>
+
+            <!--Mobile Hover Card 2-->
+            <div class="flex gap-4">
+              <span class="rounded-full h-6 w-6 bg-caption-color p-4 mt-4 ml-2">
+                <p
+                  class="text-base flex justify-center items-center h-full w-full text-white font-bold"
+                >
+                  2
+                </p>
+              </span>
+              <div class="bg-white shadow-2xl rounded-lg p-4 w-full">
+                <p class="caption capitalize">
+                  <strong>Increasing capacity</strong><p
+                    class="text-body-color"
+                  >
+                    by building new power plants, transmission lines, adding
+                    other sources of energy.
+                  </p>
+                </p>
+                <li class="text-body-color mt-2">Expensive</li>
+                <li class="text-body-color">Complex regulatory process</li>
+                <li class="text-body-color mb-2">
+                  Negative environmental impact
+                </li>
+              </div>
+            </div>
+
+            <!--Mobile Hover Card 3-->
+            <div class="flex gap-4">
+              <span class="rounded-full h-6 w-6 bg-caption-color p-4 mt-4 ml-2">
+                <p
+                  class="text-base flex justify-center items-center h-full w-full text-white font-bold"
+                >
+                  3
+                </p>
+              </span>
+              <div class="bg-white shadow-2xl rounded-lg p-4 w-full">
+                <p class="caption capitalize">
+                  <strong>purchasing energy</strong><p class="text-body-color">
+                    from other utilities on the open market.
+                  </p>
+                </p>
+                <li class="text-body-color mt-2">Very expensive</li>
+                <li class="text-body-color mb-2">
+                  May be limited by transmission capacity
+                </li>
+              </div>
+            </div>
+
+            <!--Mobile Hover Card 4-->
+
+            <div class="flex gap-4">
+              <span class="rounded-full h-6 w-6 bg-caption-color p-4 mt-4 ml-2">
+                <p
+                  class="text-base flex justify-center items-center h-full w-full text-white font-bold"
+                >
+                  4
+                </p>
+              </span>
+              <div class="bg-white shadow-2xl rounded-lg p-4 w-full">
+                <p class="caption capitalize">
+                  <strong>Reducing Demand</strong><p class="text-body-color">
+                    by offering energy efficiency incentives.
+                  </p>
+                </p>
+                <li class="text-body-color mt-2">
+                  Much less expensive than adding capacity or purchasing energy
+                </li>
+                <li class="text-body-color">
+                  Cost-effective for the utility and rate-payers
+                </li>
+                <li class="text-body-color mb-2">
+                  Positive environmental impact
+                </li>
+              </div>
             </div>
           </div>
-
         </div>
       </div>
 
-            <!--What Companies Do-->
+      <!--What Companies Do-->
 
       <div class="w-full flex justify-between max-md:flex-col py-4 gap-4">
         <div class="w-1/2 max-md:w-full rounded-2xl shadow-2xl p-4">
