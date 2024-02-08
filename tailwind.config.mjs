@@ -32,17 +32,7 @@ export default {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0%)" },
         },
-        // ping: {
-        //   "75%": {
-        //     transform: "scale(1)",
-        //     opacity: "0"
-        //   },
-        //   "100%": {
-        //     transform: "scale(2)",
-        //     opacity: "0"
-        //   },
-        // },
-      },
+              },
     },
   },
 };
