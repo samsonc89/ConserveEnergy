@@ -5,6 +5,6 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  site: "https://samsonc89.github.io",
-  base: "/ConserveEnergy",
+  site: "https://www.conservee.com",
+  base: "/",
 });
